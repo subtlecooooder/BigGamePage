@@ -64,7 +64,7 @@ python3 scripts/build.py
 python3 scripts/check.py
 ```
 
-The checker builds twice in a temporary directory, compares the actual bytes with the showcase, records whether they still match historical hashes, installs the complete Skill into another temporary directory, builds from that installation, rejects a duplicate install and rejects a changed foundation. It checks local Markdown/HTML links and JSON. Node.js adds exported-JavaScript syntax checks and 71 language-selection/translation cases when present. Its dated output is `evidence/2026-11-16/repository-check.json` and reflects the latest build, not the v0.3 byte comparison above.
+The checker builds twice in a temporary directory, compares the actual bytes with the showcase, records whether they still match historical hashes, installs the complete Skill into another temporary directory, builds from that installation, rejects a duplicate install and rejects a changed foundation. It checks local Markdown/HTML links and JSON. Node.js adds exported-JavaScript syntax checks and 73 language-selection/translation cases when present. Its dated output is `evidence/2026-11-16/repository-check.json` and reflects the latest build, not the v0.3 byte comparison above.
 
 To validate the saved thermal trace, first inspect the verifier's CLI:
 

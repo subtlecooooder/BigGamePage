@@ -4,8 +4,8 @@
   "games": [
     {
       "id": "switchyard-zero",
-      "bytes": 1537480,
-      "sha256": "ecc6b1634afc6ba47fa12e073afa99a3a3c02c39fe457551630776ffce1eb5d3",
+      "bytes": 1537614,
+      "sha256": "38de61d9b78265ae0964a862e6a2c712854144847c28ed9418336f3baaffd90c",
       "budget": 2000000,
       "externalHTMLResources": [],
       "runtimeNetworkPolicy": "connect-src none",
@@ -23,8 +23,8 @@
     },
     {
       "id": "night-harbor",
-      "bytes": 1526993,
-      "sha256": "937811b39bdbf03245e34cdea7256968f582ba89b281fe8c489f3da9cd761062",
+      "bytes": 1527127,
+      "sha256": "f3a13e2e2f3ea2950434782dc9df03b7f0953eb9f5efac3a09fe98f31e4cf3e8",
       "budget": 2000000,
       "externalHTMLResources": [],
       "runtimeNetworkPolicy": "connect-src none",
@@ -42,8 +42,8 @@
     },
     {
       "id": "selene-repair",
-      "bytes": 1527107,
-      "sha256": "09d10f9169f45ea7653afc137899162a1744d17464518f86e1846738865104d9",
+      "bytes": 1527241,
+      "sha256": "2316bd0964031754a10bcb46aa744b0375d92af9bf35e32bb16133c5ec88fb61",
       "budget": 2000000,
       "externalHTMLResources": [],
       "runtimeNetworkPolicy": "connect-src none",
@@ -61,8 +61,8 @@
     },
     {
       "id": "bunker-09",
-      "bytes": 1527193,
-      "sha256": "a428a9fd2ba6162c320651b5b172da5d04341b9dc9b5ec39d79a47bcafbfd4b2",
+      "bytes": 1527327,
+      "sha256": "a1ef9025bbdddc62c5e1caa48e753524ebd3af2859638a5179bb2775ea1eb019",
       "budget": 2000000,
       "externalHTMLResources": [],
       "runtimeNetworkPolicy": "connect-src none",

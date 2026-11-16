@@ -31,6 +31,7 @@
     if (Object.hasOwn(messages, trimmed)) result = text.replace(trimmed, messages[trimmed]);
     else {
       result = text.replace(/（(低|中|高|极高|默认)）/g, (_, quality) => '(' + messages[quality] + ')')
+        .replace(/(西南堆场|东南堆场|西北货道|东北货道|东侧堆场|西侧通道)(发现增援|增援)/g, '$1 · $2')
         .replace(/Q 放下后战斗 · 警戒第\s*(\d+)\s*波/g, 'Q: drop to fight · Wave $1')
         .replace(/第\s*(\d+)\s*波增援抵达/g, 'Wave $1 reinforcements arrived')
         .replace(/第\s*(\d+)\s*波/g, 'Wave $1')

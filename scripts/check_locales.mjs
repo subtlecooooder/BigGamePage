@@ -39,6 +39,8 @@ for(const name of ['switchyard-zero','night-harbor','selene-repair','bunker-09']
 }
 const r=engine(JSON.parse(fs.readFileSync(new URL('recipes/switchyard-zero.json',asset),'utf8')));
 assert.equal(r.translate('警戒上升：蹲伏绕过视野，用集装箱与仓库阻断视线'),'Alert rising: crouch out of sight. Use containers and warehouses for cover');cases++;
+assert.equal(r.translate('西侧通道增援 · 6 秒'),'West access · reinforcements · 6 s');cases++;
+assert.equal(r.translate('西侧通道发现增援 · 6 秒后接敌'),'West access · REINFORCEMENTS SPOTTED · 6 s until contact');cases++;
 for(const text of ['按住 E · 磁吸搬运 西库 / 稳压核心','按住 E · 核心冷却中','第 4 波增援抵达','装载 2/3 · 西线','维修包 2 · 备用弹药 150','警戒 3 波 · 在场 5 · 回收守备余量 8','核心温度 84% · Q 放下','护送开始 · 保持距车 8 米以内','N ↑ / M 展开','已根据设备自动选择画质（高），运行不流畅时可降低画质。','一页九式突击步枪','Q 放下后战斗 · 警戒第 2 波','64 秒 · 7 台守卫 · 补给 2 次','最高警戒 100% · 暴露 4 次']) {
   assert.doesNotMatch(r.translate(text),/[\u3400-\u9fff]/,text);cases++;
 }
