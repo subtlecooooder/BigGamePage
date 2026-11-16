@@ -1,0 +1,19 @@
+name: Technical checks
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Build standalone games
+        run: python3 scripts/build.py
+      - name: Verify package and documentation
+        run: python3 scripts/check.py
+      # Deliberately no deployment or artifact upload. See docs/release.md.

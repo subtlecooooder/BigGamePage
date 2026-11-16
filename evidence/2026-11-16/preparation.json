@@ -1,0 +1,31 @@
+{
+  "date": "2026-11-16",
+  "status": "local-repository-candidate",
+  "branch": "main",
+  "commits": 0,
+  "remoteConfigured": false,
+  "publicRelease": false,
+  "officialSkillValidator": "passed using isolated temporary PyYAML dependency",
+  "githubYamlParse": "passed",
+  "hostedActionsRun": false,
+  "runtimeModulesByteIdenticalToPreviousDelivery": true,
+  "releaseCheckExitCode": 2,
+  "releasePendingItems": [
+    "inherited-game",
+    "chinese-adaptation",
+    "procedural-assets",
+    "demo-media",
+    "project-license"
+  ],
+  "files": {
+    "scripts/build.py": "8bd55666fd36fdc99ecf05932d132193bfeb8566a7636aeb4a9901236c8c315f",
+    "scripts/install_skill.py": "b36e244bf5a7bf14f899b1e8e97cf971030dd53a0b4211a3c56b9129e67b7b08",
+    "scripts/check.py": "1d9a8ce86b5fddf3fa0111020294da5a4a94a82ca896b16ff741435ce1425cc9",
+    "README.md": "17cb4656933e2c516f31f3b2fbf03b1abedbef719d5acd83d5d68f0a8f06f7bc",
+    "README.en.md": "66ac188806f5b751bdb050bae4dca6e4c47b8814925735654cfac4041a572995",
+    "docs/getting-started.md": "025173686041d16749a201fed7f154213d12b3d3b1d4c0027af32fbbc89fb8db",
+    "docs/getting-started.en.md": "a735c202c6845da28457a15d0cfe1c8cd37c6381f46f4b476f6a710e5fc2d028",
+    "docs/licensing.md": "86ea3499f3f513d9ae76c9cad03cd11aca226067dc34582cd7ca879d844f7b6e",
+    "docs/licensing.en.md": "6b506e83137b30d6e3b75519c543ef429d099a1a31821780f4c313d066d1ad02"
+  }
+}

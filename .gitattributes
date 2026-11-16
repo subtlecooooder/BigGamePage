@@ -1,0 +1,11 @@
+* text=auto
+*.py text eol=lf
+*.js text eol=lf
+*.html text eol=lf
+*.css text eol=lf
+*.md text eol=lf
+*.json text eol=lf
+*.png binary
+
+# Preserve the byte-pinned inherited foundation, including shader whitespace.
+skills/big-game-page/assets/runtime/foundation.js -whitespace

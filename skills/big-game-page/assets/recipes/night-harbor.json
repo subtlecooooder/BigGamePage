@@ -1,0 +1,21 @@
+{
+  "id": "night-harbor",
+  "title": "夜港无声",
+  "subtitle": "NIGHT HARBOR",
+  "world": "harbor",
+  "brief": "暴雨中的货运港，先关闭堆场警报 A，再下载仓库资料 B，最后开启码头通道 C。蹲伏与掩体降低警戒；开枪会暴露位置。绿色 S 柜补给，蓝色 EMP 争取脱身时间。",
+  "objectives": [
+    "A · 关闭堆场警报",
+    "B · 下载仓库资料",
+    "C · 开启撤离通道"
+  ],
+  "mechanics": {
+    "reserve": 150,
+    "startReserve": 60
+  },
+  "palette": [
+    "#79c8df",
+    "#d9e9ec",
+    "#132b43"
+  ]
+}

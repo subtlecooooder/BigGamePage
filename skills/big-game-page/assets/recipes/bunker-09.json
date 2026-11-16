@@ -1,0 +1,21 @@
+{
+  "id": "bunker-09",
+  "title": "地底九号",
+  "subtitle": "BUNKER 09 / BLACKOUT",
+  "world": "bunker",
+  "brief": "地下货运站进入封锁。先在红色开放集装箱内找到保险芯；关闭 A 安防锁，将保险芯装入仓库 B，再到 C 重启排风，抵达东侧逃生气闸。L 切换手电，S 补给电池与弹药，卷帘门可阻断追击。",
+  "objectives": [
+    "A · 解除安防锁",
+    "B · 装入保险芯",
+    "C · 重启排风系统"
+  ],
+  "mechanics": {
+    "reserve": 90,
+    "startReserve": 30
+  },
+  "palette": [
+    "#e4b377",
+    "#85d7c8",
+    "#182622"
+  ]
+}

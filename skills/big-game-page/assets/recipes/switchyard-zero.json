@@ -1,0 +1,10 @@
+{
+  "id":"switchyard-zero",
+  "title":"零号中转站",
+  "subtitle":"SWITCHYARD ZERO / HEAVY CARGO",
+  "world":"freight",
+  "brief":"回收西库、东侧开放集装箱与高架桥上的三枚能源核心，自选顺序送回南侧运载车。搬运时无法开火，核心会发热；Q 可放下应战。回收触发守备增援，留意方向预警并利用补给点。装满后在路由台选择西线或东线，靠近车辆按住 E 出发。留在车旁护送至北方出口，遭袭时可消耗维修包修车。",
+  "objectives":["回收核心 · 自选顺序","选择路线并启动运输","护送运载车抵达北站"],
+  "palette":["#f1bc72","#72d6d4","#16252d"],
+  "mechanics":{"reserve":150,"startReserve":75,"carrySeconds":55,"cartHealth":100,"repairKits":3}
+}

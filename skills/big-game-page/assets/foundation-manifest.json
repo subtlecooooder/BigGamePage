@@ -1,0 +1,37 @@
+{
+  "source": "几猫国产3A大作_V1.html / user-supplied",
+  "original_script_sha256": "96ec824cb4f09ee11915322be8357555e79c6ff00f301774552e398555e10476",
+  "foundation_sha256": "1f78441cb11f5376cc2f27db547d46111324a8dabddba2dcee21583f78c25098",
+  "baseline": {
+    "containers": 47,
+    "props": 298,
+    "staticTriangles": 794188,
+    "dogTriangles": 17344,
+    "droneTriangles": 13788,
+    "runtimeFullRig": {
+      "hashMethod": "FNV-1a; traverse meshes; sorted geometry attribute buffers then index bytes; includes effect planes",
+      "dog": {
+        "hash": "56cdfa8c",
+        "triangles": 17348,
+        "meshes": 2
+      },
+      "drone": {
+        "hash": "aabcf30a",
+        "triangles": 13790,
+        "meshes": 3
+      }
+    }
+  },
+  "presentation_revision": {
+    "version": "0.3.0",
+    "brand": "BigGamePage · 一页大作",
+    "tagline": "Big games. One page.",
+    "previous_foundation_sha256": "f8ef86a2133ec8f35fa1d09f3eece410b4b9aea6fb9703ff3c808e84ce01c534",
+    "scope": "Names, labels, shader debug markers and menu copy only; original geometry and rules retained.",
+    "source_attribution": "../SOURCE-NOTICE.md"
+  },
+  "extraction_history": {
+    "archived_manifest_sha256": "12bacf62435e3fbdbe9c5a7086fd8269d60da7a9157b1b6d1f0a9d718ad60c3b",
+    "note": "Original extraction patch log retained unchanged in the pre-branding source archive."
+  }
+}

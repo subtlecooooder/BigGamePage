@@ -1,0 +1,87 @@
+{
+  "desktop": {
+    "height": 900,
+    "images": [
+      {
+        "alt": "零号中转站独立环形货运地图的实机场景检查视角",
+        "loaded": true
+      },
+      {
+        "alt": "夜港无声的潮湿货运港场景检查画面",
+        "loaded": true
+      },
+      {
+        "alt": "月面余氧的货运基地场景检查画面",
+        "loaded": true
+      },
+      {
+        "alt": "地底九号仓库的场景检查画面",
+        "loaded": true
+      }
+    ],
+    "lang": "zh-CN",
+    "playLinks": [
+      "games/switchyard-zero.html?noaudio=1",
+      "games/night-harbor.html?noaudio=1",
+      "games/selene-repair.html?noaudio=1",
+      "games/bunker-09.html?noaudio=1"
+    ],
+    "scrollWidth": 1425,
+    "width": 1440
+  },
+  "soundOn": {
+    "links": [
+      "games/switchyard-zero.html",
+      "games/night-harbor.html",
+      "games/selene-repair.html",
+      "games/bunker-09.html"
+    ],
+    "pressed": "true"
+  },
+  "copyStatus": "Copied. Run in a terminal at the repository root.",
+  "mobileZh": {
+    "language": "zh-CN",
+    "scrollWidth": 375,
+    "width": 390
+  },
+  "mobileEn": {
+    "active": "BUTTON",
+    "language": "en",
+    "scrollWidth": 375,
+    "width": 390
+  },
+  "landingErrors": [],
+  "gameEntry": {
+    "url": "http://127.0.0.1:8000/games/switchyard-zero.html?noaudio=1",
+    "title": "零号中转站 · BigGamePage · 一页大作",
+    "scope": "Silent landing-link launch, start, forward movement and pause; not a new complete route."
+  },
+  "gameErrors": [],
+  "date": "2026-11-16",
+  "gameplayCodeChanged": false,
+  "fullGameplayRerun": false,
+  "scope": "Repository and showcase verification; prior gameplay evidence is retained and hash-matched separately.",
+  "finalResponsiveCheck": {
+    "allImagesLoaded": true,
+    "scrollWidth": 375,
+    "skipLinkHidden": false,
+    "width": 390
+  },
+  "siteFiles": {
+    "site/index.html": "215f19973f9e98bbb70acfad681c3e3b97c041bb4b2277eecc491f9a64e16c49",
+    "site/site.js": "fb1d1ace55b020c891d5286327735bddeb66f811afee4339c5e90559dbf9b91a",
+    "site/styles.css": "a3ef92ddcff7526b0b53550a07ecf0b5c22a7f28ee462050089e67abf9401f0e"
+  },
+  "gameArtifact": {
+    "id": "switchyard-zero",
+    "bytes": 1507479,
+    "sha256": "eb66de081941994f93e9eef2b9c4fa8a069b0b297551e6c00272484cfdfcc88c",
+    "budget": 2000000,
+    "externalHTMLResources": [],
+    "runtimeNetworkPolicy": "connect-src none",
+    "foundation_sha256": "1f78441cb11f5376cc2f27db547d46111324a8dabddba2dcee21583f78c25098",
+    "brand": "BigGamePage · 一页大作",
+    "tagline": "Big games. One page.",
+    "version": "0.3.0"
+  }
+}

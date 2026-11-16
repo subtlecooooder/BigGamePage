@@ -1,0 +1,259 @@
+{
+  "method": "Real browser AX inputs; restarted using normal pause-menu button; route driver stopped",
+  "artifact": {
+    "id": "switchyard-zero",
+    "bytes": 1507479,
+    "sha256": "eb66de081941994f93e9eef2b9c4fa8a069b0b297551e6c00272484cfdfcc88c",
+    "budget": 2000000,
+    "externalHTMLResources": [],
+    "runtimeNetworkPolicy": "connect-src none",
+    "foundation_sha256": "1f78441cb11f5376cc2f27db547d46111324a8dabddba2dcee21583f78c25098",
+    "brand": "BigGamePage · 一页大作",
+    "tagline": "Big games. One page.",
+    "version": "0.3.0"
+  },
+  "notes": [
+    "Input route driver stopped. Camera is normal play view; diagnostics may call it play.",
+    "First attempt failed after an unattended interval; retained separately. This retry completed the full control sequence."
+  ],
+  "records": [
+    {
+      "action": "Normal menu restart then W held 1.2s",
+      "position": [
+        0,
+        0,
+        24.752773259889494
+      ],
+      "controls": {
+        "ammo": 30,
+        "eyeHeight": 1.6601687720022331,
+        "mapExpanded": false,
+        "pitch": 0,
+        "reserve": 75,
+        "yaw": 0
+      },
+      "state": "playing",
+      "time": 1.04,
+      "playerHealth": 100,
+      "combat": {
+        "hits": 0,
+        "kills": 0,
+        "shots": 0
+      },
+      "loaded": [],
+      "overheats": 0,
+      "supplyUses": 0,
+      "repairs": 3,
+      "routeDriverRunning": false,
+      "inspectionCamera": "play",
+      "invulnerable": false,
+      "audioContext": "stub",
+      "errors": [],
+      "networkResources": []
+    },
+    {
+      "action": "S held 1.2s",
+      "position": [
+        0,
+        0,
+        27.718401900024514
+      ],
+      "controls": {
+        "ammo": 30,
+        "eyeHeight": 1.6993751931021015,
+        "mapExpanded": false,
+        "pitch": 0,
+        "reserve": 75,
+        "yaw": 0
+      },
+      "state": "playing",
+      "time": 2.68,
+      "playerHealth": 100,
+      "combat": {
+        "hits": 0,
+        "kills": 0,
+        "shots": 0
+      },
+      "loaded": [],
+      "overheats": 0,
+      "supplyUses": 0,
+      "repairs": 3,
+      "routeDriverRunning": false,
+      "inspectionCamera": "play",
+      "invulnerable": false,
+      "audioContext": "stub",
+      "errors": [],
+      "networkResources": []
+    },
+    {
+      "action": "Right held 0.5s",
+      "position": [
+        0,
+        0,
+        28.001221479965235
+      ],
+      "controls": {
+        "ammo": 30,
+        "eyeHeight": 1.6789591728291058,
+        "mapExpanded": false,
+        "pitch": 0,
+        "reserve": 75,
+        "yaw": -0.732480000025034
+      },
+      "state": "playing",
+      "time": 3.09,
+      "playerHealth": 100,
+      "combat": {
+        "hits": 0,
+        "kills": 0,
+        "shots": 0
+      },
+      "loaded": [],
+      "overheats": 0,
+      "supplyUses": 0,
+      "repairs": 3,
+      "routeDriverRunning": false,
+      "inspectionCamera": "play",
+      "invulnerable": false,
+      "audioContext": "stub",
+      "errors": [],
+      "networkResources": []
+    },
+    {
+      "action": "C crouch held 0.6s",
+      "position": [
+        0,
+        0,
+        28.001221479965235
+      ],
+      "controls": {
+        "ammo": 30,
+        "eyeHeight": 1.1115553650130916,
+        "mapExpanded": false,
+        "pitch": 0,
+        "reserve": 75,
+        "yaw": -1.1161500000000002
+      },
+      "state": "playing",
+      "time": 3.51,
+      "playerHealth": 100,
+      "combat": {
+        "hits": 0,
+        "kills": 0,
+        "shots": 0
+      },
+      "loaded": [],
+      "overheats": 0,
+      "supplyUses": 0,
+      "repairs": 3,
+      "routeDriverRunning": false,
+      "inspectionCamera": "play",
+      "invulnerable": false,
+      "audioContext": "stub",
+      "errors": [],
+      "networkResources": []
+    },
+    {
+      "action": "M expanded map; left mouse held 0.8s",
+      "position": [
+        0,
+        0,
+        28.001221479965235
+      ],
+      "controls": {
+        "ammo": 20,
+        "eyeHeight": 1.6799412212036795,
+        "mapExpanded": true,
+        "pitch": 0.2733073574036756,
+        "reserve": 75,
+        "yaw": -1.1174577405982111
+      },
+      "state": "playing",
+      "time": 4.76,
+      "playerHealth": 100,
+      "combat": {
+        "hits": 0,
+        "kills": 0,
+        "shots": 10
+      },
+      "loaded": [],
+      "overheats": 0,
+      "supplyUses": 0,
+      "repairs": 3,
+      "routeDriverRunning": false,
+      "inspectionCamera": "play",
+      "invulnerable": false,
+      "audioContext": "stub",
+      "errors": [],
+      "networkResources": []
+    },
+    {
+      "action": "R reload; Left held 2.6s",
+      "position": [
+        0,
+        0,
+        28.001221479965235
+      ],
+      "controls": {
+        "ammo": 30,
+        "eyeHeight": 1.6799999999999995,
+        "mapExpanded": true,
+        "pitch": 0.2733073574036756,
+        "reserve": 65,
+        "yaw": 4.044552259451857
+      },
+      "state": "playing",
+      "time": 7.28,
+      "playerHealth": 100,
+      "combat": {
+        "hits": 0,
+        "kills": 0,
+        "shots": 10
+      },
+      "loaded": [],
+      "overheats": 0,
+      "supplyUses": 0,
+      "repairs": 3,
+      "routeDriverRunning": false,
+      "inspectionCamera": "play",
+      "invulnerable": false,
+      "audioContext": "stub",
+      "errors": [],
+      "networkResources": []
+    },
+    {
+      "action": "P pause",
+      "position": [
+        0,
+        0,
+        28.001221479965235
+      ],
+      "controls": {
+        "ammo": 30,
+        "eyeHeight": 1.6799999999999995,
+        "mapExpanded": true,
+        "pitch": 0.2733073574036756,
+        "reserve": 65,
+        "yaw": 4.340862259439341
+      },
+      "state": "paused",
+      "time": 7.44,
+      "playerHealth": 100,
+      "combat": {
+        "hits": 0,
+        "kills": 0,
+        "shots": 10
+      },
+      "loaded": [],
+      "overheats": 0,
+      "supplyUses": 0,
+      "repairs": 3,
+      "routeDriverRunning": false,
+      "inspectionCamera": "play",
+      "invulnerable": false,
+      "audioContext": "stub",
+      "errors": [],
+      "networkResources": []
+    }
+  ]
+}

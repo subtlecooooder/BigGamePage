@@ -1,0 +1,5 @@
+interface:
+  display_name: "BigGamePage · 一页大作"
+  short_description: "Big games. One page. — 制作精细、可离线游玩的单 HTML 游戏"
+  brand_color: "#79C8DF"
+  default_prompt: "Use $big-game-page to make a detailed single-HTML game under 2 MB, preserving the supplied assets and testing its gameplay and visuals."

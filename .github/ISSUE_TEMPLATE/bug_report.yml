@@ -1,0 +1,22 @@
+name: Bug report / 问题反馈
+description: Report a reproducible build, game or documentation problem.
+body:
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment / 环境
+      description: Browser/version, operating system, recipe ID, seed and HTML SHA-256.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Steps and result / 操作步骤与结果
+      description: Include expected behavior, observed behavior and whether normal enemies/damage were enabled.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence / 证据
+      description: Screenshots or sanitized logs; do not include tokens or personal paths. Distinguish gameplay from inspection-camera views.

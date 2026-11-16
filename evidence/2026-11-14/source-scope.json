@@ -1,0 +1,92 @@
+{
+  "recipesUnchanged": true,
+  "runtimeModules": {
+    "worlds.js": {
+      "equalAfterAuditedBrandReplacements": true
+    },
+    "missions.js": {
+      "namespaceRenamed": true,
+      "presentationEdits": [
+        [
+          "：沿用原版精细资产的单文件实验",
+          " · 一页大作"
+        ],
+        [
+          "",
+          "Big games. One page. "
+        ]
+      ]
+    },
+    "freight-qa.js": {
+      "equalAfterAuditedBrandReplacements": true
+    },
+    "adapter.js": {
+      "equalAfterAuditedBrandReplacements": true
+    },
+    "foundation.js": {
+      "equalAfterAuditedBrandReplacements": true
+    },
+    "freight-map.js": {
+      "equalAfterAuditedBrandReplacements": true
+    },
+    "qa.js": {
+      "equalAfterAuditedBrandReplacements": true
+    },
+    "devices.js": {
+      "namespaceRenamed": true,
+      "presentationEdits": [
+        [
+          "I",
+          "ig"
+        ],
+        [
+          "GAME",
+          "ame"
+        ],
+        [
+          "AGE",
+          "age · 一页大作"
+        ]
+      ]
+    },
+    "climbing.js": {
+      "equalAfterAuditedBrandReplacements": true
+    },
+    "freight-game.js": {
+      "namespaceRenamed": true,
+      "presentationEdits": [
+        [
+          "",
+          "Big games. One page. · "
+        ],
+        [
+          " / 单文件离线游戏",
+          ""
+        ]
+      ]
+    }
+  },
+  "geometryBaselineUnchanged": true,
+  "baseline": {
+    "containers": 47,
+    "props": 298,
+    "staticTriangles": 794188,
+    "dogTriangles": 17344,
+    "droneTriangles": 13788,
+    "runtimeFullRig": {
+      "hashMethod": "FNV-1a; traverse meshes; sorted geometry attribute buffers then index bytes; includes effect planes",
+      "dog": {
+        "hash": "56cdfa8c",
+        "triangles": 17348,
+        "meshes": 2
+      },
+      "drone": {
+        "hash": "aabcf30a",
+        "triangles": 13790,
+        "meshes": 3
+      }
+    }
+  },
+  "sourceFoundationSHA256": "f8ef86a2133ec8f35fa1d09f3eece410b4b9aea6fb9703ff3c808e84ce01c534",
+  "currentFoundationSHA256": "1f78441cb11f5376cc2f27db547d46111324a8dabddba2dcee21583f78c25098"
+}

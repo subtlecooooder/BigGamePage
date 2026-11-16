@@ -1,0 +1,13 @@
+{
+  "reviewedAt": "2026-11-16",
+  "scope": "Complete local BigGamePage repository candidate, generated games and demonstration media",
+  "items": [
+    {"id": "three-r180", "status": "cleared", "releaseBlocker": false, "license": "MIT", "evidence": "https://github.com/mrdoob/three.js/blob/r180/LICENSE", "action": "Retain the full embedded notice; it covers Three.js only."},
+    {"id": "inherited-game", "status": "pending", "releaseBlocker": true, "evidence": "source-record.json", "action": "Obtain a version-specific grant for modification, source/artifact redistribution and intended commercial use from an authorized rights holder."},
+    {"id": "chinese-adaptation", "status": "pending", "releaseBlocker": true, "evidence": "source-record.json: non-identical inline scripts", "action": "Attribute and clear intervening Chinese modifications, or recreate them from an authorized upstream."},
+    {"id": "procedural-assets", "status": "pending", "releaseBlocker": true, "evidence": "Inherited generators in skills/big-game-page/assets/runtime/foundation.js", "action": "Confirm that the grant covers model, material, shader and audio generators and their derivative outputs."},
+    {"id": "demo-media", "status": "pending", "releaseBlocker": true, "evidence": "site/assets/screens and generated site/games", "action": "Confirm permission for hosted games, downloads, screenshots and demonstration videos."},
+    {"id": "project-license", "status": "pending", "releaseBlocker": true, "evidence": "LICENSE-STATUS.md", "action": "Maintainer must confirm licensable new contributions and select a compatible license with explicit scope and attribution."},
+    {"id": "fonts", "status": "no-bundled-files-observed", "releaseBlocker": false, "evidence": "System-font fallback stacks in the current export; no embedded font file found", "action": "Do not bundle font binaries without separately reviewing their licenses."}
+  ]
+}

@@ -1,0 +1,50 @@
+[
+  {
+    "id": "bunker-09",
+    "bytes": 1497422,
+    "sha256": "15d7c8e2dbbca3507ab7602e0d5ee77ebae4837d607c4c88a1c4dbce256c336c",
+    "budget": 2000000,
+    "externalHTMLResources": [],
+    "runtimeNetworkPolicy": "connect-src none",
+    "foundation_sha256": "1f78441cb11f5376cc2f27db547d46111324a8dabddba2dcee21583f78c25098",
+    "brand": "BigGamePage · 一页大作",
+    "tagline": "Big games. One page.",
+    "version": "0.3.0"
+  },
+  {
+    "id": "night-harbor",
+    "bytes": 1497324,
+    "sha256": "a40e2210bfc812be7f628a64bda2535dbbc6c1c6609e719f26c1855400b4ba6f",
+    "budget": 2000000,
+    "externalHTMLResources": [],
+    "runtimeNetworkPolicy": "connect-src none",
+    "foundation_sha256": "1f78441cb11f5376cc2f27db547d46111324a8dabddba2dcee21583f78c25098",
+    "brand": "BigGamePage · 一页大作",
+    "tagline": "Big games. One page.",
+    "version": "0.3.0"
+  },
+  {
+    "id": "selene-repair",
+    "bytes": 1497413,
+    "sha256": "deb16b6a1652768722bd678a03ce30806d26b12135f474eede3ad8783ec6ff33",
+    "budget": 2000000,
+    "externalHTMLResources": [],
+    "runtimeNetworkPolicy": "connect-src none",
+    "foundation_sha256": "1f78441cb11f5376cc2f27db547d46111324a8dabddba2dcee21583f78c25098",
+    "brand": "BigGamePage · 一页大作",
+    "tagline": "Big games. One page.",
+    "version": "0.3.0"
+  },
+  {
+    "id": "switchyard-zero",
+    "bytes": 1507479,
+    "sha256": "eb66de081941994f93e9eef2b9c4fa8a069b0b297551e6c00272484cfdfcc88c",
+    "budget": 2000000,
+    "externalHTMLResources": [],
+    "runtimeNetworkPolicy": "connect-src none",
+    "foundation_sha256": "1f78441cb11f5376cc2f27db547d46111324a8dabddba2dcee21583f78c25098",
+    "brand": "BigGamePage · 一页大作",
+    "tagline": "Big games. One page.",
+    "version": "0.3.0"
+  }
+]

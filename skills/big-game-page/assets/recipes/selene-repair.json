@@ -1,0 +1,21 @@
+{
+  "id": "selene-repair",
+  "title": "月面余氧",
+  "subtitle": "SELENE / LAST OXYGEN",
+  "world": "moon",
+  "brief": "月面货运基地断电。按 A 电力、B 冷却、C 密封的顺序抢修，再进入东侧气闸。氧气持续流失，冲刺更耗氧；S 柜可补满氧气。低重力可跃上矮箱，也要小心暴露在无人机视线中。",
+  "objectives": [
+    "A · 接通阵列电力",
+    "B · 恢复冷却循环",
+    "C · 修复气闸密封"
+  ],
+  "mechanics": {
+    "reserve": 150,
+    "startReserve": 90
+  },
+  "palette": [
+    "#c5dbed",
+    "#f0e0b8",
+    "#0e1728"
+  ]
+}

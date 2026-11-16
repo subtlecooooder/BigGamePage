@@ -1,0 +1,28 @@
+{
+  "repository": "https://github.com/realcodebear/saltline-fable-5.2",
+  "commit": "09c51774cd77aad750bd2d6c42af2b1020cb668d",
+  "checked": "2026-11-16",
+  "rootFiles": [
+    "README.md",
+    "index.html"
+  ],
+  "htmlBytes": 1423569,
+  "htmlSHA256": "f34e6debbfa7526b72be2daa24595c2f195e102a7aede4f22e59138c99cd6852",
+  "userSupplied": {
+    "fileName": "几猫国产3A大作_V1.html",
+    "bytes": 1425707,
+    "sha256": "9e55b5200b088adaf8e1152da04efc0d3b25e236e6baf2dee96f81e23e084966",
+    "scriptSHA256": "96ec824cb4f09ee11915322be8357555e79c6ff00f301774552e398555e10476"
+  },
+  "comparison": {
+    "method": "Non-overlapping 1024-byte blocks of the longest inline script in the user-supplied file, searched as exact byte strings anywhere in the mirror longest script. Not an authorship or rights test.",
+    "userScriptBytes": 1393607,
+    "mirrorScriptBytes": 1391985,
+    "completeBlocks": 1360,
+    "exactBlocksFound": 1278,
+    "fraction": 0.939706,
+    "scriptsByteIdentical": false
+  },
+  "mirrorLicenseMarkers": 0,
+  "foundationSHA256": "1f78441cb11f5376cc2f27db547d46111324a8dabddba2dcee21583f78c25098"
+}
