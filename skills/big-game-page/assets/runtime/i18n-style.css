@@ -1,6 +1,8 @@
 /* Localized copy uses the same offline system fonts and responsive layout. */
 .bgp-language { position:fixed; top:max(12px,env(safe-area-inset-top)); right:max(16px,env(safe-area-inset-right)); z-index:85; padding:10px 14px; max-width:calc(100vw - 32px); background:rgba(9,18,23,.94); border:1px solid var(--line); color:var(--bone); pointer-events:auto; }
 .bgp-language[hidden] { display:none; }
+/* Decorative location cards remain in the DOM when faded out. Never intercept menu clicks. */
+.loc-card { pointer-events:none; }
 .bgp-language label { display:flex; align-items:center; gap:12px; font:600 13px/1.4 var(--f-label); }
 .bgp-language select { color:var(--bone); background:#17262d; border:1px solid var(--line); border-radius:2px; padding:6px 9px; font:inherit; min-height:34px; }
 .bgp-language select:focus-visible { outline:2px solid var(--signal); outline-offset:2px; }
