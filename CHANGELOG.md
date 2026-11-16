@@ -1,5 +1,12 @@
 # Changelog
 
+## Hosted demos and English default README (2026-11-16)
+
+- Made English the default README and moved the full Chinese version to `README.zh-CN.md`; retained the old English path as a pointer.
+- Added hosted arcade and direct muted links for all four games to both READMEs.
+- Added a build-validated GitHub Pages deployment of `site/` and hosted-page status messages.
+- Preserved game bytes, source attribution and unresolved permission records.
+
 ## Source preview — repository publication (2026-11-16)
 
 - Prepared the public repository at https://github.com/subtlecooooder/BigGamePage with explicit unresolved license status.

@@ -40,4 +40,4 @@ Ask the actual rights holder to identify the covered game version, procedural mo
 
 **B. Publish only independently licensable tooling.** Exclude the inherited foundation/UI, derived games and media, require users to provide compatible resources they are entitled to use, or author a replacement foundation. The current full source preview is not that reduced package, and the current builder does not accept arbitrary HTML inputs.
 
-Record evidence in [rights.json](provenance/rights.json). Changing a status to `cleared` does not itself grant rights. There is deliberately no project-wide MIT badge or license yet. The GitHub workflow performs technical checks only; it does not deploy Pages or upload release artifacts.
+Record evidence in [rights.json](provenance/rights.json). Changing a status to `cleared` does not itself grant rights. There is deliberately no project-wide MIT badge or license yet. GitHub Pages is deployed at the maintainer's explicit request after technical checks. This deployment does not clear any permission gaps. No Release download package has been published.

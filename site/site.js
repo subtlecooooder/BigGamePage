@@ -13,9 +13,14 @@
 
   function renderStatus() {
     buildStatus.classList.toggle('warning', catalogFailed);
+    const local = location.protocol === 'file:' || ['localhost', '127.0.0.1', '[::1]'].includes(location.hostname);
     buildStatus.textContent = catalogReady
-      ? (language === 'zh' ? '四份本地构建已就绪 · 每份严格小于 2,000,000 字节 · 默认静音' : 'Four local builds ready · each under 2,000,000 bytes · muted by default')
-      : (language === 'zh' ? '首次运行请执行 python3 scripts/build.py，再通过本地 HTTP 服务打开此页。' : 'Run python3 scripts/build.py first, then open this page through the local HTTP server.');
+      ? (language === 'zh' ? '四款游戏已就绪 · 每份严格小于 2,000,000 字节 · 默认静音' : 'Four games ready · each under 2,000,000 bytes · muted by default')
+      : !catalogFailed
+        ? (language === 'zh' ? '正在载入游戏列表…' : 'Loading the game list…')
+        : local
+          ? (language === 'zh' ? '首次运行请执行 python3 scripts/build.py，再通过本地 HTTP 服务打开此页。' : 'Run python3 scripts/build.py first, then open this page through the local HTTP server.')
+          : (language === 'zh' ? '游戏列表暂时无法载入，请稍后刷新页面。' : 'The game list could not be loaded. Please refresh the page shortly.');
   }
   function renderSound() {
     soundButton.setAttribute('aria-pressed', String(sound));

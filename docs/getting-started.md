@@ -1,6 +1,10 @@
 # 安装与使用
 
-[English](getting-started.en.md) · [返回 README](../README.md)
+[English](getting-started.en.md) · [返回 README](../README.zh-CN.md)
+
+## 直接试玩
+
+打开 [在线演示站](https://subtlecooooder.github.io/BigGamePage/?lang=zh) 即可选择四款游戏；默认静音。仅试玩不需要 Python、Git 或 Skill，以下工具用于本地制作和验证。
 
 ## 运行环境
 

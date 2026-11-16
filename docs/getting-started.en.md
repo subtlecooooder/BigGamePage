@@ -1,6 +1,10 @@
 # Install and use
 
-[简体中文](getting-started.md) · [Back to README](../README.en.md)
+[简体中文](getting-started.md) · [Back to README](../README.md)
+
+## Play without installing
+
+Open the [online arcade](https://subtlecooooder.github.io/BigGamePage/?lang=en) and choose one of the four games. Links start muted. Playing requires no Python, Git or Skill installation; those tools are for authoring and local verification.
 
 ## Requirements
 

@@ -16,4 +16,4 @@ jobs:
         run: python3 scripts/build.py
       - name: Verify package and documentation
         run: python3 scripts/check.py
-      # Deliberately no deployment or artifact upload. See docs/release.md.
+      # Pull requests are checked here; main is deployed by pages.yml.

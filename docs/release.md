@@ -1,31 +1,38 @@
-# GitHub release preparation / 发布准备
+# Deployment and release / 部署与发布
 
-Repository: [subtlecooooder/BigGamePage](https://github.com/subtlecooooder/BigGamePage). The maintainer has requested public source publication through `gh`. 本次按维护者要求公开源码预览；GitHub Pages、Release 下载包和自动部署不在此次推送范围。
+Repository: [subtlecooooder/BigGamePage](https://github.com/subtlecooooder/BigGamePage). Online demos: [English](https://subtlecooooder.github.io/BigGamePage/?lang=en) / [简体中文](https://subtlecooooder.github.io/BigGamePage/?lang=zh).
 
-Public visibility does not grant missing rights. The five unresolved permission/license categories remain recorded as pending; no blanket open-source license has been added. 历史 `evidence/2026-11-16/preparation.json` 记录的是公开前准备状态，不是当前远端状态。
+The maintainer has requested both the public source preview and GitHub Pages deployment. 公开源码与在线试玩均按维护者明确要求提供；这不改变原作、中文修改、程序化素材、衍生媒体及新增代码的许可待确认状态。No blanket open-source license has been added. Historical preparation and browser records describe the version checked at that time.
 
-## Current blockers / 当前阻塞
+## Pages workflow / 部署流程
 
-Run `python3 scripts/check.py --release`. At present it exits **2** for unresolved inherited code, Chinese modifications, procedural assets, demo media and the project's own license selection. Details and the proposed permission inquiry are in [licensing](licensing.md) / [English](licensing.en.md).
+`.github/workflows/pages.yml` runs on pushes to `main` and manual dispatches:
 
-The repository contains the full inherited foundation, HTML shell and game screenshots. Ignoring generated `site/games/` is a repository hygiene choice, not a rights workaround. The maintainer's source-publication decision does not clear permissions for inherited content. These gaps must remain visible in the README and license records.
+1. Check out the source and read the GitHub Pages configuration.
+2. Run `python3 scripts/build.py` to generate all four standalone games into `site/games/`.
+3. Run `python3 scripts/check.py` to validate reproducibility, size, the complete Skill and documentation links.
+4. Upload the complete `site/` directory, including the generated games, catalog, screenshots and `.nojekyll`.
+5. Deploy that artifact to the `github-pages` environment. Only the deploy job receives Pages write and OIDC permissions.
 
-## Once permissions are documented / 授权齐备后
+The build job must succeed before deployment. Pull requests also run `.github/workflows/checks.yml`; they do not deploy. `site/games/` stays Git-ignored because Actions rebuilds it. Relative URLs preserve the `/BigGamePage/` subpath. No custom domain or Release download package is configured.
 
-1. 保存适用版本、权利人、许可文本或书面授权与例外；更新 `docs/provenance/rights.json`，并附可复核依据。Select and add scoped license file(s) for the portions the maintainer can license.
-2. 重建并校验：`python3 scripts/build.py`、`python3 scripts/check.py`、`python3 scripts/check.py --release`。Review actual gameplay if runtime changes; do not reuse old hashes for changed files.
-3. 仓库 URL 已确定为 https://github.com/subtlecooooder/BigGamePage 。若后续启用 Pages 或 Release，再补实际验证的试玩与下载链接。
-4. 审查将上传的文件，尤其是继承源码、截图、许可证和本地路径。Commit only the intended repository files; keep caches, generated demos and local installation directories out of the source history.
-5. 用户明确发布后再推送。For a Pages site, build first and deploy the complete `site/` folder; it uses relative URLs and works under a repository subpath. Include `games/`, `assets/` and `.nojekyll` in the deployed output, even though generated games are Git-ignored.
-6. For a Release, package the complete Skill directory with its notices and manifests, and attach the individual HTML files and build hashes. Keep the `<2 MB` claim scoped to each game, not the entire repository or Skill ZIP.
+Workflow setup follows [GitHub's custom Pages workflow documentation](https://docs.github.com/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages). The source-only check uses read permission; deployment adds the permissions required to publish this requested site.
 
-The supplied workflow runs build/package checks only. It has read-only repository permissions, no deployment credentials, no release upload and no Pages job. Local checks of those commands do not constitute a successful hosted Actions run.
+## Verify a deployment / 部署后验证
 
-## Suggested repository metadata / 建议仓库介绍
+Check the [Pages workflow](https://github.com/subtlecooooder/BigGamePage/actions/workflows/pages.yml), then open the actual HTTPS site. Verify both landing languages and all four game links. Test silently with `noaudio=1`, keep normal enemies/damage, and distinguish a complete input route from startup-only checks. Compare downloaded game bytes with their local build manifests. A successful Actions job alone does not prove browser playability.
+
+Default GitHub README: [English](../README.md). Chinese README: [简体中文](../README.zh-CN.md). Both contain the hosted arcade and four direct game URLs. The GitHub repository's homepage field also points to the arcade.
+
+## Permission inventory / 授权记录
+
+`python3 scripts/check.py --release` checks permission records only. It still exits **2** while five categories remain unresolved. See [中文清单](licensing.md) / [English inventory](licensing.en.md). That result is kept separate from build/deployment status; publishing does not convert pending rights into cleared rights.
+
+For a future licensed release, preserve the applicable license or written grant and version, resolve adaptation/asset scope, select scoped licenses for new contributions, update the inventory with evidence, then package the complete Skill and game artifacts with notices and hashes. Never apply a project-wide MIT badge merely because Three.js is MIT-licensed.
+
+## Repository metadata
 
 - Name: `BigGamePage`
-- Description: `Big games. One page. A Skill and toolkit for detailed single-HTML 3D games under 2 MB.`
-- Topics: `single-file`, `html-game`, `procedural-generation`, `threejs`, `agent-skills`
-- Primary README: Chinese, with a prominent English link.
-
-Only use “open source” and a license badge after the matching permission and license scope are actually in place.
+- Tagline: `Big games. One page.`
+- Default language: English, with a prominent Chinese link.
+- The under-2-MB claim applies to each exported game, not the whole repository or website.
