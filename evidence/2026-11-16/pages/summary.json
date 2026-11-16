@@ -1,0 +1,231 @@
+{
+  "verifiedAt": "2026-11-16T03:23:27.265377+00:00",
+  "baseURL": "https://subtlecooooder.github.io/BigGamePage/",
+  "buildCommit": "7682dcf5b78040a27cb49af579f5467f30108b22",
+  "method": "Visible QA controls synthesize normal movement, look, fire, reload and interact inputs on the deployed HTTPS games; no teleport, health, ammo or objective edits. Actual player views reviewed separately from numeric assertions.",
+  "games": [
+    {
+      "game": "夜港无声",
+      "html": "night-harbor.html",
+      "sha256": "a40e2210bfc812be7f628a64bda2535dbbc6c1c6609e719f26c1855400b4ba6f",
+      "bytes": 1497324,
+      "state": "complete",
+      "timeSeconds": 61.58,
+      "combat": {
+        "shots": 48,
+        "hits": 22,
+        "kills": 6
+      },
+      "minHP": 95,
+      "audioContext": "stub",
+      "invulnerableDuringPlay": false,
+      "errors": [],
+      "networkResources": [],
+      "viewport": {
+        "width": 1280,
+        "height": 720,
+        "dpr": 2
+      },
+      "frameTiming": {
+        "samples": 2438,
+        "medianMs": 24.8,
+        "p95Ms": 29,
+        "p99Ms": 31.4
+      },
+      "render": {
+        "calls": 173,
+        "tris": 1633550,
+        "geos": 310,
+        "tex": 171,
+        "programs": 116,
+        "res": [
+          2022,
+          1137
+        ],
+        "scale": 1,
+        "advanced": true,
+        "softShadows": true,
+        "fps": 51.5,
+        "state": "complete"
+      },
+      "report": "harbor-playthrough.json",
+      "details": {
+        "objectives": 3,
+        "supplyUses": 2,
+        "minOxygen": 100,
+        "fuseUsed": false
+      }
+    },
+    {
+      "game": "月面余氧",
+      "html": "selene-repair.html",
+      "sha256": "deb16b6a1652768722bd678a03ce30806d26b12135f474eede3ad8783ec6ff33",
+      "bytes": 1497413,
+      "state": "complete",
+      "timeSeconds": 63.48,
+      "combat": {
+        "shots": 62,
+        "hits": 15,
+        "kills": 5
+      },
+      "minHP": 86,
+      "audioContext": "stub",
+      "invulnerableDuringPlay": false,
+      "errors": [],
+      "networkResources": [],
+      "viewport": {
+        "width": 1280,
+        "height": 720,
+        "dpr": 2
+      },
+      "frameTiming": {
+        "samples": 3249,
+        "medianMs": 18.9,
+        "p95Ms": 22.2,
+        "p99Ms": 23.4
+      },
+      "render": {
+        "calls": 275,
+        "tris": 2088891,
+        "geos": 298,
+        "tex": 161,
+        "programs": 110,
+        "res": [
+          2022,
+          1137
+        ],
+        "scale": 1,
+        "advanced": true,
+        "softShadows": true,
+        "fps": 60,
+        "state": "complete"
+      },
+      "report": "moon-playthrough.json",
+      "details": {
+        "objectives": 3,
+        "supplyUses": 3,
+        "minOxygen": 78.32,
+        "fuseUsed": false
+      }
+    },
+    {
+      "game": "地底九号",
+      "html": "bunker-09.html",
+      "sha256": "15d7c8e2dbbca3507ab7602e0d5ee77ebae4837d607c4c88a1c4dbce256c336c",
+      "bytes": 1497422,
+      "state": "complete",
+      "timeSeconds": 63.08,
+      "combat": {
+        "shots": 55,
+        "hits": 31,
+        "kills": 7
+      },
+      "minHP": 95,
+      "audioContext": "stub",
+      "invulnerableDuringPlay": false,
+      "errors": [],
+      "networkResources": [],
+      "viewport": {
+        "width": 1280,
+        "height": 720,
+        "dpr": 2
+      },
+      "frameTiming": {
+        "samples": 2774,
+        "medianMs": 22,
+        "p95Ms": 26.6,
+        "p99Ms": 29.9
+      },
+      "render": {
+        "calls": 97,
+        "tris": 907576,
+        "geos": 312,
+        "tex": 170,
+        "programs": 108,
+        "res": [
+          2022,
+          1137
+        ],
+        "scale": 1,
+        "advanced": true,
+        "softShadows": true,
+        "fps": 51.6,
+        "state": "complete"
+      },
+      "report": "bunker-playthrough.json",
+      "details": {
+        "objectives": 3,
+        "supplyUses": 3,
+        "minOxygen": 100,
+        "fuseUsed": true
+      }
+    },
+    {
+      "game": "零号中转站",
+      "html": "switchyard-zero.html",
+      "sha256": "eb66de081941994f93e9eef2b9c4fa8a069b0b297551e6c00272484cfdfcc88c",
+      "bytes": 1507479,
+      "state": "complete",
+      "timeSeconds": 208.66,
+      "combat": {
+        "shots": 137,
+        "hits": 74,
+        "kills": 19
+      },
+      "minHP": 76,
+      "audioContext": "stub",
+      "invulnerableDuringPlay": false,
+      "errors": [],
+      "networkResources": [],
+      "viewport": {
+        "width": 1280,
+        "height": 720,
+        "dpr": 2
+      },
+      "frameTiming": {
+        "samples": 9558,
+        "medianMs": 21.5,
+        "p95Ms": 26.5,
+        "p99Ms": 32.2
+      },
+      "render": {
+        "calls": 176,
+        "tris": 1254156,
+        "geos": 528,
+        "tex": 152,
+        "programs": 99,
+        "res": [
+          2022,
+          1137
+        ],
+        "scale": 1,
+        "advanced": true,
+        "softShadows": true,
+        "fps": 52.1,
+        "state": "complete"
+      },
+      "report": "freight-playthrough.json",
+      "details": {
+        "route": "west",
+        "loaded": [
+          "W",
+          "U",
+          "E"
+        ],
+        "cartHealth": 95.78,
+        "minCart": 81.21,
+        "repairs": 1,
+        "maxPlayerHeight": 4.800000000000001,
+        "supplyUses": 4,
+        "checksPassed": 16,
+        "recoveryWaves": 4
+      }
+    }
+  ],
+  "limits": [
+    "One desktop in-app browser at 1280x720 CSS pixels, DPR 2, high quality, dynamic resolution off, seed 4207.",
+    "Muted execution only; sound mixing, mobile touch, explicit offline mode and file:// cold starts are not accepted by this run.",
+    "West escort route was repeated online; the separate thermal recovery, east route and dedicated rail probes were not repeated in this deployment check.",
+    "Automated input routes do not establish general balance, stability or human enjoyment."
+  ]
+}

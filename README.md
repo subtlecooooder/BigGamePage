@@ -79,7 +79,7 @@ site/                  Bilingual demo page and local captures; games/ is generat
 docs/                  Setup, architecture, testing, release and licensing guides
 docs/provenance/       Source commit, file hashes and unresolved rights inventory
 evidence/              Dated gameplay and repository-preparation evidence
-.github/               Technical-check workflow, issue and pull-request templates
+.github/               Technical checks, Pages deployment, issue and PR templates
 ```
 
 ## Validate and contribute
@@ -91,7 +91,7 @@ python3 scripts/check.py --release
 
 The first checks reproducibility, size, an isolated Skill install/build, local links and rejection of a modified foundation. It also checks JavaScript syntax when Node.js is available. The second checks rights records only; **exit code 2 is currently expected** because release blockers remain. Passing technical checks does not establish permission.
 
-See [testing](docs/testing.md) for the four input-driven routes and thermal recovery recorded on 2026-11-14. This preparation verifies byte-identical builds against those artifacts; historical runs are not presented as new playthroughs. Browser checks are reported separately from static checks.
+All four deployed HTTPS games completed fresh, muted input-driven routes on 2026-11-16, with normal enemies and damage. The hosted files match local builds byte for byte. See [testing](docs/testing.md) for current logs and screenshots, plus the separate 2026-11-14 thermal recovery evidence and validation limits.
 
 Read [contributing](CONTRIBUTING.md), [architecture](docs/architecture.md), and the [release guide](docs/release.md). This repository is a source preview; public visibility does not resolve permission gaps. GitHub Pages hosts the playable demos; no Release download package has been published.
 

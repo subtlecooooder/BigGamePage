@@ -1,0 +1,106 @@
+{
+  "verifiedAt": "2026-11-16T03:13:55.649373+00:00",
+  "baseURL": "https://subtlecooooder.github.io/BigGamePage/",
+  "buildCommit": "7682dcf5b78040a27cb49af579f5467f30108b22",
+  "files": [
+    {
+      "path": "/",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 16219,
+      "sha256": "f10da087a9d8f2537f65608ea6145786c717c155dca64283895d83b2cc6236a9",
+      "matchesLocal": true
+    },
+    {
+      "path": "assets/screens/bunker-world.png",
+      "status": 200,
+      "contentType": "image/png",
+      "bytes": 152435,
+      "sha256": "98d70ba3f559a76760eb7b8e329057b2a2878364402dbe97c17e9e18045902c7",
+      "matchesLocal": true
+    },
+    {
+      "path": "assets/screens/freight-world.png",
+      "status": 200,
+      "contentType": "image/png",
+      "bytes": 136546,
+      "sha256": "dd685c53733a41fe82ead54eb4a4421b4fa5f6181b1f1ceca44f0245fd6a0ac2",
+      "matchesLocal": true
+    },
+    {
+      "path": "assets/screens/harbor-world.png",
+      "status": 200,
+      "contentType": "image/png",
+      "bytes": 120384,
+      "sha256": "297284bfe8cf316046cab1ca9d929cc803a82962c52e9bee3421e54aa0ade303",
+      "matchesLocal": true
+    },
+    {
+      "path": "assets/screens/moon-world.png",
+      "status": 200,
+      "contentType": "image/png",
+      "bytes": 103422,
+      "sha256": "57765d02d7a24debb6ea106970cd9bcf32321c1b532aadf31154aab9c1136a6c",
+      "matchesLocal": true
+    },
+    {
+      "path": "site.js",
+      "status": 200,
+      "contentType": "application/javascript; charset=utf-8",
+      "bytes": 4116,
+      "sha256": "c220f98566d6f80723965b2d31526e28dd36ebff2f02a32921e623776ec978fd",
+      "matchesLocal": true
+    },
+    {
+      "path": "styles.css",
+      "status": 200,
+      "contentType": "text/css; charset=utf-8",
+      "bytes": 10497,
+      "sha256": "f1fe916c83f9eb79f96ac1f6e8b83d403d9ee841208266dc26135161376c4cf8",
+      "matchesLocal": true
+    },
+    {
+      "path": "games/catalog.json",
+      "status": 200,
+      "contentType": "application/json; charset=utf-8",
+      "bytes": 2024,
+      "sha256": "cf97b381fcfb7df5dffa2c9008bbf0a7113263b06566beb8cf19a15c7ead6542",
+      "matchesLocal": true
+    },
+    {
+      "path": "games/bunker-09.html",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 1497422,
+      "sha256": "15d7c8e2dbbca3507ab7602e0d5ee77ebae4837d607c4c88a1c4dbce256c336c",
+      "matchesLocal": true
+    },
+    {
+      "path": "games/night-harbor.html",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 1497324,
+      "sha256": "a40e2210bfc812be7f628a64bda2535dbbc6c1c6609e719f26c1855400b4ba6f",
+      "matchesLocal": true
+    },
+    {
+      "path": "games/selene-repair.html",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 1497413,
+      "sha256": "deb16b6a1652768722bd678a03ce30806d26b12135f474eede3ad8783ec6ff33",
+      "matchesLocal": true
+    },
+    {
+      "path": "games/switchyard-zero.html",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 1507479,
+      "sha256": "eb66de081941994f93e9eef2b9c4fa8a069b0b297551e6c00272484cfdfcc88c",
+      "matchesLocal": true
+    }
+  ],
+  "checkerNotes": [
+    "An initial checker mistakenly requested /catalog.json and received 404. Corrected to the actual site.js path /games/catalog.json; no site change was required."
+  ]
+}

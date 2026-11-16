@@ -32,9 +32,30 @@ Build identities: [builds.json](../evidence/2026-11-14/builds.json). Naming-only
 - Inspected Chinese and English showcase layouts at desktop widths and 390 px. Images loaded, language and sound-link toggles worked, command copying succeeded, and no horizontal overflow was observed. The sound toggle was returned to off before entering a game.
 - Entered Switchyard Zero through its showcase link with `noaudio=1`, started a normal session, sent forward input, inspected the rendered scene and paused normally. No console errors were captured on the showcase or during this startup check. This was not a new full gameplay route, audio-mix test or mobile-game test.
 - The first browser wait targeted a boot element that remains in the DOM; that wait timed out even though the menu was ready. The menu was then inspected directly and the session started successfully. No game code change was needed for this observation issue.
-- Public-release check returns 2 with five unresolved rights/license categories. That is separate from passing technical validation. Hosted GitHub Actions has not run.
+- Public-release check returns 2 with five unresolved rights/license categories. That is separate from passing technical validation. Hosted Actions results and the later Pages checks are recorded separately below.
 
 [Package results](../evidence/2026-11-16/repository-check.json) · [Browser record](../evidence/2026-11-16/browser-check.json) · [Desktop Chinese](../evidence/2026-11-16/browser/desktop-zh.jpg) · [Desktop English](../evidence/2026-11-16/browser/desktop-en.jpg) · [Narrow English](../evidence/2026-11-16/browser/mobile-en.jpg) · [Silent game startup](../evidence/2026-11-16/browser/freight-start.jpg)
+
+## 2026-11-16 live Pages verification / 公网部署实测
+
+Opened the actual [HTTPS arcade](https://subtlecooooder.github.io/BigGamePage/) after the [Pages deployment](https://github.com/subtlecooooder/BigGamePage/actions/runs/43796435285) and [technical checks](https://github.com/subtlecooooder/BigGamePage/actions/runs/43796435268) succeeded for `7682dcf5b78040a27cb49af579f5467f30108b22`. English is now the repository's default README; both README languages link to the arcade and each game.
+
+新一轮测试直接运行公网版本：用页面上可见的 QA 按钮合成正常移动、瞄准、射击、换弹和交互输入，保留敌人及伤害；没有修改坐标、血量、弹药或任务状态，没有用检查机位代替玩家抵达。四款均首次完成本轮路线，未出现阵亡重试。夜港还单独验证了不带 QA 参数的正常开始、前进与 Escape 暂停。
+
+| Online game | Fresh result | Evidence |
+|---|---|---|
+| 夜港无声 / Silent Harbor | 61.58 s; 3 objectives, 6 kills, minimum HP 95, 2 supplies | [Report](../evidence/2026-11-16/pages/harbor-playthrough.json) · [Complete](../evidence/2026-11-16/pages/harbor-complete.jpg) |
+| 月面余氧 / Lunar Reserve | 63.48 s; 3 objectives, 5 kills, minimum HP 86, minimum oxygen 78.32%, 3 supplies | [Report](../evidence/2026-11-16/pages/moon-playthrough.json) · [In play](../evidence/2026-11-16/pages/moon-in-play.jpg) |
+| 地底九号 / Bunker Nine | 63.08 s; fuse acquired and consumed, 3 objectives, 7 kills, minimum HP 95 | [Report](../evidence/2026-11-16/pages/bunker-playthrough.json) · [In play](../evidence/2026-11-16/pages/bunker-in-play.jpg) |
+| 零号中转站 / Switchyard Zero | 208.66 s; W/U/E loaded, reached the 4.8 m upper ring, west delivery, 19 kills, minimum HP 76, 4 supplies, 1 repair; 16 assertions passed | [Report](../evidence/2026-11-16/pages/freight-playthrough.json) · [Delivered](../evidence/2026-11-16/pages/freight-complete.jpg) |
+
+- All four report `audioContext: stub`, no invulnerability, no captured runtime errors and no runtime resource requests. Full dog/drone geometry hashes remain `56cdfa8c` / `aabcf30a`. Sampled actual gameplay views were inspected separately from the assertions.
+- The freight run triggered four recovery waves. Its carrier fell to 81.21 HP, used one finite repair kit and finished at 95.78 HP. The dedicated thermal recovery, east escort and rail-probe scenarios were not repeated in this deployment check; their earlier evidence remains separate.
+- The landing page was checked in English and Chinese. All four links contain `noaudio=1`; the default sound checkbox is off and all four preview images loaded. Downloaded HTML, catalog, JavaScript, CSS and images returned HTTP 200 and match local bytes. Each game remains below 2,000,000 bytes.
+- Environment: desktop in-app browser, 1280 × 720 CSS pixels, DPR 2, `q=high&dynres=0&seed=4207&noaudio=1`. This is silent desktop route verification, not mobile, audio-mix or broad performance acceptance.
+- Observation issues were retained: the first menu wait timed out even though its diagnostic showed a visible start button; direct UI inspection then succeeded. An initial HTTP checker mistakenly requested `/catalog.json`; the real site uses `/games/catalog.json`, which passed. Neither required a game or site fix.
+
+[Machine-readable summary](../evidence/2026-11-16/pages/summary.json) · [HTTP hashes](../evidence/2026-11-16/pages/http-artifacts.json) · [Browser record](../evidence/2026-11-16/pages/browser-check.json) · [Online homepage](../evidence/2026-11-16/pages/arcade-home.jpg) · [English homepage](../evidence/2026-11-16/pages/arcade-en.jpg)
 
 ## Reproduce static/package checks
 

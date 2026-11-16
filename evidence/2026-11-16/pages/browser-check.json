@@ -1,0 +1,51 @@
+{
+  "baseURL": "https://subtlecooooder.github.io/BigGamePage/",
+  "languageToggle": "English to Chinese observed",
+  "englishScreenshot": "arcade-en.jpg",
+  "landing": {
+    "images": [
+      {
+        "loaded": true,
+        "src": "assets/screens/freight-world.png"
+      },
+      {
+        "loaded": true,
+        "src": "assets/screens/harbor-world.png"
+      },
+      {
+        "loaded": true,
+        "src": "assets/screens/moon-world.png"
+      },
+      {
+        "loaded": true,
+        "src": "assets/screens/bunker-world.png"
+      }
+    ],
+    "lang": "zh-CN",
+    "links": [
+      {
+        "href": "https://subtlecooooder.github.io/BigGamePage/games/switchyard-zero.html?noaudio=1",
+        "text": "进入中转站\n↗"
+      },
+      {
+        "href": "https://subtlecooooder.github.io/BigGamePage/games/night-harbor.html?noaudio=1",
+        "text": "进入夜港 ↗"
+      },
+      {
+        "href": "https://subtlecooooder.github.io/BigGamePage/games/selene-repair.html?noaudio=1",
+        "text": "执行作业 ↗"
+      },
+      {
+        "href": "https://subtlecooooder.github.io/BigGamePage/games/bunker-09.html?noaudio=1",
+        "text": "进入地下 ↗"
+      }
+    ],
+    "sound": false
+  },
+  "gameConsoleErrors": [],
+  "notes": [
+    "Silent actual-input routes used normal enemies and damage. No inspection cameras used during routes.",
+    "The first menu wait reported an automation timeout while its diagnostic already showed the start button visible; subsequent UI inspection and normal start succeeded.",
+    "Normal non-QA Harbor startup, forward input and Escape pause were also checked."
+  ]
+}
