@@ -20,7 +20,7 @@ html[lang="en"] .h-cm { left:-34px; width:68px; white-space:nowrap; }
 html[lang="en"] .h-wm span { white-space:nowrap; }
 html[lang="en"] .h-plabel { max-width:min(560px,72vw); white-space:normal; line-height:1.45; }
 html[lang="en"] .comms-t { font-size:16px; line-height:1.5; }
-html[lang="en"] .h-warn { font-size:clamp(16px,2.4vw,28px); letter-spacing:.06em; }
+html[lang="en"] .h-warn { font-size:clamp(16px,2vw,23px); letter-spacing:.06em!important; width:min(640px,75vw); white-space:normal; text-align:center; line-height:1.35; }
 html[lang="en"] .btn,html[lang="en"] .tab { letter-spacing:.04em; }
 html[lang="en"] .bgp-qa,html[lang="en"] .ft-qa { max-width:min(680px,88vw); }
 html[lang="en"] .bgp-status,html[lang="en"] .ft-panel { line-height:1.45; }
