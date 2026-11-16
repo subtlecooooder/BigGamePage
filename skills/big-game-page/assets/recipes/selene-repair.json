@@ -17,5 +17,16 @@
     "#c5dbed",
     "#f0e0b8",
     "#0e1728"
-  ]
+  ],
+  "locales": {
+    "en": {
+      "title": "Lunar Reserve",
+      "brief": "The lunar freight base has lost power. Repair A power, B cooling and C seals in that order, then reach the east airlock. Oxygen drains continuously and sprinting uses more. S cabinets refill oxygen. Low gravity lets you jump onto low crates, but drones can spot you in the open.",
+      "objectives": [
+        "A · Restore array power",
+        "B · Restore coolant circulation",
+        "C · Repair airlock seals"
+      ]
+    }
+  }
 }

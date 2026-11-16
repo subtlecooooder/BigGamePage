@@ -1,10 +1,35 @@
 {
-  "id":"switchyard-zero",
-  "title":"零号中转站",
-  "subtitle":"SWITCHYARD ZERO / HEAVY CARGO",
-  "world":"freight",
-  "brief":"回收西库、东侧开放集装箱与高架桥上的三枚能源核心，自选顺序送回南侧运载车。搬运时无法开火，核心会发热；Q 可放下应战。回收触发守备增援，留意方向预警并利用补给点。装满后在路由台选择西线或东线，靠近车辆按住 E 出发。留在车旁护送至北方出口，遭袭时可消耗维修包修车。",
-  "objectives":["回收核心 · 自选顺序","选择路线并启动运输","护送运载车抵达北站"],
-  "palette":["#f1bc72","#72d6d4","#16252d"],
-  "mechanics":{"reserve":150,"startReserve":75,"carrySeconds":55,"cartHealth":100,"repairKits":3}
+  "id": "switchyard-zero",
+  "title": "零号中转站",
+  "subtitle": "SWITCHYARD ZERO / HEAVY CARGO",
+  "world": "freight",
+  "brief": "回收西库、东侧开放集装箱与高架桥上的三枚能源核心，自选顺序送回南侧运载车。搬运时无法开火，核心会发热；Q 可放下应战。回收触发守备增援，留意方向预警并利用补给点。装满后在路由台选择西线或东线，靠近车辆按住 E 出发。留在车旁护送至北方出口，遭袭时可消耗维修包修车。",
+  "objectives": [
+    "回收核心 · 自选顺序",
+    "选择路线并启动运输",
+    "护送运载车抵达北站"
+  ],
+  "palette": [
+    "#f1bc72",
+    "#72d6d4",
+    "#16252d"
+  ],
+  "mechanics": {
+    "reserve": 150,
+    "startReserve": 75,
+    "carrySeconds": 55,
+    "cartHealth": 100,
+    "repairKits": 3
+  },
+  "locales": {
+    "en": {
+      "title": "Switchyard Zero",
+      "brief": "Recover three energy cores from the west warehouse, east open container and upper walkway. Return them to the south carrier in any order. Carrying blocks fire and builds heat; Q drops the core so you can fight. Recovery triggers reinforcements: watch direction warnings and use supplies. Once loaded, choose west or east at the route console, then hold E near the carrier to depart. Stay close and escort it to the north exit. Repair kits restore carrier health.",
+      "objectives": [
+        "Recover cores · Any order",
+        "Choose a route and start transport",
+        "Escort the carrier to the north terminal"
+      ]
+    }
+  }
 }

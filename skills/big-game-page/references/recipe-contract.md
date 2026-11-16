@@ -2,6 +2,10 @@
 
 Required: `id` (lowercase hyphenated), `title`, `subtitle`, `world` (`harbor`, `moon`, `bunker`, `freight`), `brief`, exactly three `objectives`, three hex colors in `palette`, and `mechanics` containing `startReserve` and `reserve`.
 
+Version 0.4 also requires `locales.en` with a nonempty `title`, `brief`, and exactly three translated `objectives`. The main recipe copy is Chinese. Shared interface messages live in `assets/locales/en.json`; add translations there when introducing new prompts or mechanics. HTML markup is rejected in both language copies. Both languages are embedded in every export.
+
+The game uses a supported `lang=zh|en|auto` query override, then a remembered manual preference, then the first supported language in `navigator.languages` (English fallback). The title/pause language selector updates immediately; choosing automatic clears the saved preference. A manual choice updates an existing URL override too, so reloading cannot unexpectedly revert it. Storage failures fall back to the current session.
+
 Worlds are authored gameplay archetypes, not a free-text skin parser:
 
 | World | Layout additions | Consequential rule |

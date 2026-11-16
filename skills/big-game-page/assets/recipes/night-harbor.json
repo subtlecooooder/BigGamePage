@@ -17,5 +17,16 @@
     "#79c8df",
     "#d9e9ec",
     "#132b43"
-  ]
+  ],
+  "locales": {
+    "en": {
+      "title": "Silent Harbor",
+      "brief": "Infiltrate the rain-soaked cargo port. Disable yard alarm A, download the warehouse data at B, then open exit C. Crouch and use cover to lower alert; firing reveals your position. Green S cabinets replenish supplies. Blue EMP devices buy you time to escape.",
+      "objectives": [
+        "A · Disable yard alarm",
+        "B · Download warehouse data",
+        "C · Open extraction route"
+      ]
+    }
+  }
 }

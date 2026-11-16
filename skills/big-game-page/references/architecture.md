@@ -16,6 +16,10 @@
 
 Development files are intentionally readable and modular. Exported files have no sibling-file dependency. Legacy adaptations embed their three world kits; independent archetypes select their own modules. Aggressive minification is unnecessary within the current budget.
 
+`i18n.js` is the final module in both archetypes. It negotiates browser/query/saved language, provides the menu selector and translates DOM text plus accessibility labels without replacing interactive elements. A WeakMap retains source text for reversible switching; raw QA reports and canvas content are excluded from text traversal. The minimap translates its own canvas label. The English catalog and recipe copy are inlined during the build. No translation API, font download or sibling locale file is used at runtime.
+
+The builder applies asserted replacements inside the inherited HUD factory's presentation boundary: objective typewriting, radio typewriting, retaining the last radio source and immediate refresh after a language change. Text is translated before slicing; queued radio lines keep their original source. The pinned foundation file remains unchanged. The translations do not alter mission state, coordinates, collision, damage, ammunition or procedural models. QA reports include the chosen language, browser languages and any untranslated interface strings seen during that run.
+
 The intended public extension interface is `BGP.recipe`, `BGP.wrap(factory, decorator)`, `BGP.T`, `BGP.V`, `BGP.merge`, `BGP.bevel`, and documented movement/sensing/mission settings. Run initialization follows render → materials → level → backdrop → ground → audio/player/weapon/enemies/HUD → game. Install theme geometry in backdrop and rule state in game.
 
 ## Independent maps and controllers (v0.2)

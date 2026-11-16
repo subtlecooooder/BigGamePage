@@ -9,6 +9,7 @@
 7. Take yard and warehouse screenshots at identical camera/FOV/quality and viewport for baseline and all themes. Photograph machine dog and drone at the same model-showcase view. Inspect silhouettes, joints, texture detail, occlusion, interior props, lighting and visibility.
 8. Try real browser movement/look/crouch/fire/reload/pause. Input bots can validate reachability and rules but not subjective aiming feel or player skill. Record human-style observations separately, without claiming user testing.
 9. Record FPS/frame quantiles only for active runs, with resolution and quality. Do not extrapolate a single-machine measurement to all devices. Inspect final screenshot composition before delivery.
+10. For interface changes, check title, settings, controls, pause, objectives, radio, prompts, warnings and results in both languages. Test browser default, manual preference persistence, URL override and automatic reset. Paused switching must preserve time, position, health, ammo and mission progress. Inspect long English copy at desktop and narrow widths; do not equate a responsive menu with mobile gameplay acceptance. Preserve raw QA records and do not translate their machine-readable keys.
 
 Publish evidence as screenshots plus JSON logs and an honest concise report. Any unexecuted case is explicitly unverified. Skill frontmatter validation only checks packaging; it does not verify game quality.
 

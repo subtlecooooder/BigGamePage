@@ -24,4 +24,4 @@ const BGP = {
     else throw Error('Unknown BigGamePage hook: '+name);
   }
 };
-window.BigGamePage={version:'0.3.0',name:'BigGamePage · 一页大作',tagline:'Big games. One page.',recipe:BGP.recipe};
+window.BigGamePage={version:'0.4.0',name:'BigGamePage · 一页大作',tagline:'Big games. One page.',recipe:BGP.recipe};

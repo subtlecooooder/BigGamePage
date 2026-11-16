@@ -10,7 +10,7 @@
 
 ## 2026-11-14 gameplay baseline / 历史游玩基准
 
-These records were created during the branding regression, before the repository reorganization. 本轮没有改动游戏运行代码；重新构建后必须逐字节匹配下面的基准，才能引用这些记录。
+These records belong to the v0.3 branding baseline, before the repository reorganization. 旧记录保留其原始 HTML 哈希；v0.4 双语界面构建会改变文件字节，必须提供新一轮实测，不能将这些旧通关记录改标为新版本。
 
 | Game | Input-route result | Link |
 |---|---|---|
@@ -25,9 +25,9 @@ Real keyboard/mouse checks from the same date covered movement, fallback view, c
 
 Build identities: [builds.json](../evidence/2026-11-14/builds.json). Naming-only scope and model baseline: [source scope](../evidence/2026-11-14/source-scope.json).
 
-## 2026-11-16 repository and showcase checks / 本轮整理验收
+## 2026-11-16 repository and showcase checks / v0.3 整理验收
 
-- Four rebuilt games match the historical SHA-256 values exactly; all remain below 2,000,000 bytes. Runtime gameplay code was not changed.
+- At the v0.3 repository-preparation commit, four rebuilt games matched the historical SHA-256 values exactly; all remained below 2,000,000 bytes. These byte comparisons predate the v0.4 localization work.
 - The complete Skill was installed into a temporary directory and built independently. Duplicate installation and a tampered foundation were rejected. The Skill creator's validator and YAML parsing also passed; its optional PyYAML dependency was isolated in a temporary directory, not added to this project or the global Python environment.
 - Inspected Chinese and English showcase layouts at desktop widths and 390 px. Images loaded, language and sound-link toggles worked, command copying succeeded, and no horizontal overflow was observed. The sound toggle was returned to off before entering a game.
 - Entered Switchyard Zero through its showcase link with `noaudio=1`, started a normal session, sent forward input, inspected the rendered scene and paused normally. No console errors were captured on the showcase or during this startup check. This was not a new full gameplay route, audio-mix test or mobile-game test.
@@ -36,7 +36,7 @@ Build identities: [builds.json](../evidence/2026-11-14/builds.json). Naming-only
 
 [Package results](../evidence/2026-11-16/repository-check.json) · [Browser record](../evidence/2026-11-16/browser-check.json) · [Desktop Chinese](../evidence/2026-11-16/browser/desktop-zh.jpg) · [Desktop English](../evidence/2026-11-16/browser/desktop-en.jpg) · [Narrow English](../evidence/2026-11-16/browser/mobile-en.jpg) · [Silent game startup](../evidence/2026-11-16/browser/freight-start.jpg)
 
-## 2026-11-16 live Pages verification / 公网部署实测
+## 2026-11-16 v0.3 live Pages verification / 历史公网部署实测
 
 Opened the actual [HTTPS arcade](https://subtlecooooder.github.io/BigGamePage/) after the [Pages deployment](https://github.com/subtlecooooder/BigGamePage/actions/runs/43796435285) and [technical checks](https://github.com/subtlecooooder/BigGamePage/actions/runs/43796435268) succeeded for `7682dcf5b78040a27cb49af579f5467f30108b22`. English is now the repository's default README; both README languages link to the arcade and each game.
 
@@ -64,7 +64,7 @@ python3 scripts/build.py
 python3 scripts/check.py
 ```
 
-The checker builds twice in a temporary directory, compares the actual bytes with the showcase and historical hashes, installs the complete Skill into another temporary directory, builds from that installation, rejects a duplicate install and rejects a changed foundation. It checks local Markdown/HTML links and JSON. Node.js adds exported-JavaScript syntax checks when present. Its dated output is `evidence/2026-11-16/repository-check.json`.
+The checker builds twice in a temporary directory, compares the actual bytes with the showcase, records whether they still match historical hashes, installs the complete Skill into another temporary directory, builds from that installation, rejects a duplicate install and rejects a changed foundation. It checks local Markdown/HTML links and JSON. Node.js adds exported-JavaScript syntax checks and 70 language-selection/translation cases when present. Its dated output is `evidence/2026-11-16/repository-check.json` and reflects the latest build, not the v0.3 byte comparison above.
 
 To validate the saved thermal trace, first inspect the verifier's CLI:
 

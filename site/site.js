@@ -5,7 +5,10 @@
   const soundButton = document.querySelector('#sound');
   const links = [...document.querySelectorAll('.play')];
   const buildStatus = document.querySelector('#build-status');
-  let language = new URLSearchParams(location.search).get('lang') === 'en' ? 'en' : 'zh';
+  const requestedLanguage = new URLSearchParams(location.search).get('lang');
+  let explicitLanguage = ['zh','en'].includes(requestedLanguage);
+  const browserLanguage = (navigator.languages || [navigator.language]).find(value => /^(zh|en)(-|$)/i.test(value)) || 'en';
+  let language = explicitLanguage ? requestedLanguage : /^zh/i.test(browserLanguage) ? 'zh' : 'en';
   let sound = false;
   let catalogReady = false;
   let catalogFailed = false;
@@ -26,7 +29,10 @@
     soundButton.setAttribute('aria-pressed', String(sound));
     document.querySelector('#sound-label').textContent = language === 'zh' ? `声音：${sound ? '开启' : '关闭'}` : `Sound: ${sound ? 'on' : 'off'}`;
     for (const link of links) {
-      link.href = `games/${link.dataset.game}.html${sound ? '' : '?noaudio=1'}`;
+      const query = new URLSearchParams();
+      if (!sound) query.set('noaudio','1');
+      if (explicitLanguage) query.set('lang',language);
+      link.href = `games/${link.dataset.game}.html${query.size ? '?' + query : ''}`;
     }
   }
   function renderLanguage() {
@@ -38,7 +44,7 @@
     document.querySelector('#copy-status').textContent = '';
     renderSound(); renderStatus();
   }
-  languageButton.addEventListener('click', () => { language = language === 'zh' ? 'en' : 'zh'; renderLanguage(); });
+  languageButton.addEventListener('click', () => { language = language === 'zh' ? 'en' : 'zh'; explicitLanguage = true; renderLanguage(); });
   soundButton.addEventListener('click', () => { sound = !sound; renderSound(); });
   document.querySelector('#copy').addEventListener('click', async () => {
     const value = document.querySelector('#commands').textContent;

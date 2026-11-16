@@ -17,5 +17,16 @@
     "#e4b377",
     "#85d7c8",
     "#182622"
-  ]
+  ],
+  "locales": {
+    "en": {
+      "title": "Bunker Nine",
+      "brief": "The underground freight station is locked down. Find a fuse inside the open red container. Disable security lock A, install the fuse in warehouse B, then restart ventilation at C and reach the east escape airlock. L toggles your flashlight. S cabinets replenish battery and ammo. Use the shutter to block pursuers.",
+      "objectives": [
+        "A · Release security lock",
+        "B · Install the fuse",
+        "C · Restart ventilation"
+      ]
+    }
+  }
 }

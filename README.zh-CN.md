@@ -14,7 +14,9 @@
 
 ## 在线试玩
 
-打开 [四款游戏演示站](https://subtlecooooder.github.io/BigGamePage/?lang=zh)，选择游戏即可开始，无需安装或下载项目。推荐支持 WebGL2 的桌面浏览器与键鼠；试玩链接默认静音，可在首页打开声音后再进入。游戏内界面目前为中文。
+打开 [四款游戏演示站](https://subtlecooooder.github.io/BigGamePage/?lang=zh)，选择游戏即可开始，无需安装或下载项目。推荐支持 WebGL2 的桌面浏览器与键鼠；试玩链接默认静音，可在首页打开声音后再进入。
+
+四款游戏均支持 **简体中文和英文**。首次直接打开时跟随浏览器语言，其他语言回退为英文。开始页可选语言，游玩中按 **Esc / P** 暂停后也可切换，无需重开任务。手动选择会记住；选“跟随浏览器”恢复自动识别。`?lang=en`、`?lang=zh` 和 `?lang=auto` 可以显式覆盖已保存的选择。两套文案均封装于同一个 HTML。
 
 ## 本地运行
 
@@ -40,10 +42,10 @@ python3 -m http.server 8000 --bind 127.0.0.1 --directory site
 
 | 游戏 / 配方 | 地图与玩法 | HTML 大小 |
 |---|---|---:|
-| [零号中转站 / `switchyard-zero`](https://subtlecooooder.github.io/BigGamePage/games/switchyard-zero.html?noaudio=1) | 独立环形货运枢纽；自由顺序搬运核心、过热与冷却、选线护送和有限维修 | 1,507,479 B |
-| [夜港无声 / `night-harbor`](https://subtlecooooder.github.io/BigGamePage/games/night-harbor.html?noaudio=1) | 原港区布局；警戒、潜入、设备交互与撤离 | 1,497,324 B |
-| [月面余氧 / `selene-repair`](https://subtlecooooder.github.io/BigGamePage/games/selene-repair.html?noaudio=1) | 原港区布局；低重力移动、氧气管理和抢修 | 1,497,413 B |
-| [地底九号 / `bunker-09`](https://subtlecooooder.github.io/BigGamePage/games/bunker-09.html?noaudio=1) | 原港区布局；保险芯、电力恢复、手电与逃生 | 1,497,422 B |
+| [零号中转站 / `switchyard-zero`](https://subtlecooooder.github.io/BigGamePage/games/switchyard-zero.html?noaudio=1) | 独立环形货运枢纽；自由顺序搬运核心、过热与冷却、选线护送和有限维修 | 1,537,232 B |
+| [夜港无声 / `night-harbor`](https://subtlecooooder.github.io/BigGamePage/games/night-harbor.html?noaudio=1) | 原港区布局；警戒、潜入、设备交互与撤离 | 1,526,745 B |
+| [月面余氧 / `selene-repair`](https://subtlecooooder.github.io/BigGamePage/games/selene-repair.html?noaudio=1) | 原港区布局；低重力移动、氧气管理和抢修 | 1,526,859 B |
+| [地底九号 / `bunker-09`](https://subtlecooooder.github.io/BigGamePage/games/bunker-09.html?noaudio=1) | 原港区布局；保险芯、电力恢复、手电与逃生 | 1,526,945 B |
 
 后三款共享底层布局，并非三张独立地图。零号中转站重做地图与任务控制器。完整机器狗与无人机模型、可进入仓库和集装箱沿用精细底座；没有通过缩减模型来满足体积限制。
 

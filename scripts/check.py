@@ -58,6 +58,7 @@ def check():
     node = shutil.which("node")
     if node:
         subprocess.run([node, "--check", str(ROOT / "site/site.js")], check=True, capture_output=True)
+        subprocess.run([node, str(ROOT / "scripts/check_locales.mjs")], check=True)
     with tempfile.TemporaryDirectory(prefix="bgp-check-") as folder:
         temp = Path(folder)
         first, second = build_all(temp / "first"), build_all(temp / "second")
@@ -99,13 +100,15 @@ def check():
     source = json.loads((ROOT / "docs/provenance/source-record.json").read_text(encoding="utf-8"))
     assert source["foundationSHA256"] == hashlib.sha256((SKILL / "assets/runtime/foundation.js").read_bytes()).hexdigest()
     baseline = json.loads((ROOT / "evidence/2026-11-14/builds.json").read_text(encoding="utf-8"))
-    assert {x["id"]:x["sha256"] for x in first} == {x["id"]:x["sha256"] for x in baseline}
+    assert {x["id"] for x in first} == {x["id"] for x in baseline}
+    historical_match = {x["id"]:x["sha256"] for x in first} == {x["id"]:x["sha256"] for x in baseline}
     checked_on = date.today().isoformat()
     report = {"date":checked_on, "technicalPass":True, "games":first,
               "relativeLinksChecked":count, "deterministicBuild":True,
               "isolatedSkillInstallAndBuild":True, "overwriteRejected":True,
               "changedFoundationRejected":True, "nodeSyntaxChecked":bool(node),
-              "unchangedFromGameplayEvidence":"2026-11-14",
+              "matches20261114GameplayArtifacts":historical_match,
+              "localeUnitChecks":bool(node),
               "note":"Static/package checks. Browser and gameplay evidence are recorded separately."}
     output = ROOT / "evidence" / checked_on / "repository-check.json"
     output.parent.mkdir(parents=True, exist_ok=True)

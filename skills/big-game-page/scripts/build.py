@@ -7,7 +7,7 @@ from html import escape
 
 ROOT=Path(__file__).resolve().parents[1]
 ASSETS=ROOT/'assets'
-MODULES=['adapter','devices','climbing','worlds','qa','missions']
+MODULES=['adapter','devices','climbing','worlds','qa','missions','i18n']
 
 def validate_recipe(r):
     for key in ['id','title','subtitle','world','brief','objectives','mechanics','palette']:
@@ -29,7 +29,29 @@ def validate_recipe(r):
             value=r['mechanics'].get(key)
             if type(value) not in (int,float) or not lo<=value<=hi: raise ValueError('Invalid freight rule: '+key)
         if type(r['mechanics']['repairKits']) is not int: raise ValueError('repairKits must be an integer')
-    if '<' in ''.join(str(r.get(x,'')) for x in ['title','subtitle','brief']): raise ValueError('HTML is not allowed in recipe copy')
+    english=r.get('locales',{}).get('en')
+    if not isinstance(english,dict): raise ValueError('Missing English locale')
+    for key in ('title','brief'):
+        if not isinstance(english.get(key),str) or not english[key].strip(): raise ValueError('Missing English '+key)
+    if not isinstance(english.get('objectives'),list) or len(english['objectives'])!=3 or any(not isinstance(v,str) or not v.strip() for v in english['objectives']): raise ValueError('Expected three English objectives')
+    if any('<' in value for value in [r['title'],r['subtitle'],r['brief'],*r['objectives'],english['title'],english['brief'],*english['objectives']]): raise ValueError('HTML is not allowed in recipe copy')
+
+def localize_hud(js):
+    """Patch only the display boundary; keep the source foundation hash pinned.
+
+    Typewriter strings must be translated before slicing, otherwise English
+    subtitles are truncated to the Chinese character count. Keep source strings
+    in the original queues so a language change also updates pending radio lines.
+    """
+    start=js.index('function hM('); end=js.index('var fM=',start)
+    hud=js[start:end]
+    before='if($<re.length){ue+=k*46;let we=Math.min(re.length,Math.floor(ue));we!==$&&($=we,u.textContent=re.slice(0,we))}'
+    after='{let localized=BGP.i18n.t(re);if($<localized.length){ue+=k*46;let we=Math.min(localized.length,Math.floor(ue));we!==$&&($=we,u.textContent=localized.slice(0,we))}}'
+    changes=[('function hM(i){','function hM(i){let bgpRadioSource="";'),(before,after),('ee=me.shift(),B=0','ee=me.shift(),bgpRadioSource=ee.text,B=0'),('let ce=ee.text;if(B<ce.length)','let ce=BGP.i18n.t(ee.text);if(B<ce.length)'),('return R(),I}', 'BGP.i18n.onChange(()=>{let text=BGP.i18n.t(re);u.textContent=text;$=text.length;ue=$;let line=BGP.i18n.t(ee?ee.text:bgpRadioSource);N.textContent=line;if(ee){B=line.length;P=B;}});return R(),I}')]
+    for old,new in changes:
+        if hud.count(old)!=1: raise ValueError('HUD localization boundary changed: '+old[:70])
+        hud=hud.replace(old,new,1)
+    return js[:start]+hud+js[end:]
 
 class Resources(HTMLParser):
     def __init__(self): super().__init__(); self.external=[]; self.scripts=0
@@ -49,14 +71,23 @@ def build(recipe,out):
     manifest=json.loads((ASSETS/'foundation-manifest.json').read_text())
     base=(ASSETS/'runtime/foundation.js').read_bytes()
     if hashlib.sha256(base).hexdigest()!=manifest['foundation_sha256']: raise ValueError('Pinned foundation changed; review and re-baseline before building')
-    modules=['adapter','freight-map','freight-game','freight-qa'] if r['world']=='freight' else MODULES
+    modules=['adapter','freight-map','freight-game','freight-qa','i18n'] if r['world']=='freight' else MODULES
     module='\n'.join((ASSETS/f'runtime/{name}.js').read_text() for name in modules)
+    messages=json.loads((ASSETS/'locales/en.json').read_text())
+    if any(not isinstance(k,str) or not isinstance(v,str) for k,v in messages.items()): raise ValueError('Invalid English message catalog')
+    if module.count('/* BIGGAMEPAGE_EN */')!=1: raise ValueError('Expected one localization catalog marker')
+    module=module.replace('/* BIGGAMEPAGE_EN */',json.dumps(messages,ensure_ascii=False,separators=(',',':')).replace('<','\\u003c'))
     assert base.count(b'/* BIGGAMEPAGE_MODULES */')==1
-    js=base.decode().replace('/* BIGGAMEPAGE_MODULES */',module)
+    js=localize_hud(base.decode()).replace('/* BIGGAMEPAGE_MODULES */',module)
     # Menu copy is a presentation adapter; never edit geometry to apply a theme.
     js=js.replace('<h1 class="m-word">一页<span class="m-subtitle">3A大作</span></h1>',f'<h1 class="m-word">{js_text(r["title"])}<span class="m-subtitle">{js_text(r["subtitle"])}</span></h1>')
     for before,after in {'一页港区':r['title'],'一页突击小队':'BigGamePage · 一页大作','国产第一人称射击游戏':'独立单文件游戏','港区主控':'自动防御系统'}.items(): js=js.replace(before,js_text(after))
     js=js.replace('<kbd>E</kbd> 切断中继','<kbd>E</kbd> 任务 / 补给 / 设备').replace('已切断中继','已完成作业')
+    js=js.replace('<dt>切断中继</dt>','<dt>交互</dt>').replace('靠近中继并按住“交互”','靠近设备并按住“交互”').replace('Y 切断中继','Y 交互')
+    if r['world']=='freight':
+        js=js.replace('<div><dt>近战</dt><dd><kbd>F</kbd></dd></div>', '<div><dt>放下核心</dt><dd><kbd>Q</kbd></dd></div><div><dt>展开地图</dt><dd><kbd>M</kbd></dd></div><div><dt>近战</dt><dd><kbd>F</kbd></dd></div>')
+    elif r['world']=='bunker':
+        js=js.replace('<div><dt>近战</dt><dd><kbd>F</kbd></dd></div>', '<div><dt>手电开关</dt><dd><kbd>L</kbd></dd></div><div><dt>近战</dt><dd><kbd>F</kbd></dd></div>')
     js=js.replace('四号泊位',{'harbor':'04 号货运港','moon':'月面货运基地','bunker':'地下第九层','freight':'环形货运枢纽'}[r['world']])
     js=js.replace('05:42',{'harbor':'02:17','moon':'EVA / 07','bunker':'B09 / LOCKDOWN','freight':'NODE 00 / 18:40'}[r['world']])
     about=js.find('<h3>BigGamePage · 一页大作</h3>')
@@ -69,6 +100,7 @@ def build(recipe,out):
     shell=re.sub(r'<title>.*?</title>',lambda _:f'<title>{escape(r["title"])} · BigGamePage · 一页大作</title>',shell,count=1)
     css=(ASSETS/'runtime/style.css').read_text()+f'\n:root{{--signal:{r["palette"][0]};--bgp-accent:{r["palette"][0]};--bgp-glow:{r["palette"][1]};}}'
     if r['world']=='freight': css+='\n'+(ASSETS/'runtime/freight-style.css').read_text()
+    css+='\n'+(ASSETS/'runtime/i18n-style.css').read_text()
     shell=shell.replace('/* BIGGAMEPAGE_STYLE */',css)
     encoded=json.dumps(r,ensure_ascii=False,separators=(',',':')).replace('<','\\u003c')
     shell=shell.replace('<!-- BIGGAMEPAGE_SCRIPT -->','<script>\nwindow.BIGGAMEPAGE_RECIPE='+encoded+';\n'+js+'\n</script>')
@@ -84,7 +116,7 @@ def build(recipe,out):
     for u in re.findall(r'url\(\s*[\"\']?([^\)\"\']+)',css):
         if not u.startswith(('data:','#')): raise ValueError('External CSS url: '+u)
     out=Path(out); out.parent.mkdir(parents=True,exist_ok=True); out.write_bytes(raw)
-    info={'id':r['id'],'bytes':len(raw),'sha256':hashlib.sha256(raw).hexdigest(),'budget':2_000_000,'externalHTMLResources':audit.external,'runtimeNetworkPolicy':'connect-src none','foundation_sha256':manifest['foundation_sha256'],'brand':'BigGamePage · 一页大作','tagline':'Big games. One page.','version':'0.3.0'}
+    info={'id':r['id'],'bytes':len(raw),'sha256':hashlib.sha256(raw).hexdigest(),'budget':2_000_000,'externalHTMLResources':audit.external,'runtimeNetworkPolicy':'connect-src none','foundation_sha256':manifest['foundation_sha256'],'brand':'BigGamePage · 一页大作','tagline':'Big games. One page.','version':'0.4.0','languages':['zh','en'],'defaultLanguage':'browser'}
     out.with_suffix('.build.json').write_text(json.dumps(info,ensure_ascii=False,indent=2)+'\n')
     return info
 

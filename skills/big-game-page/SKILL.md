@@ -7,7 +7,7 @@ description: Build and adapt detailed, self-contained 3D browser games from the 
 
 **Big games. One page.**
 
-Deliver a playable HTML, editable recipe and evidence from the exact file. Version 0.3.0 supports both adaptations of the original harbor and an independently authored recovery/escort level. It does not promise arbitrary genres or arbitrary anatomy from a prompt.
+Deliver a playable HTML, editable recipe and evidence from the exact file. Version 0.4.0 supports Chinese/English interfaces, adaptations of the original harbor and an independently authored recovery/escort level. It does not promise arbitrary genres or arbitrary anatomy from a prompt.
 
 ## Choose the right scope
 
@@ -21,6 +21,7 @@ Keep `assets/runtime/foundation.js` pinned. Reuse its procedural geometry, mater
 ## Quality contract
 
 - Export strictly below **2,000,000 UTF-8 bytes**, one HTML and no external runtime resource, CDN, font, image, audio, API or service worker.
+- Include English `locales.en.title`, `brief` and three `objectives` in every recipe. UI defaults to browser language; allow instant Chinese/English selection from the title and pause menus. New messages belong in `assets/locales/en.json`; never call a translation service at runtime. Test both languages and preserve gameplay state while switching.
 - Preserve complete robot rigs. Reference hashes: dog `56cdfa8c` / 17,348 full-rig triangles; drone `aabcf30a` / 13,790. Static asset-only counts are 17,344 and 13,788. Do not replace them with simplified approximations.
 - Retain enterable, detailed warehouses and open containers. Preserve small props, readable materials, silhouettes and traversal. Counts supplement visual review; they are not a quality score.
 - **Legacy adaptations only:** retain the original 47 containers, 298 props, 794,188 static triangles and crane route to 30.34 m. These exact layout counts do not apply to independent maps.

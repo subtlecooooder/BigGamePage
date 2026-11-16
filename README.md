@@ -14,7 +14,9 @@ Detailed procedural 3D scenes, combat and missions in one HTML file. BigGamePage
 
 ## Play online
 
-Open the [four-game arcade](https://subtlecooooder.github.io/BigGamePage/?lang=en) and choose a game. No installation or repository download is needed. Use a WebGL2-capable desktop browser with keyboard/mouse. Links start muted; enable sound on the landing page before launching if desired. In-game UI is currently Chinese.
+Open the [four-game arcade](https://subtlecooooder.github.io/BigGamePage/?lang=en) and choose a game. No installation or repository download is needed. Use a WebGL2-capable desktop browser with keyboard/mouse. Links start muted; enable sound on the landing page before launching if desired.
+
+All four games include **English and Simplified Chinese**. A fresh direct launch follows your browser language (English fallback). Change **Language** on the title screen or pause with **Esc / P** to switch during a mission without restarting. Manual choices are remembered; choose **Browser language** to return to automatic selection. Explicit `?lang=en`, `?lang=zh` or `?lang=auto` links override a saved choice. Both languages are embedded in the single HTML.
 
 ## Run locally
 
@@ -40,10 +42,10 @@ Each exported HTML is independently movable. Its `.build.json` sidecar is verifi
 
 | Game / recipe | Layout and mechanics | HTML size |
 |---|---|---:|
-| [零号中转站 / Switchyard Zero · `switchyard-zero`](https://subtlecooooder.github.io/BigGamePage/games/switchyard-zero.html?noaudio=1) | Independent freight hub; unordered core recovery, heat/cooling, route choice, escort and finite repairs | 1,507,479 B |
-| [夜港无声 / Silent Harbor · `night-harbor`](https://subtlecooooder.github.io/BigGamePage/games/night-harbor.html?noaudio=1) | Original harbor layout; alert management, infiltration, devices and extraction | 1,497,324 B |
-| [月面余氧 / Lunar Reserve · `selene-repair`](https://subtlecooooder.github.io/BigGamePage/games/selene-repair.html?noaudio=1) | Original harbor layout; reduced gravity, oxygen and repairs | 1,497,413 B |
-| [地底九号 / Bunker Nine · `bunker-09`](https://subtlecooooder.github.io/BigGamePage/games/bunker-09.html?noaudio=1) | Original harbor layout; fuse recovery, power, flashlight and escape | 1,497,422 B |
+| [零号中转站 / Switchyard Zero · `switchyard-zero`](https://subtlecooooder.github.io/BigGamePage/games/switchyard-zero.html?noaudio=1) | Independent freight hub; unordered core recovery, heat/cooling, route choice, escort and finite repairs | 1,537,232 B |
+| [夜港无声 / Silent Harbor · `night-harbor`](https://subtlecooooder.github.io/BigGamePage/games/night-harbor.html?noaudio=1) | Original harbor layout; alert management, infiltration, devices and extraction | 1,526,745 B |
+| [月面余氧 / Lunar Reserve · `selene-repair`](https://subtlecooooder.github.io/BigGamePage/games/selene-repair.html?noaudio=1) | Original harbor layout; reduced gravity, oxygen and repairs | 1,526,859 B |
+| [地底九号 / Bunker Nine · `bunker-09`](https://subtlecooooder.github.io/BigGamePage/games/bunker-09.html?noaudio=1) | Original harbor layout; fuse recovery, power, flashlight and escape | 1,526,945 B |
 
 The last three share the original layout. Switchyard Zero replaces both the map and mission controller. Detailed machine dogs, drones, enterable warehouses and open containers are retained. Export size was not achieved by replacing those models with simplified approximations.
 
