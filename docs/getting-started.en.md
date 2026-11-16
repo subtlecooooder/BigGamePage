@@ -41,30 +41,52 @@ http://127.0.0.1:8000/games/switchyard-zero.html?qa=1&q=high&dynres=0&seed=4207&
 
 `qa=1` enables the visible acceptance panel; `noaudio=1` uses an audio stub. `q=high`, `dynres=0` and `seed=4207` fix quality and random seed. Ordinary play does not need QA mode. Silent testing does not validate sound quality.
 
-## Install the complete Skill
+## Install with your AI agent
 
-User-wide installation:
+Paste this message into your AI agent:
 
-```sh
-python3 scripts/install_skill.py --dest ~/.agents/skills
+```text
+Read this repository and install its BigGamePage Skill for the AI agent I am using:
+https://github.com/subtlecooooder/BigGamePage
+
+Follow the repository's installation guide, install the complete Skill,
+and verify it. Tell me how to use it in this agent when you are done.
 ```
 
-Or install only for this repository:
+The package uses a `SKILL.md` entry point with bundled resources. The destination and activation syntax depend on the agent; no particular vendor, directory or slash-command syntax is required by BigGamePage.
+
+### Instructions for the installing agent
+
+1. Retrieve this repository. Read [`skills/big-game-page/SKILL.md`](../skills/big-game-page/SKILL.md) and its [`SOURCE-NOTICE.md`](../skills/big-game-page/SOURCE-NOTICE.md).
+2. Determine the current agent's supported Skill format, discovery directory and activation method from its available configuration or documentation. Use its native installer when it can preserve the complete package; otherwise use this repository's installer with the appropriate destination. Do not assume another tool's directory or invocation syntax applies.
+3. Install the entire `skills/big-game-page/` folder, including `SKILL.md`, `agents/`, `references/`, `scripts/`, `assets/` and `SOURCE-NOTICE.md`. A Markdown-only copy cannot build games. Preserve an existing installation; the local installer refuses to overwrite one.
+4. From the installed Skill folder, run the commands below. The package validation must pass and the smoke build must produce an HTML below 2,000,000 bytes.
+
+   ```sh
+   python3 scripts/validate_package.py
+   python3 scripts/build.py --recipe assets/recipes/switchyard-zero.json --out /path/to/output/switchyard-zero.html
+   ```
+
+5. Refresh or register the Skill using the current agent's own mechanism. Verify that it can discover and read the installed `SKILL.md`. Report the actual installation path, validation/build results and the supported way to invoke `big-game-page`. Copying files alone is not proof of discovery.
+
+Replace `/path/to/output/` with a writable output directory. If the tool has no persistent Skill mechanism but can read files and execute commands, use the complete checkout as a session resource: read the entry point, resolve its relative paths from `skills/big-game-page/`, and follow it for the current task. Describe that as session use, not a completed installation. A chat-only tool without repository/file access cannot perform these steps on its own.
+
+### Manual installation
+
+From the repository root, replace the example destination with the parent Skill directory used by your agent:
 
 ```sh
-python3 scripts/install_skill.py --dest .agents/skills
+python3 scripts/install_skill.py --dest "/path/to/your-agent/skills"
 ```
 
-`--dest` is the parent directory; the installer creates `big-game-page/` inside it. Keep `SKILL.md`, `agents/`, `references/`, `scripts/`, `assets/` and `SOURCE-NOTICE.md` together. A Markdown-only copy cannot build games. Avoid duplicate installations with the same Skill name.
+`--dest` is the parent directory; the installer creates `big-game-page/` inside it. Follow the validation and discovery steps above. Avoid duplicate installations with the same Skill name.
 
-These discovery paths and `$` invocation are documented in the [official Codex Skill guide](https://developers.openai.com/codex/skills), checked on 2026-11-16. Other agents may need a different path or installation method.
-
-The installer downloads nothing and changes no model/browser settings. It refuses an existing destination. Back up or move your old Skill folder before upgrading; remove only that installed folder to uninstall. Restart Codex if the Skill does not appear, then invoke `$big-game-page`.
+The installer downloads nothing and changes no model/browser settings. It refuses an existing destination. Back up or move your old Skill folder before upgrading; remove only that installed folder to uninstall. Reload the agent's Skill list or session as required by that tool.
 
 ## Adapt an existing archetype
 
 ```text
-$big-game-page
+Use the big-game-page Skill.
 Create a storm-extraction adaptation of assets/recipes/night-harbor.json.
 Retain the harbor layout. Change narrative, palette and ammunition budgets.
 Identify it as a shared-layout adaptation. Test the exact exported file silently
@@ -84,7 +106,7 @@ The builder enforces fewer than 2,000,000 bytes, one inline script and no extern
 ## Author a different map and loop
 
 ```text
-$big-game-page
+Use the big-game-page Skill.
 Create a distinct facility-repair-and-escape game using freight-map.js and
 freight-game.js as structural references. Reuse the detailed asset factories.
 Specify room connections, vertical routes, player actions, resource tradeoffs,

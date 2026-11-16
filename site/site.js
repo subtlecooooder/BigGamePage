@@ -47,16 +47,17 @@
   languageButton.addEventListener('click', () => { language = language === 'zh' ? 'en' : 'zh'; explicitLanguage = true; renderLanguage(); });
   soundButton.addEventListener('click', () => { sound = !sound; renderSound(); });
   document.querySelector('#copy').addEventListener('click', async () => {
-    const value = document.querySelector('#commands').textContent;
+    const prompt = document.querySelector(`#install-prompt [lang="${root.lang}"]`);
+    const value = prompt.textContent;
     const status = document.querySelector('#copy-status');
     try {
       if (!navigator.clipboard?.writeText) throw new Error('Clipboard unavailable');
       await navigator.clipboard.writeText(value);
-      status.textContent = language === 'zh' ? '已复制。请在仓库根目录的终端中执行。' : 'Copied. Run in a terminal at the repository root.';
+      status.textContent = language === 'zh' ? '已复制。粘贴到你使用的 AI Agent，让它读取仓库并安装。' : 'Copied. Paste into your AI agent to read the repository and install the Skill.';
     } catch {
-      const range = document.createRange(); range.selectNodeContents(document.querySelector('#commands'));
+      const range = document.createRange(); range.selectNodeContents(prompt);
       const selection = window.getSelection(); selection.removeAllRanges(); selection.addRange(range);
-      status.textContent = language === 'zh' ? '浏览器不允许自动复制，已选中命令，请按 Ctrl/Cmd+C。' : 'Clipboard permission unavailable. Commands selected; press Ctrl/Cmd+C.';
+      status.textContent = language === 'zh' ? '浏览器不允许自动复制，已选中安装提示词，请按 Ctrl/Cmd+C。' : 'Clipboard permission unavailable. Install prompt selected; press Ctrl/Cmd+C.';
     }
   });
   renderLanguage();

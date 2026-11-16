@@ -51,18 +51,24 @@ The last three share the original layout. Switchyard Zero replaces both the map 
 
 Controls: WASD move, mouse aim, left click fire, R reload, hold E interact, Shift sprint, C crouch, Space jump, P pause. Switchyard adds Q to drop a core and M for the map; Bunker uses L for the flashlight. Follow the game's fallback-view instructions if pointer lock is unavailable. The landing page, guides and in-game UI support both English and Chinese.
 
-## Install the Skill in Codex
+## Install with your AI agent
 
-```sh
-python3 scripts/install_skill.py --dest ~/.agents/skills
-```
-
-This copies the **complete** `skills/big-game-page/` directory, validates its resources, and refuses to overwrite an existing installation. A project-local `.agents/skills` destination is also supported. See the [installation guide](docs/getting-started.en.md).
-
-Invoke in Codex:
+**Paste the repository URL into your AI agent and ask it to install the Skill.** You can copy this message:
 
 ```text
-$big-game-page
+Read this repository and install its BigGamePage Skill for the AI agent I am using:
+https://github.com/subtlecooooder/BigGamePage
+
+Follow the repository's installation guide, install the complete Skill,
+and verify it. Tell me how to use it in this agent when you are done.
+```
+
+The agent reads the [installation guide](docs/getting-started.en.md#install-with-your-ai-agent), locates [`skills/big-game-page/SKILL.md`](skills/big-game-page/SKILL.md), and installs the **complete** `skills/big-game-page/` folder using its own Skill conventions. Installation requires an agent that can retrieve the repository and write local files. For tools without persistent Skill support, the guide explains how to use it directly from a checkout for the current session.
+
+After installation, ask your agent:
+
+```text
+Use the big-game-page Skill.
 Starting from Switchyard Zero, create a distinct repair-and-escape level.
 Define its new layout, player decisions, failure conditions and resource tradeoffs first.
 Preserve detailed models and enterable buildings. Export one HTML under 2,000,000 bytes,

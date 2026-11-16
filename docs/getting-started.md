@@ -44,32 +44,54 @@ http://127.0.0.1:8000/games/switchyard-zero.html?qa=1&q=high&dynres=0&seed=4207&
 
 `noaudio=1` 使用音频 stub；`qa=1` 显示验收面板；`q=high` 固定画质档，`dynres=0` 关闭动态分辨率，`seed` 固定随机种子。不要把静音测试说成音效验收。普通试玩不需要 `qa=1`。
 
-## 安装完整 Skill
+## 让你的 AI Agent 安装 Skill
 
-推荐用户级安装：
+把下面这段话贴给你使用的 AI Agent：
 
-```sh
-python3 scripts/install_skill.py --dest ~/.agents/skills
+```text
+请阅读这个仓库，为我当前使用的 AI Agent 安装 BigGamePage Skill：
+https://github.com/subtlecooooder/BigGamePage
+
+请按照仓库里的安装指南安装完整 Skill，并验证安装结果。
+完成后告诉我如何在当前 Agent 中使用它。
 ```
 
-或只在本项目使用：
+本 Skill 使用 `SKILL.md` 作为入口，随包包含所需资源。安装位置和调用方式由当前 Agent 决定，BigGamePage 不要求某一家工具、固定目录或特定的斜杠命令。
+
+### 给执行安装的 Agent
+
+1. 获取本仓库，阅读 [`skills/big-game-page/SKILL.md`](../skills/big-game-page/SKILL.md) 和随包的 [`SOURCE-NOTICE.md`](../skills/big-game-page/SOURCE-NOTICE.md)。
+2. 根据当前 Agent 的配置或文档，确定它支持的 Skill 格式、发现目录和调用方式。原生安装器能保留完整资源时，可使用原生安装器；否则调用本仓库的安装脚本并传入正确目录。不要套用其他工具的安装路径或调用语法。
+3. 安装整个 `skills/big-game-page/` 文件夹，保留 `SKILL.md`、`agents/`、`references/`、`scripts/`、`assets/` 和 `SOURCE-NOTICE.md`。只复制 Markdown 无法构建游戏。保留已有安装；本仓库安装器会拒绝覆盖同名目录。
+4. 在安装后的 Skill 目录运行以下命令。完整性校验须通过，试构建须生成小于 2,000,000 字节的 HTML。
+
+   ```sh
+   python3 scripts/validate_package.py
+   python3 scripts/build.py --recipe assets/recipes/switchyard-zero.json --out /path/to/output/switchyard-zero.html
+   ```
+
+5. 按当前 Agent 的机制刷新或注册 Skill，验证它能发现并读取已安装的 `SKILL.md`。报告实际安装路径、校验与构建结果，以及该工具中调用 `big-game-page` 的方法。复制成功不等于已被工具识别。
+
+请把 `/path/to/output/` 换成可写的输出目录。如果工具没有持久安装机制，但能读取文件并执行命令，可直接把完整仓库用于当前会话：读取入口文件，以 `skills/big-game-page/` 为基准解析相对路径，按 Skill 执行当前任务。应说明这是会话内使用，不声称已完成安装。不能获取仓库或读写文件的纯聊天工具无法自行执行以上步骤。
+
+### 手动安装
+
+在仓库根目录执行，将示例路径替换为当前 Agent 使用的 Skill 父目录：
 
 ```sh
-python3 scripts/install_skill.py --dest .agents/skills
+python3 scripts/install_skill.py --dest "/path/to/your-agent/skills"
 ```
 
-`--dest` 是父目录，脚本会创建其下的 `big-game-page/`。目录应含 `SKILL.md`、`agents/`、`references/`、`scripts/`、`assets/` 和 `SOURCE-NOTICE.md`。不要只复制一个 Markdown 文件，也不要同时装多个同名副本。
+`--dest` 是父目录，脚本会创建其下的 `big-game-page/`。安装后按上面的步骤验证完整性和 Agent 发现情况，不要同时装多个同名副本。
 
-这些发现路径和 `$` 调用方式依据 [Codex 官方 Skill 文档](https://developers.openai.com/codex/skills)（2026-11-16 核对）。若代理配置使用其他目录，可显式传给 `--dest`；不要默认所有代理都支持同一安装方式。
-
-安装脚本不下载内容，不改模型或浏览器配置。同名目录已存在时会报错并保留原目录。升级前先备份或移走你原有的 `big-game-page` 文件夹，再重新安装；删除对应安装目录即可卸载。Codex 未识别时重启后再输入 `$big-game-page`。
+安装脚本不下载内容，不改模型或浏览器配置。同名目录已存在时会报错并保留原目录。升级前先备份或移走你原有的 `big-game-page` 文件夹，再重新安装；删除对应安装目录即可卸载。按所用工具的要求刷新 Skill 列表或重新打开会话。
 
 ## 先做一个受支持的改版
 
 在代理中输入：
 
 ```text
-$big-game-page
+使用 big-game-page Skill。
 以 assets/recipes/night-harbor.json 为基础创建“暴雨撤离”。
 保留原港区布局，调整叙事、配色与弹药预算，不宣称是新地图。
 从本次导出的文件进行静音输入路线测试，输出 HTML、配方、截图和哈希。
@@ -88,7 +110,7 @@ python3 skills/big-game-page/scripts/build.py \
 ## 再做不同地图与玩法
 
 ```text
-$big-game-page
+使用 big-game-page Skill。
 制作一款独立“设施抢修与撤离”游戏。
 参考 freight-map.js 与 freight-game.js 的组织方式，复用模型工厂。
 先给出房间连接、垂直动线、主要操作、资源取舍、失败/恢复/胜利条件。

@@ -51,18 +51,24 @@ python3 -m http.server 8000 --bind 127.0.0.1 --directory site
 
 WASD 移动，鼠标瞄准，左键射击，R 换弹，按住 E 交互，Shift 冲刺，C 蹲伏，Space 跳跃，P 暂停。中转站另有 Q 放下核心、M 地图；地下版 L 手电。浏览器无法锁定鼠标时，按游戏提示使用备用视角控制。
 
-## 把 Skill 装进 Codex
+## 让你的 AI Agent 安装 Skill
 
-```sh
-python3 scripts/install_skill.py --dest ~/.agents/skills
-```
-
-脚本复制 **整个** `skills/big-game-page/`，校验资源完整性，遇到同名目录会停止，不覆盖旧版本。也可只安装到某个项目的 `.agents/skills`。详见 [完整安装说明](docs/getting-started.md)。
-
-在 Codex 中调用：
+**把仓库地址贴给你使用的 AI Agent，让它读取并安装 Skill。** 可以直接复制下面这段话：
 
 ```text
-$big-game-page
+请阅读这个仓库，为我当前使用的 AI Agent 安装 BigGamePage Skill：
+https://github.com/subtlecooooder/BigGamePage
+
+请按照仓库里的安装指南安装完整 Skill，并验证安装结果。
+完成后告诉我如何在当前 Agent 中使用它。
+```
+
+Agent 会读取 [安装指南](docs/getting-started.md)，找到 [`skills/big-game-page/SKILL.md`](skills/big-game-page/SKILL.md)，再按自身的 Skill 规则安装 **整个** `skills/big-game-page/` 文件夹。安装需要 Agent 能获取仓库并读写本地文件；如果工具不支持持久安装 Skill，指南也提供了从仓库直接读取并在当前会话使用的方法。
+
+安装后，直接告诉 Agent：
+
+```text
+使用 big-game-page Skill。
 以零号中转站为基础，设计一个“抢修后撤离”的独立关卡。
 先说明新的地图布局、玩家决策、失败条件和资源取舍。
 保留精细模型与可进入建筑，输出单 HTML、严格小于 2,000,000 字节、无外部资源。

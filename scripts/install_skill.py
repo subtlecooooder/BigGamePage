@@ -30,10 +30,10 @@ def install(parent):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--dest", required=True, type=Path, help="Parent directory, e.g. ~/.agents/skills")
+    parser.add_argument("--dest", required=True, type=Path, help="Parent Skill directory used by your AI agent")
     args = parser.parse_args()
     try:
         result = install(args.dest)
     except (ValueError, FileExistsError, subprocess.CalledProcessError) as exc:
         parser.exit(1, str(exc) + "\n")
-    print(f"Installed: {result}\nInvoke $big-game-page in Codex. Restart if it is not detected.")
+    print(f"Installed and package-validated: {result}\nRefresh your AI agent's Skills, verify it can discover this folder, and invoke big-game-page using that agent's supported method.")
