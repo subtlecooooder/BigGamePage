@@ -1,0 +1,566 @@
+{
+  "artifactSHA256": "628c1ad452e51792c5433e6189444b1b0ec5cc109238ca1ef4e665b9bfabcb9f",
+  "url": "https://subtlecooooder.github.io/BigGamePage/games/night-harbor.html?noaudio=1&qa=1&q=high&dynres=0&seed=4207&lang=en",
+  "passed": true,
+  "before": {
+    "position": [
+      -7.789649820574874,
+      0,
+      11.035141310936847
+    ],
+    "mission": {
+      "world": "harbor",
+      "state": "paused",
+      "time": 11.93,
+      "objectives": 0,
+      "health": 100,
+      "oxygen": 100,
+      "minOxygen": 100,
+      "maxAlarm": 99.9,
+      "detections": 0,
+      "fuse": false,
+      "fuseUsed": false,
+      "battery": 100,
+      "flashlight": true,
+      "recharges": 1,
+      "jumpMax": 0,
+      "minHP": 100,
+      "combat": {
+        "shots": 27,
+        "hits": 0,
+        "kills": 0
+      },
+      "devices": {
+        "time": 11.896400000095367,
+        "supplies": [
+          {
+            "id": "supply1",
+            "pos": [
+              -31.5,
+              0,
+              9.5
+            ],
+            "ready": 45.99400000005961,
+            "uses": 1
+          },
+          {
+            "id": "supply2",
+            "pos": [
+              -10.2,
+              0,
+              -26.5
+            ],
+            "ready": 0,
+            "uses": 0
+          },
+          {
+            "id": "supply3",
+            "pos": [
+              18.5,
+              0,
+              -15.8
+            ],
+            "ready": 0,
+            "uses": 0
+          }
+        ],
+        "emp": [
+          {
+            "id": "emp1",
+            "pos": [
+              -8.5,
+              0,
+              9.8
+            ],
+            "uses": 0,
+            "ready": 0
+          },
+          {
+            "id": "emp2",
+            "pos": [
+              15.2,
+              0,
+              -20
+            ],
+            "uses": 0,
+            "ready": 0
+          }
+        ],
+        "doors": [
+          {
+            "open": 1,
+            "target": 1,
+            "uses": 0,
+            "blocking": false
+          }
+        ],
+        "uses": 1,
+        "pulses": 0,
+        "doorUses": 0,
+        "originalLevel": {
+          "labelsAtlased": 96,
+          "containers": 47,
+          "props": 298,
+          "tris": 794188,
+          "meshes": 125
+        },
+        "enemyTris": {
+          "gull": 13788,
+          "hound": 17344
+        }
+      },
+      "climb": {
+        "active": null,
+        "position": [
+          -7.789649820574874,
+          0,
+          11.035141310936847
+        ],
+        "ascents": 0,
+        "descents": 0,
+        "summitReached": false,
+        "log": [],
+        "ladders": [
+          {
+            "id": "base",
+            "length": 4.774131112314674,
+            "bottom": [
+              19.8,
+              0,
+              7.35
+            ],
+            "top": [
+              20,
+              3.6,
+              6.56
+            ]
+          },
+          {
+            "id": "roof",
+            "length": 5.800000000000003,
+            "bottom": [
+              25.2,
+              21.9,
+              3.55
+            ],
+            "top": [
+              25.2,
+              26.12,
+              2.25
+            ]
+          },
+          {
+            "id": "summit",
+            "length": 5.529999999999998,
+            "bottom": [
+              26.12,
+              26.12,
+              -0.25
+            ],
+            "top": [
+              27.15,
+              30.34,
+              -0.25
+            ]
+          }
+        ]
+      },
+      "events": [
+        {
+          "event": "start",
+          "time": 0,
+          "position": [
+            -32,
+            0,
+            6
+          ]
+        },
+        {
+          "event": "supply",
+          "time": 0.99,
+          "position": [
+            -31.55,
+            0,
+            7.577
+          ],
+          "id": "supply1"
+        }
+      ]
+    },
+    "step": 4
+  },
+  "chinese": {
+    "position": [
+      -7.789649820574874,
+      0,
+      11.035141310936847
+    ],
+    "mission": {
+      "world": "harbor",
+      "state": "paused",
+      "time": 11.93,
+      "objectives": 0,
+      "health": 100,
+      "oxygen": 100,
+      "minOxygen": 100,
+      "maxAlarm": 99.9,
+      "detections": 0,
+      "fuse": false,
+      "fuseUsed": false,
+      "battery": 100,
+      "flashlight": true,
+      "recharges": 1,
+      "jumpMax": 0,
+      "minHP": 100,
+      "combat": {
+        "shots": 27,
+        "hits": 0,
+        "kills": 0
+      },
+      "devices": {
+        "time": 11.896400000095367,
+        "supplies": [
+          {
+            "id": "supply1",
+            "pos": [
+              -31.5,
+              0,
+              9.5
+            ],
+            "ready": 45.99400000005961,
+            "uses": 1
+          },
+          {
+            "id": "supply2",
+            "pos": [
+              -10.2,
+              0,
+              -26.5
+            ],
+            "ready": 0,
+            "uses": 0
+          },
+          {
+            "id": "supply3",
+            "pos": [
+              18.5,
+              0,
+              -15.8
+            ],
+            "ready": 0,
+            "uses": 0
+          }
+        ],
+        "emp": [
+          {
+            "id": "emp1",
+            "pos": [
+              -8.5,
+              0,
+              9.8
+            ],
+            "uses": 0,
+            "ready": 0
+          },
+          {
+            "id": "emp2",
+            "pos": [
+              15.2,
+              0,
+              -20
+            ],
+            "uses": 0,
+            "ready": 0
+          }
+        ],
+        "doors": [
+          {
+            "open": 1,
+            "target": 1,
+            "uses": 0,
+            "blocking": false
+          }
+        ],
+        "uses": 1,
+        "pulses": 0,
+        "doorUses": 0,
+        "originalLevel": {
+          "labelsAtlased": 96,
+          "containers": 47,
+          "props": 298,
+          "tris": 794188,
+          "meshes": 125
+        },
+        "enemyTris": {
+          "gull": 13788,
+          "hound": 17344
+        }
+      },
+      "climb": {
+        "active": null,
+        "position": [
+          -7.789649820574874,
+          0,
+          11.035141310936847
+        ],
+        "ascents": 0,
+        "descents": 0,
+        "summitReached": false,
+        "log": [],
+        "ladders": [
+          {
+            "id": "base",
+            "length": 4.774131112314674,
+            "bottom": [
+              19.8,
+              0,
+              7.35
+            ],
+            "top": [
+              20,
+              3.6,
+              6.56
+            ]
+          },
+          {
+            "id": "roof",
+            "length": 5.800000000000003,
+            "bottom": [
+              25.2,
+              21.9,
+              3.55
+            ],
+            "top": [
+              25.2,
+              26.12,
+              2.25
+            ]
+          },
+          {
+            "id": "summit",
+            "length": 5.529999999999998,
+            "bottom": [
+              26.12,
+              26.12,
+              -0.25
+            ],
+            "top": [
+              27.15,
+              30.34,
+              -0.25
+            ]
+          }
+        ]
+      },
+      "events": [
+        {
+          "event": "start",
+          "time": 0,
+          "position": [
+            -32,
+            0,
+            6
+          ]
+        },
+        {
+          "event": "supply",
+          "time": 0.99,
+          "position": [
+            -31.55,
+            0,
+            7.577
+          ],
+          "id": "supply1"
+        }
+      ]
+    },
+    "step": 4
+  },
+  "english": {
+    "position": [
+      -7.789649820574874,
+      0,
+      11.035141310936847
+    ],
+    "mission": {
+      "world": "harbor",
+      "state": "paused",
+      "time": 11.93,
+      "objectives": 0,
+      "health": 100,
+      "oxygen": 100,
+      "minOxygen": 100,
+      "maxAlarm": 99.9,
+      "detections": 0,
+      "fuse": false,
+      "fuseUsed": false,
+      "battery": 100,
+      "flashlight": true,
+      "recharges": 1,
+      "jumpMax": 0,
+      "minHP": 100,
+      "combat": {
+        "shots": 27,
+        "hits": 0,
+        "kills": 0
+      },
+      "devices": {
+        "time": 11.896400000095367,
+        "supplies": [
+          {
+            "id": "supply1",
+            "pos": [
+              -31.5,
+              0,
+              9.5
+            ],
+            "ready": 45.99400000005961,
+            "uses": 1
+          },
+          {
+            "id": "supply2",
+            "pos": [
+              -10.2,
+              0,
+              -26.5
+            ],
+            "ready": 0,
+            "uses": 0
+          },
+          {
+            "id": "supply3",
+            "pos": [
+              18.5,
+              0,
+              -15.8
+            ],
+            "ready": 0,
+            "uses": 0
+          }
+        ],
+        "emp": [
+          {
+            "id": "emp1",
+            "pos": [
+              -8.5,
+              0,
+              9.8
+            ],
+            "uses": 0,
+            "ready": 0
+          },
+          {
+            "id": "emp2",
+            "pos": [
+              15.2,
+              0,
+              -20
+            ],
+            "uses": 0,
+            "ready": 0
+          }
+        ],
+        "doors": [
+          {
+            "open": 1,
+            "target": 1,
+            "uses": 0,
+            "blocking": false
+          }
+        ],
+        "uses": 1,
+        "pulses": 0,
+        "doorUses": 0,
+        "originalLevel": {
+          "labelsAtlased": 96,
+          "containers": 47,
+          "props": 298,
+          "tris": 794188,
+          "meshes": 125
+        },
+        "enemyTris": {
+          "gull": 13788,
+          "hound": 17344
+        }
+      },
+      "climb": {
+        "active": null,
+        "position": [
+          -7.789649820574874,
+          0,
+          11.035141310936847
+        ],
+        "ascents": 0,
+        "descents": 0,
+        "summitReached": false,
+        "log": [],
+        "ladders": [
+          {
+            "id": "base",
+            "length": 4.774131112314674,
+            "bottom": [
+              19.8,
+              0,
+              7.35
+            ],
+            "top": [
+              20,
+              3.6,
+              6.56
+            ]
+          },
+          {
+            "id": "roof",
+            "length": 5.800000000000003,
+            "bottom": [
+              25.2,
+              21.9,
+              3.55
+            ],
+            "top": [
+              25.2,
+              26.12,
+              2.25
+            ]
+          },
+          {
+            "id": "summit",
+            "length": 5.529999999999998,
+            "bottom": [
+              26.12,
+              26.12,
+              -0.25
+            ],
+            "top": [
+              27.15,
+              30.34,
+              -0.25
+            ]
+          }
+        ]
+      },
+      "events": [
+        {
+          "event": "start",
+          "time": 0,
+          "position": [
+            -32,
+            0,
+            6
+          ]
+        },
+        {
+          "event": "supply",
+          "time": 0.99,
+          "position": [
+            -31.55,
+            0,
+            7.577
+          ],
+          "id": "supply1"
+        }
+      ]
+    },
+    "step": 4
+  }
+}

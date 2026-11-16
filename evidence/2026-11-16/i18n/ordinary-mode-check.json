@@ -1,0 +1,13 @@
+{
+  "artifactSHA256": "a428a9fd2ba6162c320651b5b172da5d04341b9dc9b5ec39d79a47bcafbfd4b2",
+  "environment": "Local HTTP, no QA panel, noaudio=1",
+  "checks": [
+    "Controls button opened after pointer-events fix",
+    "Flashlight L row present in controls",
+    "Start mission clicked",
+    "W and L keyboard input sent",
+    "P opened pause menu",
+    "Paused UI switched to Chinese without restart"
+  ],
+  "note": "Escape first left pointer lock; P opened the paused menu. Movement distance and flashlight state were not measured in this no-QA check."
+}

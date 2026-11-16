@@ -1,0 +1,13 @@
+{
+  "test": "Chinese preference survives navigation to another game while browser is English",
+  "language": {
+    "language": "zh",
+    "preference": "zh",
+    "browserLanguages": [
+      "en-US",
+      "en;q=0.9"
+    ],
+    "storageAvailable": true,
+    "untranslated": []
+  }
+}

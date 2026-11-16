@@ -1,0 +1,2122 @@
+{
+  "artifactSHA256": "ecc6b1634afc6ba47fa12e073afa99a3a3c02c39fe457551630776ffce1eb5d3",
+  "url": "https://subtlecooooder.github.io/BigGamePage/games/switchyard-zero.html?noaudio=1&qa=1&q=high&dynres=0&seed=4207&lang=en",
+  "issues": [
+    "Reinforcement location needed a separator",
+    "Long English reinforcement warnings exceeded the viewport; constrain width and wrap text"
+  ],
+  "report": {
+    "ready": true,
+    "scenario": "west",
+    "language": {
+      "language": "en",
+      "preference": "en",
+      "browserLanguages": [
+        "zh-CN"
+      ],
+      "storageAvailable": true,
+      "untranslated": []
+    },
+    "waypointProblems": [],
+    "controls": {
+      "yaw": 0.6954520598634911,
+      "pitch": 0.42503475788089423,
+      "eyeHeight": 1.6665715241423062,
+      "ammo": 28,
+      "reserve": 96,
+      "mapExpanded": false
+    },
+    "running": false,
+    "step": 45,
+    "totalSteps": 46,
+    "stage": {
+      "kind": "escort"
+    },
+    "position": [
+      2.168087191256418e-17,
+      0,
+      -41.59261690464983
+    ],
+    "maxY": 4.800000000000001,
+    "minY": 0,
+    "invulnerableDuringPlay": false,
+    "geometry": {
+      "dog": {
+        "hash": "56cdfa8c",
+        "triangles": 17348,
+        "meshes": 2
+      },
+      "drone": {
+        "hash": "aabcf30a",
+        "triangles": 13790,
+        "meshes": 3
+      }
+    },
+    "mission": {
+      "state": "complete",
+      "phase": "delivered",
+      "time": 206.98,
+      "loaded": [
+        "W",
+        "U",
+        "E"
+      ],
+      "carrying": null,
+      "route": "west",
+      "cartHealth": 95.08,
+      "minCart": 89.93,
+      "cartPosition": [
+        0,
+        0,
+        -45.99594499997196
+      ],
+      "progress": 0.9999650431032062,
+      "repairs": 2,
+      "repairUses": 1,
+      "stalls": 3,
+      "drops": 0,
+      "overheats": 0,
+      "supplyUses": 4,
+      "minHP": 71,
+      "playerHealth": 100,
+      "cores": [
+        {
+          "id": "W",
+          "state": "loaded",
+          "heat": 0.35,
+          "position": [
+            -0.724502512333544,
+            0.9010957746488717,
+            22.864195691932125
+          ]
+        },
+        {
+          "id": "E",
+          "state": "loaded",
+          "heat": 0.481,
+          "position": [
+            -0.41958129886584783,
+            0.9124674917389788,
+            23.179035894445615
+          ]
+        },
+        {
+          "id": "U",
+          "state": "loaded",
+          "heat": 0.545,
+          "position": [
+            -0.7131969128957916,
+            0.9016868062608232,
+            22.879829789764518
+          ]
+        }
+      ],
+      "combat": {
+        "shots": 136,
+        "hits": 63,
+        "kills": 19
+      },
+      "director": {
+        "wave": 7,
+        "recoverySpawned": 10,
+        "recoveryBudget": 12,
+        "maxAlive": 6,
+        "maxObserved": 3,
+        "alive": 0,
+        "nextAt": 200.24000000023784,
+        "queued": 0,
+        "pending": null
+      },
+      "enemies": [],
+      "events": [
+        {
+          "event": "start",
+          "time": 0,
+          "playerHealth": 100,
+          "position": [
+            0,
+            0,
+            28
+          ],
+          "layout": "new square freight loop + separate elevated pedestrian ring"
+        },
+        {
+          "event": "supply",
+          "time": 2.796,
+          "playerHealth": 100,
+          "position": [
+            5.815,
+            0,
+            28.009
+          ],
+          "id": "S1"
+        },
+        {
+          "event": "pickup",
+          "time": 18.067,
+          "playerHealth": 100,
+          "position": [
+            -33.837,
+            0.03,
+            0.048
+          ],
+          "core": "W"
+        },
+        {
+          "event": "recovery-alert",
+          "time": 18.067,
+          "playerHealth": 100,
+          "position": [
+            -33.837,
+            0.03,
+            0.048
+          ],
+          "core": "W"
+        },
+        {
+          "event": "reinforcement-warning",
+          "time": 28.087,
+          "playerHealth": 100,
+          "position": [
+            -14.079,
+            0,
+            11.34
+          ],
+          "phase": "recovery",
+          "source": "西侧通道",
+          "due": 34.086900000035634,
+          "count": 2,
+          "reason": "cargo-alarm"
+        },
+        {
+          "event": "recovery-wave",
+          "time": 34.103,
+          "playerHealth": 100,
+          "position": [
+            -5.013,
+            0,
+            23.384
+          ],
+          "wave": 1,
+          "index": null,
+          "reason": "cargo-alarm",
+          "source": "西侧通道",
+          "count": 2,
+          "spawned": [
+            {
+              "type": "gull",
+              "position": [
+                -45,
+                8,
+                -18
+              ],
+              "distance": 58.1,
+              "id": 4,
+              "forwardDot": -0.7258,
+              "lineOfSight": false,
+              "groundWalkable": true
+            },
+            {
+              "type": "hound",
+              "position": [
+                -43.2,
+                0,
+                -18
+              ],
+              "distance": 56.31,
+              "id": 5,
+              "forwardDot": -0.7456,
+              "lineOfSight": false,
+              "groundWalkable": true
+            }
+          ],
+          "alive": 3,
+          "warningSeconds": 6.02
+        },
+        {
+          "event": "load",
+          "time": 37.299,
+          "playerHealth": 100,
+          "position": [
+            -0.342,
+            0,
+            24.037
+          ],
+          "core": "W",
+          "loaded": [
+            "W"
+          ]
+        },
+        {
+          "event": "supply",
+          "time": 40.474,
+          "playerHealth": 100,
+          "position": [
+            5.82,
+            0,
+            27.965
+          ],
+          "id": "S1"
+        },
+        {
+          "event": "pickup",
+          "time": 59.764,
+          "playerHealth": 100,
+          "position": [
+            1.698,
+            4.8,
+            -6.792
+          ],
+          "core": "U"
+        },
+        {
+          "event": "recovery-alert",
+          "time": 59.764,
+          "playerHealth": 100,
+          "position": [
+            1.698,
+            4.8,
+            -6.792
+          ],
+          "core": "U"
+        },
+        {
+          "event": "reinforcement-warning",
+          "time": 60.116,
+          "playerHealth": 100,
+          "position": [
+            1.698,
+            4.8,
+            -6.792
+          ],
+          "phase": "recovery",
+          "source": "东北货道",
+          "due": 66.11620000004835,
+          "count": 2,
+          "reason": "cargo-alarm"
+        },
+        {
+          "event": "recovery-wave",
+          "time": 66.124,
+          "playerHealth": 100,
+          "position": [
+            -13.615,
+            4.8,
+            -6.018
+          ],
+          "wave": 2,
+          "index": null,
+          "reason": "cargo-alarm",
+          "source": "东北货道",
+          "count": 2,
+          "spawned": [
+            {
+              "type": "gull",
+              "position": [
+                19,
+                8,
+                -40
+              ],
+              "distance": 47.21,
+              "id": 6,
+              "forwardDot": -0.7337,
+              "lineOfSight": true,
+              "groundWalkable": true
+            },
+            {
+              "type": "hound",
+              "position": [
+                20.8,
+                0,
+                -40
+              ],
+              "distance": 48.6,
+              "id": 7,
+              "forwardDot": -0.747,
+              "lineOfSight": false,
+              "groundWalkable": true
+            }
+          ],
+          "alive": 2,
+          "warningSeconds": 6.01
+        },
+        {
+          "event": "load",
+          "time": 89.746,
+          "playerHealth": 100,
+          "position": [
+            -0.326,
+            0,
+            24.052
+          ],
+          "core": "U",
+          "loaded": [
+            "W",
+            "U"
+          ]
+        },
+        {
+          "event": "reinforcement-warning",
+          "time": 92.147,
+          "playerHealth": 93,
+          "position": [
+            2.571,
+            0,
+            26.649
+          ],
+          "phase": "recovery",
+          "source": "东南堆场",
+          "due": 98.14670000004806,
+          "count": 3,
+          "reason": "cargo-alarm"
+        },
+        {
+          "event": "supply",
+          "time": 94.039,
+          "playerHealth": 100,
+          "position": [
+            5.765,
+            0,
+            27.955
+          ],
+          "id": "S1"
+        },
+        {
+          "event": "recovery-wave",
+          "time": 98.156,
+          "playerHealth": 100,
+          "position": [
+            9.428,
+            0,
+            16.169
+          ],
+          "wave": 3,
+          "index": null,
+          "reason": "cargo-alarm",
+          "source": "东南堆场",
+          "count": 3,
+          "spawned": [
+            {
+              "type": "gull",
+              "position": [
+                20,
+                8,
+                41
+              ],
+              "distance": 28.15,
+              "id": 8,
+              "forwardDot": -0.41,
+              "lineOfSight": true,
+              "groundWalkable": true
+            },
+            {
+              "type": "hound",
+              "position": [
+                21.8,
+                0,
+                41
+              ],
+              "distance": 27.74,
+              "id": 9,
+              "forwardDot": -0.3658,
+              "lineOfSight": true,
+              "groundWalkable": true
+            },
+            {
+              "type": "hound",
+              "position": [
+                23.6,
+                0,
+                41
+              ],
+              "distance": 28.59,
+              "id": 10,
+              "forwardDot": -0.3128,
+              "lineOfSight": true,
+              "groundWalkable": true
+            }
+          ],
+          "alive": 3,
+          "warningSeconds": 6.01
+        },
+        {
+          "event": "pickup",
+          "time": 109.2,
+          "playerHealth": 100,
+          "position": [
+            37.983,
+            0,
+            6.024
+          ],
+          "core": "E"
+        },
+        {
+          "event": "recovery-alert",
+          "time": 109.2,
+          "playerHealth": 100,
+          "position": [
+            37.983,
+            0,
+            6.024
+          ],
+          "core": "E"
+        },
+        {
+          "event": "reinforcement-warning",
+          "time": 124.164,
+          "playerHealth": 100,
+          "position": [
+            25.008,
+            0,
+            22.631
+          ],
+          "phase": "recovery",
+          "source": "东侧堆场",
+          "due": 130.16360000002393,
+          "count": 3,
+          "reason": "cargo-alarm"
+        },
+        {
+          "event": "recovery-wave",
+          "time": 130.167,
+          "playerHealth": 100,
+          "position": [
+            9.628,
+            0,
+            22.701
+          ],
+          "wave": 4,
+          "index": null,
+          "reason": "cargo-alarm",
+          "source": "东侧堆场",
+          "count": 3,
+          "spawned": [
+            {
+              "type": "gull",
+              "position": [
+                45,
+                8,
+                1
+              ],
+              "distance": 42.26,
+              "id": 11,
+              "forwardDot": -0.8467,
+              "lineOfSight": true,
+              "groundWalkable": true
+            },
+            {
+              "type": "hound",
+              "position": [
+                46.8,
+                0,
+                1
+              ],
+              "distance": 43.04,
+              "id": 12,
+              "forwardDot": -0.8674,
+              "lineOfSight": false,
+              "groundWalkable": true
+            },
+            {
+              "type": "hound",
+              "position": [
+                48.6,
+                0,
+                1
+              ],
+              "distance": 44.61,
+              "id": 13,
+              "forwardDot": -0.8774,
+              "lineOfSight": false,
+              "groundWalkable": true
+            }
+          ],
+          "alive": 3,
+          "warningSeconds": 6
+        },
+        {
+          "event": "load",
+          "time": 135.677,
+          "playerHealth": 100,
+          "position": [
+            0.082,
+            0,
+            24.314
+          ],
+          "core": "E",
+          "loaded": [
+            "W",
+            "U",
+            "E"
+          ]
+        },
+        {
+          "event": "supply",
+          "time": 139.479,
+          "playerHealth": 100,
+          "position": [
+            5.814,
+            0,
+            28.004
+          ],
+          "id": "S1"
+        },
+        {
+          "event": "escort-start",
+          "time": 142.855,
+          "playerHealth": 100,
+          "position": [
+            0.024,
+            0,
+            24.182
+          ],
+          "route": "west"
+        },
+        {
+          "event": "reinforcement-warning",
+          "time": 142.855,
+          "playerHealth": 100,
+          "position": [
+            0.024,
+            0,
+            24.182
+          ],
+          "phase": "escort",
+          "source": "西南堆场",
+          "due": 148.85500000005956,
+          "count": 2,
+          "reason": "escort-0"
+        },
+        {
+          "event": "escort-stopped",
+          "time": 145.773,
+          "playerHealth": 100,
+          "position": [
+            0.024,
+            0,
+            24.182
+          ],
+          "distance": 8.05
+        },
+        {
+          "event": "escort-wave",
+          "time": 148.877,
+          "playerHealth": 100,
+          "position": [
+            0.024,
+            0,
+            24.182
+          ],
+          "wave": 5,
+          "index": 0,
+          "reason": "escort-0",
+          "source": "西南堆场",
+          "count": 2,
+          "spawned": [
+            {
+              "type": "gull",
+              "position": [
+                -23,
+                8,
+                32
+              ],
+              "distance": 25.6,
+              "id": 14,
+              "forwardDot": -0.3423,
+              "lineOfSight": true,
+              "groundWalkable": true
+            },
+            {
+              "type": "hound",
+              "position": [
+                -21.2,
+                0,
+                32
+              ],
+              "distance": 22.62,
+              "id": 15,
+              "forwardDot": -0.3294,
+              "lineOfSight": true,
+              "groundWalkable": true
+            }
+          ],
+          "alive": 2,
+          "warningSeconds": 6.02
+        },
+        {
+          "event": "cart-hit",
+          "time": 148.903,
+          "playerHealth": 100,
+          "position": [
+            0.024,
+            0,
+            24.182
+          ],
+          "enemies": 1,
+          "health": 99.98
+        },
+        {
+          "event": "cart-hit",
+          "time": 149.619,
+          "playerHealth": 100,
+          "position": [
+            0.024,
+            0,
+            24.182
+          ],
+          "enemies": 2,
+          "health": 99.5
+        },
+        {
+          "event": "cart-hit",
+          "time": 150.327,
+          "playerHealth": 100,
+          "position": [
+            0.024,
+            0,
+            24.182
+          ],
+          "enemies": 2,
+          "health": 98.58
+        },
+        {
+          "event": "cart-hit",
+          "time": 151.038,
+          "playerHealth": 100,
+          "position": [
+            0.024,
+            0,
+            24.182
+          ],
+          "enemies": 2,
+          "health": 97.66
+        },
+        {
+          "event": "cart-hit",
+          "time": 151.74,
+          "playerHealth": 100,
+          "position": [
+            0.024,
+            0,
+            24.182
+          ],
+          "enemies": 2,
+          "health": 96.74
+        },
+        {
+          "event": "cart-hit",
+          "time": 152.44,
+          "playerHealth": 95,
+          "position": [
+            0.024,
+            0,
+            24.182
+          ],
+          "enemies": 2,
+          "health": 95.83
+        },
+        {
+          "event": "cart-hit",
+          "time": 153.153,
+          "playerHealth": 95,
+          "position": [
+            0.024,
+            0,
+            24.182
+          ],
+          "enemies": 2,
+          "health": 94.91
+        },
+        {
+          "event": "cart-hit",
+          "time": 153.859,
+          "playerHealth": 95,
+          "position": [
+            0.024,
+            0,
+            24.182
+          ],
+          "enemies": 2,
+          "health": 93.99
+        },
+        {
+          "event": "escort-resumed",
+          "time": 153.919,
+          "playerHealth": 95,
+          "position": [
+            -0.024,
+            0,
+            24.111
+          ],
+          "distance": 7.97
+        },
+        {
+          "event": "cart-hit",
+          "time": 154.572,
+          "playerHealth": 95,
+          "position": [
+            -1.753,
+            0,
+            22.161
+          ],
+          "enemies": 2,
+          "health": 93.16
+        },
+        {
+          "event": "cart-hit",
+          "time": 155.291,
+          "playerHealth": 95,
+          "position": [
+            -4.336,
+            0,
+            20.622
+          ],
+          "enemies": 1,
+          "health": 92.6
+        },
+        {
+          "event": "cart-hit",
+          "time": 155.994,
+          "playerHealth": 85,
+          "position": [
+            -7.169,
+            0,
+            20.027
+          ],
+          "enemies": 1,
+          "health": 92.14
+        },
+        {
+          "event": "escort-stopped",
+          "time": 156.3,
+          "playerHealth": 85,
+          "position": [
+            -8.006,
+            0,
+            20.002
+          ],
+          "distance": 4.4
+        },
+        {
+          "event": "cart-hit",
+          "time": 156.698,
+          "playerHealth": 85,
+          "position": [
+            -8.062,
+            0,
+            20.002
+          ],
+          "enemies": 2,
+          "health": 91.33
+        },
+        {
+          "event": "cart-hit",
+          "time": 157.414,
+          "playerHealth": 85,
+          "position": [
+            -8.062,
+            0,
+            20.002
+          ],
+          "enemies": 1,
+          "health": 90.53
+        },
+        {
+          "event": "cart-hit",
+          "time": 158.128,
+          "playerHealth": 71,
+          "position": [
+            -8.062,
+            0,
+            20.002
+          ],
+          "enemies": 1,
+          "health": 90.07
+        },
+        {
+          "event": "repair",
+          "time": 158.364,
+          "playerHealth": 71,
+          "position": [
+            -8.062,
+            0,
+            20.002
+          ],
+          "health": 100,
+          "remaining": 2
+        },
+        {
+          "event": "escort-resumed",
+          "time": 158.364,
+          "playerHealth": 71,
+          "position": [
+            -8.062,
+            0,
+            20.002
+          ],
+          "distance": 4.34
+        },
+        {
+          "event": "cart-hit",
+          "time": 158.838,
+          "playerHealth": 71,
+          "position": [
+            -8.142,
+            0,
+            20.009
+          ],
+          "enemies": 1,
+          "health": 99.56
+        },
+        {
+          "event": "cart-hit",
+          "time": 159.858,
+          "playerHealth": 71,
+          "position": [
+            -8.142,
+            0,
+            20.009
+          ],
+          "enemies": 1,
+          "health": 99.43
+        },
+        {
+          "event": "escort-stopped",
+          "time": 159.963,
+          "playerHealth": 71,
+          "position": [
+            -8.142,
+            0,
+            20.009
+          ],
+          "distance": 8.04
+        },
+        {
+          "event": "cart-hit",
+          "time": 160.64,
+          "playerHealth": 71,
+          "position": [
+            -8.142,
+            0,
+            20.009
+          ],
+          "enemies": 1,
+          "health": 99.05
+        },
+        {
+          "event": "cart-hit",
+          "time": 161.361,
+          "playerHealth": 71,
+          "position": [
+            -8.142,
+            0,
+            20.009
+          ],
+          "enemies": 1,
+          "health": 98.58
+        },
+        {
+          "event": "escort-resumed",
+          "time": 164.484,
+          "playerHealth": 100,
+          "position": [
+            -8.194,
+            0,
+            20.008
+          ],
+          "distance": 7.98
+        },
+        {
+          "event": "reinforcement-warning",
+          "time": 168.223,
+          "playerHealth": 100,
+          "position": [
+            -20.605,
+            0,
+            20
+          ],
+          "phase": "escort",
+          "source": "西侧通道",
+          "due": 174.22290000015474,
+          "count": 2,
+          "reason": "escort-1"
+        },
+        {
+          "event": "escort-wave",
+          "time": 174.227,
+          "playerHealth": 100,
+          "position": [
+            -25,
+            0,
+            10.302
+          ],
+          "wave": 6,
+          "index": 1,
+          "reason": "escort-1",
+          "source": "西侧通道",
+          "count": 2,
+          "spawned": [
+            {
+              "type": "gull",
+              "position": [
+                -45,
+                8,
+                -18
+              ],
+              "distance": 35.57,
+              "id": 16,
+              "forwardDot": 0.8995,
+              "lineOfSight": false,
+              "groundWalkable": true
+            },
+            {
+              "type": "hound",
+              "position": [
+                -43.2,
+                0,
+                -18
+              ],
+              "distance": 33.65,
+              "id": 17,
+              "forwardDot": 0.8042,
+              "lineOfSight": false,
+              "groundWalkable": true
+            }
+          ],
+          "alive": 2,
+          "warningSeconds": 6
+        },
+        {
+          "event": "cart-hit",
+          "time": 178.327,
+          "playerHealth": 100,
+          "position": [
+            -25,
+            0,
+            0.661
+          ],
+          "enemies": 1,
+          "health": 98.47
+        },
+        {
+          "event": "cart-hit",
+          "time": 179.034,
+          "playerHealth": 100,
+          "position": [
+            -25,
+            0,
+            -1.003
+          ],
+          "enemies": 1,
+          "health": 98.01
+        },
+        {
+          "event": "cart-hit",
+          "time": 179.746,
+          "playerHealth": 100,
+          "position": [
+            -24.996,
+            0,
+            -2.675
+          ],
+          "enemies": 1,
+          "health": 97.54
+        },
+        {
+          "event": "cart-hit",
+          "time": 182.73,
+          "playerHealth": 100,
+          "position": [
+            -25.004,
+            0,
+            -9.694
+          ],
+          "enemies": 1,
+          "health": 97.31
+        },
+        {
+          "event": "cart-hit",
+          "time": 183.437,
+          "playerHealth": 100,
+          "position": [
+            -25.036,
+            0,
+            -11.108
+          ],
+          "enemies": 1,
+          "health": 96.89
+        },
+        {
+          "event": "cart-hit",
+          "time": 184.137,
+          "playerHealth": 100,
+          "position": [
+            -25.212,
+            0,
+            -12.7
+          ],
+          "enemies": 1,
+          "health": 96.43
+        },
+        {
+          "event": "reinforcement-warning",
+          "time": 184.231,
+          "playerHealth": 100,
+          "position": [
+            -25.438,
+            0,
+            -12.977
+          ],
+          "phase": "escort",
+          "source": "西侧通道",
+          "due": 190.23050000017832,
+          "count": 2,
+          "reason": "escort-2"
+        },
+        {
+          "event": "cart-hit",
+          "time": 184.85,
+          "playerHealth": 100,
+          "position": [
+            -26.47,
+            0,
+            -14.837
+          ],
+          "enemies": 1,
+          "health": 95.97
+        },
+        {
+          "event": "cart-hit",
+          "time": 185.558,
+          "playerHealth": 100,
+          "position": [
+            -25.753,
+            0,
+            -16.899
+          ],
+          "enemies": 1,
+          "health": 95.51
+        },
+        {
+          "event": "escort-wave",
+          "time": 190.24,
+          "playerHealth": 100,
+          "position": [
+            -14.704,
+            0,
+            -17
+          ],
+          "wave": 7,
+          "index": 2,
+          "reason": "escort-2",
+          "source": "西侧通道",
+          "count": 2,
+          "spawned": [
+            {
+              "type": "gull",
+              "position": [
+                -45,
+                8,
+                -18
+              ],
+              "distance": 31.35,
+              "id": 18,
+              "forwardDot": -0.1022,
+              "lineOfSight": true,
+              "groundWalkable": true
+            },
+            {
+              "type": "hound",
+              "position": [
+                -43.2,
+                0,
+                -18
+              ],
+              "distance": 28.51,
+              "id": 19,
+              "forwardDot": -0.0939,
+              "lineOfSight": true,
+              "groundWalkable": true
+            }
+          ],
+          "alive": 2,
+          "warningSeconds": 6.01
+        },
+        {
+          "event": "cart-hit",
+          "time": 194.679,
+          "playerHealth": 93,
+          "position": [
+            -4.306,
+            0,
+            -16.997
+          ],
+          "enemies": 1,
+          "health": 95.14
+        },
+        {
+          "event": "delivered",
+          "time": 206.978,
+          "playerHealth": 100,
+          "position": [
+            0,
+            0,
+            -41.593
+          ],
+          "reason": "payload-at-north-terminal",
+          "cartHealth": 95.08216499997694,
+          "cargo": 3
+        }
+      ],
+      "layout": {
+        "bounds": [
+          -58,
+          -56,
+          58,
+          56
+        ],
+        "well": {
+          "min": [
+            -11,
+            -11
+          ],
+          "max": [
+            11,
+            11
+          ],
+          "depth": 4
+        },
+        "upper": {
+          "height": 4.8,
+          "ring": [
+            [
+              -14,
+              -14
+            ],
+            [
+              14,
+              -14
+            ],
+            [
+              14,
+              14
+            ],
+            [
+              -14,
+              14
+            ]
+          ],
+          "bridge": [
+            [
+              -14,
+              -6
+            ],
+            [
+              14,
+              -6
+            ]
+          ]
+        },
+        "warehouses": [
+          {
+            "kind": "warehouse",
+            "label": "WEST",
+            "min": [
+              -44.5,
+              0,
+              -14
+            ],
+            "max": [
+              -27.5,
+              9.5,
+              14.000000000000002
+            ]
+          },
+          {
+            "kind": "warehouse",
+            "label": "NORTH-EAST",
+            "min": [
+              26.5,
+              0,
+              -48
+            ],
+            "max": [
+              43.5,
+              9.5,
+              -20
+            ]
+          }
+        ],
+        "stairs": [
+          {
+            "kind": "stairs",
+            "from": [
+              -23,
+              0,
+              14
+            ],
+            "to": [
+              -15.25,
+              4.8,
+              14
+            ]
+          },
+          {
+            "kind": "stairs",
+            "from": [
+              23,
+              0,
+              14
+            ],
+            "to": [
+              15.25,
+              4.8,
+              14
+            ]
+          }
+        ],
+        "cores": [
+          {
+            "id": "W",
+            "position": [
+              -36,
+              1.1,
+              0
+            ]
+          },
+          {
+            "id": "E",
+            "position": [
+              38,
+              0.9,
+              8
+            ]
+          },
+          {
+            "id": "U",
+            "position": [
+              0,
+              5.75,
+              -8.3
+            ]
+          }
+        ],
+        "routes": {
+          "west": [
+            [
+              0,
+              20
+            ],
+            [
+              -25,
+              20
+            ],
+            [
+              -25,
+              -17
+            ],
+            [
+              0,
+              -17
+            ],
+            [
+              0,
+              -46
+            ]
+          ],
+          "east": [
+            [
+              0,
+              20
+            ],
+            [
+              25,
+              20
+            ],
+            [
+              25,
+              -17
+            ],
+            [
+              0,
+              -17
+            ],
+            [
+              0,
+              -46
+            ]
+          ]
+        },
+        "spawn": [
+          0,
+          0,
+          28
+        ],
+        "exit": [
+          0,
+          0,
+          -46
+        ],
+        "railCollision": {
+          "posts": 332,
+          "stairPosts": 28,
+          "guards": 307,
+          "metalCylinders": 394,
+          "policy": "player guards + finite metal cylinders; no bullet wall in gaps"
+        },
+        "vehicleClearance": {
+          "west": [],
+          "east": []
+        }
+      },
+      "level": {
+        "containers": 46,
+        "props": 286,
+        "tris": 1096116,
+        "meshes": 100,
+        "labelsAtlased": 83,
+        "warehouses": 2,
+        "layout": "new square freight loop + separate elevated pedestrian ring"
+      }
+    },
+    "checks": [
+      {
+        "name": "supply",
+        "pass": true,
+        "expect": "supply",
+        "time": 3.0681999999880785
+      },
+      {
+        "name": "reject-depart-before-cargo",
+        "pass": true,
+        "expect": "recovery",
+        "time": 6.112400000035761
+      },
+      {
+        "name": "pickup-W",
+        "pass": true,
+        "expect": "carrying:W",
+        "time": 18.394200000047668
+      },
+      {
+        "name": "load-W",
+        "pass": true,
+        "expect": "loaded:W",
+        "time": 37.680700000047686
+      },
+      {
+        "name": "mid-route-resupply",
+        "pass": true,
+        "before": 1,
+        "after": 2,
+        "health": 100,
+        "time": 40.47390000003587
+      },
+      {
+        "name": "pickup-U",
+        "pass": true,
+        "expect": "carrying:U",
+        "time": 60.09440000003643
+      },
+      {
+        "name": "load-U",
+        "pass": true,
+        "expect": "loaded:U",
+        "time": 90.12390000003612
+      },
+      {
+        "name": "mid-route-resupply",
+        "pass": true,
+        "before": 2,
+        "after": 3,
+        "health": 100,
+        "time": 94.03870000004798
+      },
+      {
+        "name": "pickup-E",
+        "pass": true,
+        "expect": "carrying:E",
+        "time": 109.54560000002405
+      },
+      {
+        "name": "load-E",
+        "pass": true,
+        "expect": "loaded:E",
+        "time": 136.0530000000597
+      },
+      {
+        "name": "mid-route-resupply",
+        "pass": true,
+        "before": 3,
+        "after": 4,
+        "health": 100,
+        "time": 139.47930000007167
+      },
+      {
+        "name": "depart",
+        "pass": true,
+        "expect": "escort",
+        "time": 143.24380000007147
+      },
+      {
+        "name": "escort-distance-stop",
+        "pass": true,
+        "stalls": 3
+      },
+      {
+        "name": "run-finished",
+        "pass": true,
+        "state": "complete"
+      },
+      {
+        "name": "real-cart-damage",
+        "pass": true,
+        "minCart": 89.93364499996926
+      },
+      {
+        "name": "finite-kit-repair",
+        "pass": true,
+        "uses": 1,
+        "remaining": 2
+      }
+    ],
+    "ballisticShots": [],
+    "collisionProbes": [
+      {
+        "name": "upper-gap-out",
+        "pass": true,
+        "hit": null,
+        "los": true,
+        "kind": "physics / sight probe; not an input shot"
+      },
+      {
+        "name": "upper-gap-in",
+        "pass": true,
+        "hit": null,
+        "los": true,
+        "kind": "physics / sight probe; not an input shot"
+      },
+      {
+        "name": "upper-horizontal-metal",
+        "pass": true,
+        "hit": {
+          "tag": "rail-metal",
+          "distance": 1.7699999999999987,
+          "point": [
+            15.23,
+            5.88,
+            0.75
+          ]
+        },
+        "los": false,
+        "kind": "physics / sight probe; not an input shot"
+      },
+      {
+        "name": "ground-up-gap",
+        "pass": true,
+        "hit": null,
+        "los": true,
+        "kind": "physics / sight probe; not an input shot"
+      },
+      {
+        "name": "upper-down-gap",
+        "pass": true,
+        "hit": null,
+        "los": true,
+        "kind": "physics / sight probe; not an input shot"
+      },
+      {
+        "name": "stair-post",
+        "pass": true,
+        "hit": {
+          "tag": "rail-metal",
+          "distance": 1.8630000000000009,
+          "point": [
+            19.125,
+            3.24,
+            15.136999999999999
+          ]
+        },
+        "los": false,
+        "kind": "physics / sight probe; not an input shot"
+      },
+      {
+        "name": "stair-gap",
+        "pass": true,
+        "hit": null,
+        "los": true,
+        "kind": "physics / sight probe; not an input shot"
+      },
+      {
+        "name": "stair-metal",
+        "pass": true,
+        "hit": {
+          "tag": "rail-metal",
+          "distance": 1.8699999999999983,
+          "point": [
+            18.4791667,
+            3.9033333,
+            15.130000000000003
+          ]
+        },
+        "los": false,
+        "kind": "physics / sight probe; not an input shot"
+      }
+    ],
+    "thermalTrace": [],
+    "thermalRules": {
+      "carrySeconds": 55,
+      "coolPerSecond": 0.09,
+      "pickupAtOrBelow": 0.65
+    },
+    "driverLog": [
+      {
+        "event": "step",
+        "step": 0,
+        "kind": "walk",
+        "position": [
+          0,
+          0,
+          28
+        ],
+        "time": 0.5071999999880791
+      },
+      {
+        "event": "step",
+        "step": 1,
+        "kind": "hold",
+        "name": "supply",
+        "position": [
+          5.5859717717677375,
+          0,
+          28.01721227806615
+        ],
+        "time": 1.8745
+      },
+      {
+        "event": "step",
+        "step": 2,
+        "kind": "walk",
+        "position": [
+          5.814945236855964,
+          0,
+          28.009399283469552
+        ],
+        "time": 3.0681999999880785
+      },
+      {
+        "event": "step",
+        "step": 3,
+        "kind": "hold",
+        "name": "reject-depart-before-cargo",
+        "position": [
+          0.28905507473564207,
+          0,
+          24.272631180269066
+        ],
+        "time": 4.744100000023842
+      },
+      {
+        "event": "step",
+        "step": 4,
+        "kind": "walk",
+        "position": [
+          0.08375003667946859,
+          0,
+          24.076583342289535
+        ],
+        "time": 6.112400000035761
+      },
+      {
+        "event": "step",
+        "step": 5,
+        "kind": "walk",
+        "position": [
+          -23.742275355989687,
+          0,
+          1.7672297189162787
+        ],
+        "time": 13.406500000059594
+      },
+      {
+        "event": "step",
+        "step": 6,
+        "kind": "walk",
+        "position": [
+          -28.587730463892772,
+          0.03,
+          1.515067628644038
+        ],
+        "time": 14.60670000004768
+      },
+      {
+        "event": "step",
+        "step": 7,
+        "kind": "hold",
+        "name": "pickup-W",
+        "position": [
+          -33.651648047473955,
+          0.03,
+          0.10139095203286465
+        ],
+        "time": 15.86240000003576
+      },
+      {
+        "event": "step",
+        "step": 8,
+        "kind": "walk",
+        "position": [
+          -33.8368026401031,
+          0.03,
+          0.04816369418104955
+        ],
+        "time": 18.394200000047668
+      },
+      {
+        "event": "step",
+        "step": 9,
+        "kind": "walk",
+        "position": [
+          -29.352738962280352,
+          0.03,
+          1.379056549129435
+        ],
+        "time": 20.40590000003572
+      },
+      {
+        "event": "step",
+        "step": 10,
+        "kind": "walk",
+        "position": [
+          -24.392605517485343,
+          0,
+          1.4921631799013524
+        ],
+        "time": 22.47949999999994
+      },
+      {
+        "event": "step",
+        "step": 11,
+        "kind": "walk",
+        "position": [
+          -5.0041213452394615,
+          0,
+          24.60003705054619
+        ],
+        "time": 34.54940000003568
+      },
+      {
+        "event": "step",
+        "step": 12,
+        "kind": "hold",
+        "name": "load-W",
+        "position": [
+          -0.4130552609759306,
+          0,
+          24.04554967601818
+        ],
+        "time": 36.50699999999997
+      },
+      {
+        "event": "step",
+        "step": 13,
+        "kind": "walk",
+        "position": [
+          -0.3422311244365955,
+          0,
+          24.037448964999754
+        ],
+        "time": 37.680700000047686
+      },
+      {
+        "event": "step",
+        "step": 14,
+        "kind": "resupply",
+        "position": [
+          5.6298981106322845,
+          0,
+          27.92957824050408
+        ],
+        "time": 39.574200000047746
+      },
+      {
+        "event": "step",
+        "step": 15,
+        "kind": "walk",
+        "position": [
+          5.820185368504524,
+          0,
+          27.964919450507363
+        ],
+        "time": 40.47390000003587
+      },
+      {
+        "event": "step",
+        "step": 16,
+        "kind": "walk",
+        "position": [
+          0.3198024647050666,
+          0,
+          26.141874719051113
+        ],
+        "time": 42.38550000000018
+      },
+      {
+        "event": "step",
+        "step": 17,
+        "kind": "walk",
+        "position": [
+          23.891412255337432,
+          0,
+          14.375457824197298
+        ],
+        "time": 47.560100000024136
+      },
+      {
+        "event": "step",
+        "step": 18,
+        "kind": "walk",
+        "position": [
+          14.106870137221948,
+          4.8,
+          14.002904705210184
+        ],
+        "time": 50.223800000012304
+      },
+      {
+        "event": "step",
+        "step": 19,
+        "kind": "walk",
+        "position": [
+          14.000454621162708,
+          4.8,
+          -5.8994481426367775
+        ],
+        "time": 55.66960000002439
+      },
+      {
+        "event": "step",
+        "step": 20,
+        "kind": "hold",
+        "name": "pickup-U",
+        "position": [
+          1.7068309200789067,
+          4.8,
+          -6.791050712528716
+        ],
+        "time": 58.932900000036376
+      },
+      {
+        "event": "step",
+        "step": 21,
+        "kind": "walk",
+        "position": [
+          1.6979459558709427,
+          4.8,
+          -6.791806533616784
+        ],
+        "time": 60.09440000003643
+      },
+      {
+        "event": "step",
+        "step": 22,
+        "kind": "walk",
+        "position": [
+          -13.887496859659448,
+          4.8,
+          -6.005580156956728
+        ],
+        "time": 66.34590000003648
+      },
+      {
+        "event": "step",
+        "step": 23,
+        "kind": "walk",
+        "position": [
+          -13.999092050097259,
+          4.8,
+          13.889147694778748
+        ],
+        "time": 74.21400000000054
+      },
+      {
+        "event": "step",
+        "step": 24,
+        "kind": "walk",
+        "position": [
+          -23.882792092604344,
+          0,
+          13.998280118226289
+        ],
+        "time": 78.29550000000062
+      },
+      {
+        "event": "step",
+        "step": 25,
+        "kind": "walk",
+        "position": [
+          -5.336671256046004,
+          0,
+          24.825769702356858
+        ],
+        "time": 86.86840000003616
+      },
+      {
+        "event": "step",
+        "step": 26,
+        "kind": "hold",
+        "name": "load-U",
+        "position": [
+          -0.38762374830922747,
+          0,
+          24.061340003134546
+        ],
+        "time": 88.96420000004808
+      },
+      {
+        "event": "step",
+        "step": 27,
+        "kind": "walk",
+        "position": [
+          -0.3259199264189996,
+          0,
+          24.051834963375516
+        ],
+        "time": 90.12390000003612
+      },
+      {
+        "event": "step",
+        "step": 28,
+        "kind": "resupply",
+        "position": [
+          5.639494459131426,
+          0,
+          27.93195860557503
+        ],
+        "time": 93.1321000000242
+      },
+      {
+        "event": "step",
+        "step": 29,
+        "kind": "walk",
+        "position": [
+          5.765001495599724,
+          0,
+          27.955111838989737
+        ],
+        "time": 94.03870000004798
+      },
+      {
+        "event": "step",
+        "step": 30,
+        "kind": "walk",
+        "position": [
+          0.3286467359146581,
+          0,
+          26.143341503574508
+        ],
+        "time": 95.70860000002416
+      },
+      {
+        "event": "step",
+        "step": 31,
+        "kind": "walk",
+        "position": [
+          24.68602590685978,
+          0,
+          2.210653377206685
+        ],
+        "time": 104.84130000001223
+      },
+      {
+        "event": "step",
+        "step": 32,
+        "kind": "walk",
+        "position": [
+          37.62025847266267,
+          0,
+          2.0025193923899884
+        ],
+        "time": 107.28040000003601
+      },
+      {
+        "event": "step",
+        "step": 33,
+        "kind": "hold",
+        "name": "pickup-E",
+        "position": [
+          37.964104006713896,
+          0,
+          5.790679329255239
+        ],
+        "time": 108.3726000000241
+      },
+      {
+        "event": "step",
+        "step": 34,
+        "kind": "walk",
+        "position": [
+          37.98344686145014,
+          0,
+          6.024209857361638
+        ],
+        "time": 109.54560000002405
+      },
+      {
+        "event": "step",
+        "step": 35,
+        "kind": "walk",
+        "position": [
+          37.97866485280652,
+          0,
+          2.404084823856147
+        ],
+        "time": 111.15580000001212
+      },
+      {
+        "event": "step",
+        "step": 36,
+        "kind": "walk",
+        "position": [
+          25.39729581914396,
+          0,
+          2.012166013110692
+        ],
+        "time": 116.12750000000018
+      },
+      {
+        "event": "step",
+        "step": 37,
+        "kind": "walk",
+        "position": [
+          25.00906294410991,
+          0,
+          22.600500342271967
+        ],
+        "time": 124.12420000004778
+      },
+      {
+        "event": "step",
+        "step": 38,
+        "kind": "walk",
+        "position": [
+          0.293673182211374,
+          0,
+          25.737918413184126
+        ],
+        "time": 134.12500000000009
+      },
+      {
+        "event": "step",
+        "step": 39,
+        "kind": "hold",
+        "name": "load-E",
+        "position": [
+          0.09818749318363391,
+          0,
+          24.375774329081224
+        ],
+        "time": 134.87460000002392
+      },
+      {
+        "event": "step",
+        "step": 40,
+        "kind": "walk",
+        "position": [
+          0.08211386825057063,
+          0,
+          24.31417287012955
+        ],
+        "time": 136.0530000000597
+      },
+      {
+        "event": "step",
+        "step": 41,
+        "kind": "resupply",
+        "position": [
+          5.6005378473924035,
+          0,
+          28.011045692905093
+        ],
+        "time": 138.59220000004788
+      },
+      {
+        "event": "step",
+        "step": 42,
+        "kind": "walk",
+        "position": [
+          5.813769557048531,
+          0,
+          28.003871500688735
+        ],
+        "time": 139.47930000007167
+      },
+      {
+        "event": "step",
+        "step": 43,
+        "kind": "walk",
+        "position": [
+          0.3727175179815747,
+          0,
+          26.154887547309944
+        ],
+        "time": 141.19730000007164
+      },
+      {
+        "event": "step",
+        "step": 44,
+        "kind": "hold",
+        "name": "depart",
+        "position": [
+          0.04647269901386473,
+          0,
+          24.34433272881649
+        ],
+        "time": 141.8520000000597
+      },
+      {
+        "event": "step",
+        "step": 45,
+        "kind": "escort",
+        "position": [
+          0.024029276754771473,
+          0,
+          24.181893303966774
+        ],
+        "time": 143.24380000007147
+      }
+    ],
+    "frameTiming": {
+      "samples": 10493,
+      "medianMs": 22.2,
+      "p95Ms": 26.9,
+      "p99Ms": 33.1
+    },
+    "render": {
+      "calls": 225,
+      "tris": 1215596,
+      "geos": 527,
+      "tex": 150,
+      "programs": 99,
+      "res": [
+        2022,
+        1137
+      ],
+      "scale": 1,
+      "advanced": true,
+      "softShadows": true,
+      "fps": 54,
+      "state": "complete"
+    },
+    "audioContext": "stub",
+    "audioMode": "QA volume 0 / noaudio query",
+    "viewport": {
+      "width": 1280,
+      "height": 720,
+      "dpr": 2
+    },
+    "networkResources": [],
+    "errors": [],
+    "inspectionCamera": ""
+  }
+}

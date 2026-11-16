@@ -1,0 +1,46 @@
+{
+  "harbor-complete.jpg": {
+    "sha256": "8d919d567be0ecbae295201dff8f5912c39b1b11a949b53f266fe0a3c896bc8f",
+    "view": "Actual completed mission, no inspection camera"
+  },
+  "moon-complete.jpg": {
+    "sha256": "f8e472d058681e61b3f097a909752b4ad8fd3284c93a9f565055bdb2be503b10",
+    "view": "Actual completed mission, no inspection camera"
+  },
+  "moon-in-play.jpg": {
+    "sha256": "f8e472d058681e61b3f097a909752b4ad8fd3284c93a9f565055bdb2be503b10",
+    "view": "Live player UI or title menu; not an inspection-camera render"
+  },
+  "bunker-complete.jpg": {
+    "sha256": "3191e31710841e8edc3de0aa8495aba829f46ec6d9763ba0cf495bf6b5562179",
+    "view": "Actual completed mission, no inspection camera"
+  },
+  "bunker-in-play.jpg": {
+    "sha256": "3191e31710841e8edc3de0aa8495aba829f46ec6d9763ba0cf495bf6b5562179",
+    "view": "Live player UI or title menu; not an inspection-camera render"
+  },
+  "final-pause-en.jpg": {
+    "sha256": "3191e31710841e8edc3de0aa8495aba829f46ec6d9763ba0cf495bf6b5562179",
+    "view": "Live player UI or title menu; not an inspection-camera render"
+  },
+  "final-pause-zh.jpg": {
+    "sha256": "3191e31710841e8edc3de0aa8495aba829f46ec6d9763ba0cf495bf6b5562179",
+    "view": "Live player UI or title menu; not an inspection-camera render"
+  },
+  "freight-complete.jpg": {
+    "sha256": "204fcd9c3dc094d8b1bfd7d97f4b51e12c933b880496cce8ff2a4f330b10e230",
+    "view": "Actual completed mission, no inspection camera"
+  },
+  "freight-escort.jpg": {
+    "sha256": "204fcd9c3dc094d8b1bfd7d97f4b51e12c933b880496cce8ff2a4f330b10e230",
+    "view": "Live player UI or title menu; not an inspection-camera render"
+  },
+  "freight-warning.jpg": {
+    "sha256": "204fcd9c3dc094d8b1bfd7d97f4b51e12c933b880496cce8ff2a4f330b10e230",
+    "view": "Live player UI or title menu; not an inspection-camera render"
+  },
+  "english-title.jpg": {
+    "sha256": "204fcd9c3dc094d8b1bfd7d97f4b51e12c933b880496cce8ff2a4f330b10e230",
+    "view": "Live player UI or title menu; not an inspection-camera render"
+  }
+}

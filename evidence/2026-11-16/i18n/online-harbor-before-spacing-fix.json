@@ -1,0 +1,657 @@
+{
+  "artifactSHA256": "628c1ad452e51792c5433e6189444b1b0ec5cc109238ca1ef4e665b9bfabcb9f",
+  "url": "https://subtlecooooder.github.io/BigGamePage/games/night-harbor.html?noaudio=1&qa=1&q=high&dynres=0&seed=4207&lang=en",
+  "issue": "Visual review found the generic uses-spacing rule split warehouses into wareho uses. Fix and rerun final build.",
+  "report": {
+    "recipe": "night-harbor",
+    "ready": true,
+    "language": {
+      "language": "en",
+      "preference": "en",
+      "browserLanguages": [
+        "zh-CN"
+      ],
+      "storageAvailable": true,
+      "untranslated": []
+    },
+    "mode": "input-only route; inspection cameras logged separately",
+    "running": false,
+    "step": 15,
+    "vertical": {
+      "running": false,
+      "stage": -1,
+      "maxStep": 0
+    },
+    "position": [
+      28.463890397707154,
+      0,
+      17.91342878129476
+    ],
+    "invulnerableDuringPlay": false,
+    "geometry": {
+      "dog": {
+        "hash": "56cdfa8c",
+        "triangles": 17348,
+        "meshes": 2
+      },
+      "drone": {
+        "hash": "aabcf30a",
+        "triangles": 13790,
+        "meshes": 3
+      }
+    },
+    "originalLevel": {
+      "labelsAtlased": 96,
+      "containers": 47,
+      "props": 298,
+      "tris": 794188,
+      "meshes": 125
+    },
+    "mission": {
+      "world": "harbor",
+      "state": "complete",
+      "time": 62.62,
+      "objectives": 3,
+      "health": 100,
+      "oxygen": 100,
+      "minOxygen": 100,
+      "maxAlarm": 100,
+      "detections": 3,
+      "fuse": false,
+      "fuseUsed": false,
+      "battery": 100,
+      "flashlight": true,
+      "recharges": 2,
+      "jumpMax": 0,
+      "minHP": 86,
+      "combat": {
+        "shots": 52,
+        "hits": 22,
+        "kills": 6
+      },
+      "devices": {
+        "time": 62.56920000010779,
+        "supplies": [
+          {
+            "id": "supply1",
+            "pos": [
+              -31.5,
+              0,
+              9.5
+            ],
+            "ready": 45.99400000005961,
+            "uses": 1
+          },
+          {
+            "id": "supply2",
+            "pos": [
+              -10.2,
+              0,
+              -26.5
+            ],
+            "ready": 77.58080000013103,
+            "uses": 1
+          },
+          {
+            "id": "supply3",
+            "pos": [
+              18.5,
+              0,
+              -15.8
+            ],
+            "ready": 0,
+            "uses": 0
+          }
+        ],
+        "emp": [
+          {
+            "id": "emp1",
+            "pos": [
+              -8.5,
+              0,
+              9.8
+            ],
+            "uses": 1,
+            "ready": 68.51870000010729
+          },
+          {
+            "id": "emp2",
+            "pos": [
+              15.2,
+              0,
+              -20
+            ],
+            "uses": 1,
+            "ready": 101.97080000013122
+          }
+        ],
+        "doors": [
+          {
+            "open": 0,
+            "target": 0,
+            "uses": 1,
+            "blocking": true
+          }
+        ],
+        "uses": 2,
+        "pulses": 2,
+        "doorUses": 1,
+        "originalLevel": {
+          "labelsAtlased": 96,
+          "containers": 47,
+          "props": 298,
+          "tris": 794188,
+          "meshes": 125
+        },
+        "enemyTris": {
+          "gull": 13788,
+          "hound": 17344
+        }
+      },
+      "climb": {
+        "active": null,
+        "position": [
+          28.463890397707154,
+          0,
+          17.91342878129476
+        ],
+        "ascents": 0,
+        "descents": 0,
+        "summitReached": false,
+        "log": [],
+        "ladders": [
+          {
+            "id": "base",
+            "length": 4.774131112314674,
+            "bottom": [
+              19.8,
+              0,
+              7.35
+            ],
+            "top": [
+              20,
+              3.6,
+              6.56
+            ]
+          },
+          {
+            "id": "roof",
+            "length": 5.800000000000003,
+            "bottom": [
+              25.2,
+              21.9,
+              3.55
+            ],
+            "top": [
+              25.2,
+              26.12,
+              2.25
+            ]
+          },
+          {
+            "id": "summit",
+            "length": 5.529999999999998,
+            "bottom": [
+              26.12,
+              26.12,
+              -0.25
+            ],
+            "top": [
+              27.15,
+              30.34,
+              -0.25
+            ]
+          }
+        ]
+      },
+      "events": [
+        {
+          "event": "start",
+          "time": 0,
+          "position": [
+            -32,
+            0,
+            6
+          ]
+        },
+        {
+          "event": "supply",
+          "time": 0.99,
+          "position": [
+            -31.55,
+            0,
+            7.577
+          ],
+          "id": "supply1"
+        },
+        {
+          "event": "objective",
+          "time": 19.43,
+          "position": [
+            1.376,
+            0,
+            6.125
+          ],
+          "id": "relay_a",
+          "index": 1
+        },
+        {
+          "event": "supply",
+          "time": 32.61,
+          "position": [
+            -10.281,
+            0.03,
+            -24.569
+          ],
+          "id": "supply2"
+        },
+        {
+          "event": "objective",
+          "time": 37.85,
+          "position": [
+            -3.568,
+            0.03,
+            -19.701
+          ],
+          "id": "relay_b",
+          "index": 2
+        },
+        {
+          "event": "enemy-alert",
+          "time": 39.48,
+          "position": [
+            -3.568,
+            0.03,
+            -19.701
+          ],
+          "noise": true
+        },
+        {
+          "event": "enemy-alert",
+          "time": 39.48,
+          "position": [
+            -3.568,
+            0.03,
+            -19.701
+          ],
+          "noise": true
+        },
+        {
+          "event": "enemy-alert",
+          "time": 39.48,
+          "position": [
+            -3.568,
+            0.03,
+            -19.701
+          ],
+          "noise": true
+        },
+        {
+          "event": "enemy-alert",
+          "time": 41.5,
+          "position": [
+            -2.914,
+            0.03,
+            -20.121
+          ],
+          "noise": false
+        },
+        {
+          "event": "detected",
+          "time": 41.52,
+          "position": [
+            -2.914,
+            0.03,
+            -20.121
+          ]
+        },
+        {
+          "event": "detected",
+          "time": 44.79,
+          "position": [
+            12.541,
+            0,
+            -19.55
+          ]
+        },
+        {
+          "event": "enemy-alert",
+          "time": 44.89,
+          "position": [
+            12.796,
+            0,
+            -19.456
+          ],
+          "noise": false
+        },
+        {
+          "event": "detected",
+          "time": 52.66,
+          "position": [
+            20.21,
+            0,
+            -2.681
+          ]
+        },
+        {
+          "event": "enemy-alert",
+          "time": 52.76,
+          "position": [
+            20.412,
+            0,
+            -2.213
+          ],
+          "noise": false
+        },
+        {
+          "event": "enemy-alert",
+          "time": 54.27,
+          "position": [
+            22.9,
+            0,
+            1.269
+          ],
+          "noise": false
+        },
+        {
+          "event": "objective",
+          "time": 56.74,
+          "position": [
+            22.9,
+            0,
+            1.269
+          ],
+          "id": "relay_c",
+          "index": 3
+        },
+        {
+          "event": "complete",
+          "time": 62.62,
+          "position": [
+            28.404,
+            0,
+            17.679
+          ]
+        }
+      ]
+    },
+    "bot": {
+      "enabled": false,
+      "arrived": false,
+      "path": 1,
+      "goal": {
+        "pos": {
+          "x": 29,
+          "y": 0,
+          "z": 20
+        },
+        "action": null
+      },
+      "pos": [
+        28.463890397707154,
+        0,
+        17.91342878129476
+      ],
+      "hp": 100,
+      "state": "complete",
+      "ammo": 5,
+      "reserve": 150,
+      "kills": 6,
+      "relays": 3,
+      "time": 62.616900000095875,
+      "errors": [],
+      "log": [
+        {
+          "event": "arrive",
+          "time": 27.206500000119114,
+          "pos": [
+            -3.807360979485501,
+            0.03,
+            -13.437403849618782
+          ],
+          "health": 100,
+          "kills": 1
+        },
+        {
+          "event": "close-shutter",
+          "time": 29.435300000131026,
+          "pos": [
+            -6.406150869576924,
+            0.03,
+            -13.019931413542995
+          ],
+          "health": 100,
+          "ammo": 24,
+          "reserve": 123,
+          "kills": 1,
+          "relays": 1
+        },
+        {
+          "event": "supply-2",
+          "time": 33.426000000119124,
+          "pos": [
+            -10.280742313749478,
+            0.03,
+            -24.56945969380867
+          ],
+          "health": 100,
+          "ammo": 24,
+          "reserve": 150,
+          "kills": 1,
+          "relays": 1
+        },
+        {
+          "event": "objective-B",
+          "time": 41.227500000119235,
+          "pos": [
+            -3.5679655360428333,
+            0.03,
+            -19.700682718319243
+          ],
+          "health": 100,
+          "ammo": 24,
+          "reserve": 150,
+          "kills": 1,
+          "relays": 2
+        },
+        {
+          "event": "arrive",
+          "time": 44.79050000011923,
+          "pos": [
+            12.597286379076028,
+            0,
+            -19.537958711355365
+          ],
+          "health": 100,
+          "kills": 3
+        },
+        {
+          "event": "emp-2",
+          "time": 47.52670000010738,
+          "pos": [
+            16.885545919363317,
+            0,
+            -19.916123804572234
+          ],
+          "health": 100,
+          "ammo": 13,
+          "reserve": 150,
+          "kills": 4,
+          "relays": 2
+        },
+        {
+          "event": "supply-3",
+          "time": 50.402600000083595,
+          "pos": [
+            20.017409502027753,
+            0,
+            -15.917533023280653
+          ],
+          "health": 100,
+          "ammo": 10,
+          "reserve": 150,
+          "kills": 4,
+          "relays": 2
+        },
+        {
+          "event": "objective-C",
+          "time": 59.42880000007188,
+          "pos": [
+            22.900347548175443,
+            0,
+            1.2691092093042562
+          ],
+          "health": 86,
+          "ammo": 7,
+          "reserve": 150,
+          "kills": 5,
+          "relays": 3
+        }
+      ]
+    },
+    "driverLog": [
+      {
+        "event": "route-step",
+        "step": 0,
+        "name": "supply-1",
+        "path": 5,
+        "time": 0.022200000047683716
+      },
+      {
+        "event": "route-step",
+        "step": 1,
+        "name": "walk",
+        "path": 62,
+        "time": 1.7558000000715255
+      },
+      {
+        "event": "route-step",
+        "step": 2,
+        "name": "enter-container-and-search",
+        "path": 11,
+        "time": 8.02180000007153
+      },
+      {
+        "event": "route-step",
+        "step": 3,
+        "name": "walk",
+        "path": 10,
+        "time": 10.36240000009537
+      },
+      {
+        "event": "route-step",
+        "step": 4,
+        "name": "emp-1",
+        "path": 19,
+        "time": 11.292100000083447
+      },
+      {
+        "event": "route-step",
+        "step": 5,
+        "name": "objective-A",
+        "path": 26,
+        "time": 14.260600000083448
+      },
+      {
+        "event": "route-step",
+        "step": 6,
+        "name": "walk",
+        "path": 50,
+        "time": 22.284900000095305
+      },
+      {
+        "event": "route-step",
+        "step": 7,
+        "name": "walk",
+        "path": 16,
+        "time": 25.95040000009528
+      },
+      {
+        "event": "route-step",
+        "step": 8,
+        "name": "close-shutter",
+        "path": 7,
+        "time": 27.233200000107193
+      },
+      {
+        "event": "route-step",
+        "step": 9,
+        "name": "supply-2",
+        "path": 31,
+        "time": 29.470700000107183
+      },
+      {
+        "event": "route-step",
+        "step": 10,
+        "name": "objective-B",
+        "path": 22,
+        "time": 33.4472000001072
+      },
+      {
+        "event": "route-step",
+        "step": 11,
+        "name": "walk",
+        "path": 43,
+        "time": 41.257000000119234
+      },
+      {
+        "event": "route-step",
+        "step": 12,
+        "name": "emp-2",
+        "path": 14,
+        "time": 44.81620000010731
+      },
+      {
+        "event": "route-step",
+        "step": 13,
+        "name": "supply-3",
+        "path": 11,
+        "time": 47.554100000083544
+      },
+      {
+        "event": "route-step",
+        "step": 14,
+        "name": "objective-C",
+        "path": 46,
+        "time": 50.42930000013128
+      },
+      {
+        "event": "route-step",
+        "step": 15,
+        "name": "walk",
+        "path": 48,
+        "time": 59.4561000000838
+      }
+    ],
+    "frameTiming": {
+      "samples": 2356,
+      "medianMs": 25.6,
+      "p95Ms": 33.3,
+      "p99Ms": 40.4
+    },
+    "render": {
+      "calls": 352,
+      "tris": 2591848,
+      "geos": 311,
+      "tex": 173,
+      "programs": 116,
+      "res": [
+        2022,
+        1137
+      ],
+      "scale": 1,
+      "advanced": true,
+      "softShadows": true,
+      "fps": 50.2,
+      "state": "complete"
+    },
+    "audioContext": "stub",
+    "viewport": {
+      "width": 1280,
+      "height": 720,
+      "dpr": 2
+    },
+    "networkResources": [],
+    "errors": []
+  }
+}

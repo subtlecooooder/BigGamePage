@@ -1,0 +1,21 @@
+{
+  "artifactSHA256": "6d2474785baf43c993147351e208cdf3acc0e6fbc5d73e9e8223676b99b55c57",
+  "language": {
+    "language": "en",
+    "preference": "auto",
+    "browserLanguages": [
+      "en-US",
+      "en;q=0.9"
+    ],
+    "storageAvailable": true,
+    "untranslated": []
+  },
+  "checks": [
+    "Browser English selected automatically",
+    "Chinese saved preference survived navigation to another game",
+    "Reset to Browser language restored English",
+    "English desktop controls and settings inspected",
+    "390 x 844 English menu and settings inspected after overlay fix"
+  ],
+  "mobileGameplayTested": false
+}

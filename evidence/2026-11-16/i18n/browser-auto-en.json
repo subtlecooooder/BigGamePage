@@ -1,0 +1,10 @@
+{
+  "language": "en",
+  "preference": "auto",
+  "browserLanguages": [
+    "en-US",
+    "en;q=0.9"
+  ],
+  "storageAvailable": true,
+  "untranslated": []
+}

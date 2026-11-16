@@ -1,0 +1,56 @@
+{
+  "build": "fbe61a5b371eef754cc640c744b6fb27d421497ff3202743ac4449d9c8e9c4d9",
+  "before": {
+    "state": "paused",
+    "time": 71.33,
+    "position": [
+      -13.865889384008058,
+      4.8,
+      -0.32967714507525964
+    ],
+    "loaded": [
+      "W"
+    ],
+    "health": 100,
+    "cartHealth": 100,
+    "ammo": 30,
+    "reserve": 126
+  },
+  "zh": {
+    "state": "paused",
+    "time": 71.33,
+    "position": [
+      -13.865889384008058,
+      4.8,
+      -0.32967714507525964
+    ],
+    "loaded": [
+      "W"
+    ],
+    "health": 100,
+    "cartHealth": 100,
+    "ammo": 30,
+    "reserve": 126
+  },
+  "en": {
+    "state": "paused",
+    "time": 71.33,
+    "position": [
+      -13.865889384008058,
+      4.8,
+      -0.32967714507525964
+    ],
+    "loaded": [
+      "W"
+    ],
+    "health": 100,
+    "cartHealth": 100,
+    "ammo": 30,
+    "reserve": 126
+  },
+  "passed": true,
+  "issuesFound": [
+    "Missing rifle name and carry-wave translations; repaired afterwards.",
+    "Hidden expired radio retained its previous language; repaired by keeping its original source."
+  ]
+}

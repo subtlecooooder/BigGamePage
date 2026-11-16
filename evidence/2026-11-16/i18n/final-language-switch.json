@@ -1,0 +1,1022 @@
+{
+  "artifactSHA256": "3191e31710841e8edc3de0aa8495aba829f46ec6d9763ba0cf495bf6b5562179",
+  "url": "https://subtlecooooder.github.io/BigGamePage/games/bunker-09.html?noaudio=1&qa=1&q=high&dynres=0&seed=4207&lang=en&build=568d9b7",
+  "passed": true,
+  "before": {
+    "position": [
+      26.82351291003455,
+      0,
+      11.662266560640436
+    ],
+    "mission": {
+      "world": "bunker",
+      "state": "paused",
+      "time": 59.9,
+      "objectives": 3,
+      "health": 100,
+      "oxygen": 100,
+      "minOxygen": 100,
+      "maxAlarm": 0,
+      "detections": 0,
+      "fuse": false,
+      "fuseUsed": true,
+      "battery": 97.79,
+      "flashlight": true,
+      "recharges": 3,
+      "jumpMax": 0,
+      "minHP": 100,
+      "combat": {
+        "shots": 29,
+        "hits": 28,
+        "kills": 6
+      },
+      "devices": {
+        "time": 59.8720000000602,
+        "supplies": [
+          {
+            "id": "supply1",
+            "pos": [
+              -31.5,
+              0,
+              9.5
+            ],
+            "ready": 46.03819999998808,
+            "uses": 1
+          },
+          {
+            "id": "supply2",
+            "pos": [
+              -10.2,
+              0,
+              -26.5
+            ],
+            "ready": 75.28949999999985,
+            "uses": 1
+          },
+          {
+            "id": "supply3",
+            "pos": [
+              18.5,
+              0,
+              -15.8
+            ],
+            "ready": 91.87860000002405,
+            "uses": 1
+          }
+        ],
+        "emp": [
+          {
+            "id": "emp1",
+            "pos": [
+              -8.5,
+              0,
+              9.8
+            ],
+            "uses": 1,
+            "ready": 66.51309999996424
+          },
+          {
+            "id": "emp2",
+            "pos": [
+              15.2,
+              0,
+              -20
+            ],
+            "uses": 1,
+            "ready": 99.15070000004783
+          }
+        ],
+        "doors": [
+          {
+            "open": 0,
+            "target": 0,
+            "uses": 1,
+            "blocking": true
+          }
+        ],
+        "uses": 3,
+        "pulses": 2,
+        "doorUses": 1,
+        "originalLevel": {
+          "labelsAtlased": 96,
+          "containers": 47,
+          "props": 298,
+          "tris": 794188,
+          "meshes": 125
+        },
+        "enemyTris": {
+          "gull": 13788,
+          "hound": 17344
+        }
+      },
+      "climb": {
+        "active": null,
+        "position": [
+          26.82351291003455,
+          0,
+          11.662266560640436
+        ],
+        "ascents": 0,
+        "descents": 0,
+        "summitReached": false,
+        "log": [],
+        "ladders": [
+          {
+            "id": "base",
+            "length": 4.774131112314674,
+            "bottom": [
+              19.8,
+              0,
+              7.35
+            ],
+            "top": [
+              20,
+              3.6,
+              6.56
+            ]
+          },
+          {
+            "id": "roof",
+            "length": 5.800000000000003,
+            "bottom": [
+              25.2,
+              21.9,
+              3.55
+            ],
+            "top": [
+              25.2,
+              26.12,
+              2.25
+            ]
+          },
+          {
+            "id": "summit",
+            "length": 5.529999999999998,
+            "bottom": [
+              26.12,
+              26.12,
+              -0.25
+            ],
+            "top": [
+              27.15,
+              30.34,
+              -0.25
+            ]
+          }
+        ]
+      },
+      "events": [
+        {
+          "event": "start",
+          "time": 0,
+          "position": [
+            -32,
+            0,
+            6
+          ]
+        },
+        {
+          "event": "supply",
+          "time": 1.04,
+          "position": [
+            -31.504,
+            0,
+            7.691
+          ],
+          "id": "supply1"
+        },
+        {
+          "event": "fuse-pickup",
+          "time": 7.65,
+          "position": [
+            -14.426,
+            0,
+            12.41
+          ]
+        },
+        {
+          "event": "enemy-alert",
+          "time": 12.91,
+          "position": [
+            -5.547,
+            0,
+            7.43
+          ],
+          "noise": true
+        },
+        {
+          "event": "enemy-alert",
+          "time": 13.92,
+          "position": [
+            -0.383,
+            0,
+            6.443
+          ],
+          "noise": false
+        },
+        {
+          "event": "enemy-alert",
+          "time": 15.65,
+          "position": [
+            1.386,
+            0,
+            6.122
+          ],
+          "noise": false
+        },
+        {
+          "event": "objective",
+          "time": 17.27,
+          "position": [
+            1.386,
+            0,
+            6.122
+          ],
+          "id": "relay_a",
+          "index": 1
+        },
+        {
+          "event": "supply",
+          "time": 30.29,
+          "position": [
+            -10.261,
+            0.03,
+            -24.586
+          ],
+          "id": "supply2"
+        },
+        {
+          "event": "objective",
+          "time": 35.52,
+          "position": [
+            -3.566,
+            0.03,
+            -19.698
+          ],
+          "id": "relay_b",
+          "index": 2
+        },
+        {
+          "event": "enemy-alert",
+          "time": 37.15,
+          "position": [
+            -3.566,
+            0.03,
+            -19.698
+          ],
+          "noise": true
+        },
+        {
+          "event": "enemy-alert",
+          "time": 37.15,
+          "position": [
+            -3.566,
+            0.03,
+            -19.698
+          ],
+          "noise": true
+        },
+        {
+          "event": "enemy-alert",
+          "time": 45.34,
+          "position": [
+            18.28,
+            0,
+            -18.309
+          ],
+          "noise": false
+        },
+        {
+          "event": "enemy-alert",
+          "time": 45.79,
+          "position": [
+            19.155,
+            0,
+            -17.067
+          ],
+          "noise": false
+        },
+        {
+          "event": "supply",
+          "time": 46.88,
+          "position": [
+            19.936,
+            0,
+            -16.063
+          ],
+          "id": "supply3"
+        },
+        {
+          "event": "enemy-alert",
+          "time": 48.92,
+          "position": [
+            19.369,
+            0,
+            -10.78
+          ],
+          "noise": false
+        },
+        {
+          "event": "enemy-alert",
+          "time": 50.14,
+          "position": [
+            19.521,
+            0,
+            -6.657
+          ],
+          "noise": false
+        },
+        {
+          "event": "objective",
+          "time": 54.9,
+          "position": [
+            22.802,
+            0,
+            1.282
+          ],
+          "id": "relay_c",
+          "index": 3
+        }
+      ]
+    },
+    "step": 15
+  },
+  "chinese": {
+    "position": [
+      26.82351291003455,
+      0,
+      11.662266560640436
+    ],
+    "mission": {
+      "world": "bunker",
+      "state": "paused",
+      "time": 59.9,
+      "objectives": 3,
+      "health": 100,
+      "oxygen": 100,
+      "minOxygen": 100,
+      "maxAlarm": 0,
+      "detections": 0,
+      "fuse": false,
+      "fuseUsed": true,
+      "battery": 97.79,
+      "flashlight": true,
+      "recharges": 3,
+      "jumpMax": 0,
+      "minHP": 100,
+      "combat": {
+        "shots": 29,
+        "hits": 28,
+        "kills": 6
+      },
+      "devices": {
+        "time": 59.8720000000602,
+        "supplies": [
+          {
+            "id": "supply1",
+            "pos": [
+              -31.5,
+              0,
+              9.5
+            ],
+            "ready": 46.03819999998808,
+            "uses": 1
+          },
+          {
+            "id": "supply2",
+            "pos": [
+              -10.2,
+              0,
+              -26.5
+            ],
+            "ready": 75.28949999999985,
+            "uses": 1
+          },
+          {
+            "id": "supply3",
+            "pos": [
+              18.5,
+              0,
+              -15.8
+            ],
+            "ready": 91.87860000002405,
+            "uses": 1
+          }
+        ],
+        "emp": [
+          {
+            "id": "emp1",
+            "pos": [
+              -8.5,
+              0,
+              9.8
+            ],
+            "uses": 1,
+            "ready": 66.51309999996424
+          },
+          {
+            "id": "emp2",
+            "pos": [
+              15.2,
+              0,
+              -20
+            ],
+            "uses": 1,
+            "ready": 99.15070000004783
+          }
+        ],
+        "doors": [
+          {
+            "open": 0,
+            "target": 0,
+            "uses": 1,
+            "blocking": true
+          }
+        ],
+        "uses": 3,
+        "pulses": 2,
+        "doorUses": 1,
+        "originalLevel": {
+          "labelsAtlased": 96,
+          "containers": 47,
+          "props": 298,
+          "tris": 794188,
+          "meshes": 125
+        },
+        "enemyTris": {
+          "gull": 13788,
+          "hound": 17344
+        }
+      },
+      "climb": {
+        "active": null,
+        "position": [
+          26.82351291003455,
+          0,
+          11.662266560640436
+        ],
+        "ascents": 0,
+        "descents": 0,
+        "summitReached": false,
+        "log": [],
+        "ladders": [
+          {
+            "id": "base",
+            "length": 4.774131112314674,
+            "bottom": [
+              19.8,
+              0,
+              7.35
+            ],
+            "top": [
+              20,
+              3.6,
+              6.56
+            ]
+          },
+          {
+            "id": "roof",
+            "length": 5.800000000000003,
+            "bottom": [
+              25.2,
+              21.9,
+              3.55
+            ],
+            "top": [
+              25.2,
+              26.12,
+              2.25
+            ]
+          },
+          {
+            "id": "summit",
+            "length": 5.529999999999998,
+            "bottom": [
+              26.12,
+              26.12,
+              -0.25
+            ],
+            "top": [
+              27.15,
+              30.34,
+              -0.25
+            ]
+          }
+        ]
+      },
+      "events": [
+        {
+          "event": "start",
+          "time": 0,
+          "position": [
+            -32,
+            0,
+            6
+          ]
+        },
+        {
+          "event": "supply",
+          "time": 1.04,
+          "position": [
+            -31.504,
+            0,
+            7.691
+          ],
+          "id": "supply1"
+        },
+        {
+          "event": "fuse-pickup",
+          "time": 7.65,
+          "position": [
+            -14.426,
+            0,
+            12.41
+          ]
+        },
+        {
+          "event": "enemy-alert",
+          "time": 12.91,
+          "position": [
+            -5.547,
+            0,
+            7.43
+          ],
+          "noise": true
+        },
+        {
+          "event": "enemy-alert",
+          "time": 13.92,
+          "position": [
+            -0.383,
+            0,
+            6.443
+          ],
+          "noise": false
+        },
+        {
+          "event": "enemy-alert",
+          "time": 15.65,
+          "position": [
+            1.386,
+            0,
+            6.122
+          ],
+          "noise": false
+        },
+        {
+          "event": "objective",
+          "time": 17.27,
+          "position": [
+            1.386,
+            0,
+            6.122
+          ],
+          "id": "relay_a",
+          "index": 1
+        },
+        {
+          "event": "supply",
+          "time": 30.29,
+          "position": [
+            -10.261,
+            0.03,
+            -24.586
+          ],
+          "id": "supply2"
+        },
+        {
+          "event": "objective",
+          "time": 35.52,
+          "position": [
+            -3.566,
+            0.03,
+            -19.698
+          ],
+          "id": "relay_b",
+          "index": 2
+        },
+        {
+          "event": "enemy-alert",
+          "time": 37.15,
+          "position": [
+            -3.566,
+            0.03,
+            -19.698
+          ],
+          "noise": true
+        },
+        {
+          "event": "enemy-alert",
+          "time": 37.15,
+          "position": [
+            -3.566,
+            0.03,
+            -19.698
+          ],
+          "noise": true
+        },
+        {
+          "event": "enemy-alert",
+          "time": 45.34,
+          "position": [
+            18.28,
+            0,
+            -18.309
+          ],
+          "noise": false
+        },
+        {
+          "event": "enemy-alert",
+          "time": 45.79,
+          "position": [
+            19.155,
+            0,
+            -17.067
+          ],
+          "noise": false
+        },
+        {
+          "event": "supply",
+          "time": 46.88,
+          "position": [
+            19.936,
+            0,
+            -16.063
+          ],
+          "id": "supply3"
+        },
+        {
+          "event": "enemy-alert",
+          "time": 48.92,
+          "position": [
+            19.369,
+            0,
+            -10.78
+          ],
+          "noise": false
+        },
+        {
+          "event": "enemy-alert",
+          "time": 50.14,
+          "position": [
+            19.521,
+            0,
+            -6.657
+          ],
+          "noise": false
+        },
+        {
+          "event": "objective",
+          "time": 54.9,
+          "position": [
+            22.802,
+            0,
+            1.282
+          ],
+          "id": "relay_c",
+          "index": 3
+        }
+      ]
+    },
+    "step": 15
+  },
+  "english": {
+    "position": [
+      26.82351291003455,
+      0,
+      11.662266560640436
+    ],
+    "mission": {
+      "world": "bunker",
+      "state": "paused",
+      "time": 59.9,
+      "objectives": 3,
+      "health": 100,
+      "oxygen": 100,
+      "minOxygen": 100,
+      "maxAlarm": 0,
+      "detections": 0,
+      "fuse": false,
+      "fuseUsed": true,
+      "battery": 97.79,
+      "flashlight": true,
+      "recharges": 3,
+      "jumpMax": 0,
+      "minHP": 100,
+      "combat": {
+        "shots": 29,
+        "hits": 28,
+        "kills": 6
+      },
+      "devices": {
+        "time": 59.8720000000602,
+        "supplies": [
+          {
+            "id": "supply1",
+            "pos": [
+              -31.5,
+              0,
+              9.5
+            ],
+            "ready": 46.03819999998808,
+            "uses": 1
+          },
+          {
+            "id": "supply2",
+            "pos": [
+              -10.2,
+              0,
+              -26.5
+            ],
+            "ready": 75.28949999999985,
+            "uses": 1
+          },
+          {
+            "id": "supply3",
+            "pos": [
+              18.5,
+              0,
+              -15.8
+            ],
+            "ready": 91.87860000002405,
+            "uses": 1
+          }
+        ],
+        "emp": [
+          {
+            "id": "emp1",
+            "pos": [
+              -8.5,
+              0,
+              9.8
+            ],
+            "uses": 1,
+            "ready": 66.51309999996424
+          },
+          {
+            "id": "emp2",
+            "pos": [
+              15.2,
+              0,
+              -20
+            ],
+            "uses": 1,
+            "ready": 99.15070000004783
+          }
+        ],
+        "doors": [
+          {
+            "open": 0,
+            "target": 0,
+            "uses": 1,
+            "blocking": true
+          }
+        ],
+        "uses": 3,
+        "pulses": 2,
+        "doorUses": 1,
+        "originalLevel": {
+          "labelsAtlased": 96,
+          "containers": 47,
+          "props": 298,
+          "tris": 794188,
+          "meshes": 125
+        },
+        "enemyTris": {
+          "gull": 13788,
+          "hound": 17344
+        }
+      },
+      "climb": {
+        "active": null,
+        "position": [
+          26.82351291003455,
+          0,
+          11.662266560640436
+        ],
+        "ascents": 0,
+        "descents": 0,
+        "summitReached": false,
+        "log": [],
+        "ladders": [
+          {
+            "id": "base",
+            "length": 4.774131112314674,
+            "bottom": [
+              19.8,
+              0,
+              7.35
+            ],
+            "top": [
+              20,
+              3.6,
+              6.56
+            ]
+          },
+          {
+            "id": "roof",
+            "length": 5.800000000000003,
+            "bottom": [
+              25.2,
+              21.9,
+              3.55
+            ],
+            "top": [
+              25.2,
+              26.12,
+              2.25
+            ]
+          },
+          {
+            "id": "summit",
+            "length": 5.529999999999998,
+            "bottom": [
+              26.12,
+              26.12,
+              -0.25
+            ],
+            "top": [
+              27.15,
+              30.34,
+              -0.25
+            ]
+          }
+        ]
+      },
+      "events": [
+        {
+          "event": "start",
+          "time": 0,
+          "position": [
+            -32,
+            0,
+            6
+          ]
+        },
+        {
+          "event": "supply",
+          "time": 1.04,
+          "position": [
+            -31.504,
+            0,
+            7.691
+          ],
+          "id": "supply1"
+        },
+        {
+          "event": "fuse-pickup",
+          "time": 7.65,
+          "position": [
+            -14.426,
+            0,
+            12.41
+          ]
+        },
+        {
+          "event": "enemy-alert",
+          "time": 12.91,
+          "position": [
+            -5.547,
+            0,
+            7.43
+          ],
+          "noise": true
+        },
+        {
+          "event": "enemy-alert",
+          "time": 13.92,
+          "position": [
+            -0.383,
+            0,
+            6.443
+          ],
+          "noise": false
+        },
+        {
+          "event": "enemy-alert",
+          "time": 15.65,
+          "position": [
+            1.386,
+            0,
+            6.122
+          ],
+          "noise": false
+        },
+        {
+          "event": "objective",
+          "time": 17.27,
+          "position": [
+            1.386,
+            0,
+            6.122
+          ],
+          "id": "relay_a",
+          "index": 1
+        },
+        {
+          "event": "supply",
+          "time": 30.29,
+          "position": [
+            -10.261,
+            0.03,
+            -24.586
+          ],
+          "id": "supply2"
+        },
+        {
+          "event": "objective",
+          "time": 35.52,
+          "position": [
+            -3.566,
+            0.03,
+            -19.698
+          ],
+          "id": "relay_b",
+          "index": 2
+        },
+        {
+          "event": "enemy-alert",
+          "time": 37.15,
+          "position": [
+            -3.566,
+            0.03,
+            -19.698
+          ],
+          "noise": true
+        },
+        {
+          "event": "enemy-alert",
+          "time": 37.15,
+          "position": [
+            -3.566,
+            0.03,
+            -19.698
+          ],
+          "noise": true
+        },
+        {
+          "event": "enemy-alert",
+          "time": 45.34,
+          "position": [
+            18.28,
+            0,
+            -18.309
+          ],
+          "noise": false
+        },
+        {
+          "event": "enemy-alert",
+          "time": 45.79,
+          "position": [
+            19.155,
+            0,
+            -17.067
+          ],
+          "noise": false
+        },
+        {
+          "event": "supply",
+          "time": 46.88,
+          "position": [
+            19.936,
+            0,
+            -16.063
+          ],
+          "id": "supply3"
+        },
+        {
+          "event": "enemy-alert",
+          "time": 48.92,
+          "position": [
+            19.369,
+            0,
+            -10.78
+          ],
+          "noise": false
+        },
+        {
+          "event": "enemy-alert",
+          "time": 50.14,
+          "position": [
+            19.521,
+            0,
+            -6.657
+          ],
+          "noise": false
+        },
+        {
+          "event": "objective",
+          "time": 54.9,
+          "position": [
+            22.802,
+            0,
+            1.282
+          ],
+          "id": "relay_c",
+          "index": 3
+        }
+      ]
+    },
+    "step": 15
+  }
+}

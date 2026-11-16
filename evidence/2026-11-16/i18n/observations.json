@@ -1,0 +1,21 @@
+{
+  "scope": "Bilingual UI, silent desktop play and hosted artifact verification; no game rule or model simplification",
+  "fixedDuringReview": [
+    "English titles and briefs overflowed the 1280 x 720 title menu",
+    "Narrow settings tabs were overlapped by the language selector",
+    "Close shared the wrong translation with the Off setting",
+    "Animated radio and objective copy needed translation before typewriter slicing",
+    "Weapon, core names and mission-debrief strings had incomplete coverage",
+    "A units-spacing rule split warehouses into wareho uses",
+    "Compass distance units wrapped",
+    "A transparent location card intercepted Controls menu clicks",
+    "Reinforcement location and text needed a separator",
+    "Long English combat warnings overflowed; added bounded width and wrapping"
+  ],
+  "observationOnlyIssues": [
+    "A case-sensitive heading locator used Mission complete, while the actual translated heading was MISSION COMPLETE; direct UI inspection confirmed completion",
+    "Escape first released pointer lock during a no-QA startup test; P opened the paused menu"
+  ],
+  "evidencePolicy": "Intermediate reports retain their original hashes and are not relabeled as final-build runs. Raw diagnostic logs retain source-language event names; game presentation uses the selected language.",
+  "silentLimit": "Sound mixing is not tested. No mobile touch gameplay, file protocol cold start or full performance acceptance is claimed."
+}

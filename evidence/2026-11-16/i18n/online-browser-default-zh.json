@@ -1,0 +1,12 @@
+{
+  "artifactSHA256": "8fbb1ee07521ebf158fefb87e9d2203b1e1463369b260e6581edfc3c325cef8f",
+  "language": {
+    "language": "zh",
+    "preference": "auto",
+    "browserLanguages": [
+      "zh-CN"
+    ],
+    "storageAvailable": true,
+    "untranslated": []
+  }
+}

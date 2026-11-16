@@ -1,0 +1,256 @@
+{
+  "verifiedAt": "2026-11-16T07:43:52.284043+00:00",
+  "buildCommit": "568d9b7710afbd660e6f569e55d7e7da03aa9306",
+  "pagesURL": "https://subtlecooooder.github.io/BigGamePage/",
+  "method": "Visible QA controls synthesize normal movement, look, fire, reload and interaction inputs on the actual HTTPS games. Normal enemies and damage retained; no player state edits or inspection cameras.",
+  "games": [
+    {
+      "id": "night-harbor",
+      "sha256": "8d919d567be0ecbae295201dff8f5912c39b1b11a949b53f266fe0a3c896bc8f",
+      "bytes": 1527215,
+      "url": "https://subtlecooooder.github.io/BigGamePage/games/night-harbor.html?noaudio=1&qa=1&q=high&dynres=0&seed=4207&lang=en&build=568d9b7",
+      "state": "complete",
+      "timeSeconds": 61.76,
+      "minHP": 95,
+      "combat": {
+        "shots": 50,
+        "hits": 21,
+        "kills": 6
+      },
+      "language": {
+        "language": "en",
+        "preference": "en",
+        "browserLanguages": [
+          "zh-CN"
+        ],
+        "storageAvailable": true,
+        "untranslated": []
+      },
+      "audioContext": "stub",
+      "invulnerableDuringPlay": false,
+      "errors": [],
+      "networkResources": [],
+      "geometry": {
+        "dog": {
+          "hash": "56cdfa8c",
+          "triangles": 17348,
+          "meshes": 2
+        },
+        "drone": {
+          "hash": "aabcf30a",
+          "triangles": 13790,
+          "meshes": 3
+        }
+      },
+      "viewport": {
+        "width": 1280,
+        "height": 720,
+        "dpr": 2
+      },
+      "frameTiming": {
+        "samples": 2326,
+        "medianMs": 26.1,
+        "p95Ms": 30.5,
+        "p99Ms": 38
+      },
+      "report": "harbor-playthrough.json",
+      "details": {
+        "objectives": 3,
+        "minOxygen": 100,
+        "fuseUsed": false,
+        "supplies": 2
+      }
+    },
+    {
+      "id": "selene-repair",
+      "sha256": "f8e472d058681e61b3f097a909752b4ad8fd3284c93a9f565055bdb2be503b10",
+      "bytes": 1527329,
+      "url": "https://subtlecooooder.github.io/BigGamePage/games/selene-repair.html?noaudio=1&qa=1&q=high&dynres=0&seed=4207&lang=en&build=568d9b7",
+      "state": "complete",
+      "timeSeconds": 60.69,
+      "minHP": 79,
+      "combat": {
+        "shots": 21,
+        "hits": 18,
+        "kills": 6
+      },
+      "language": {
+        "language": "en",
+        "preference": "en",
+        "browserLanguages": [
+          "zh-CN"
+        ],
+        "storageAvailable": true,
+        "untranslated": []
+      },
+      "audioContext": "stub",
+      "invulnerableDuringPlay": false,
+      "errors": [],
+      "networkResources": [],
+      "geometry": {
+        "dog": {
+          "hash": "56cdfa8c",
+          "triangles": 17348,
+          "meshes": 2
+        },
+        "drone": {
+          "hash": "aabcf30a",
+          "triangles": 13790,
+          "meshes": 3
+        }
+      },
+      "viewport": {
+        "width": 1280,
+        "height": 720,
+        "dpr": 2
+      },
+      "frameTiming": {
+        "samples": 2950,
+        "medianMs": 19.8,
+        "p95Ms": 24,
+        "p99Ms": 35
+      },
+      "report": "moon-playthrough.json",
+      "details": {
+        "objectives": 3,
+        "minOxygen": 79.51,
+        "fuseUsed": false,
+        "supplies": 3
+      }
+    },
+    {
+      "id": "bunker-09",
+      "sha256": "3191e31710841e8edc3de0aa8495aba829f46ec6d9763ba0cf495bf6b5562179",
+      "bytes": 1527415,
+      "url": "https://subtlecooooder.github.io/BigGamePage/games/bunker-09.html?noaudio=1&qa=1&q=high&dynres=0&seed=4207&lang=en&build=568d9b7",
+      "state": "complete",
+      "timeSeconds": 61.01,
+      "minHP": 100,
+      "combat": {
+        "shots": 29,
+        "hits": 28,
+        "kills": 6
+      },
+      "language": {
+        "language": "en",
+        "preference": "en",
+        "browserLanguages": [
+          "zh-CN"
+        ],
+        "storageAvailable": true,
+        "untranslated": []
+      },
+      "audioContext": "stub",
+      "invulnerableDuringPlay": false,
+      "errors": [],
+      "networkResources": [],
+      "geometry": {
+        "dog": {
+          "hash": "56cdfa8c",
+          "triangles": 17348,
+          "meshes": 2
+        },
+        "drone": {
+          "hash": "aabcf30a",
+          "triangles": 13790,
+          "meshes": 3
+        }
+      },
+      "viewport": {
+        "width": 1280,
+        "height": 720,
+        "dpr": 2
+      },
+      "frameTiming": {
+        "samples": 2440,
+        "medianMs": 24.2,
+        "p95Ms": 28.8,
+        "p99Ms": 31.3
+      },
+      "report": "bunker-playthrough.json",
+      "details": {
+        "objectives": 3,
+        "minOxygen": 100,
+        "fuseUsed": true,
+        "supplies": 3
+      }
+    },
+    {
+      "id": "switchyard-zero",
+      "sha256": "204fcd9c3dc094d8b1bfd7d97f4b51e12c933b880496cce8ff2a4f330b10e230",
+      "bytes": 1537702,
+      "url": "https://subtlecooooder.github.io/BigGamePage/games/switchyard-zero.html?noaudio=1&qa=1&q=high&dynres=0&seed=4207&lang=en&build=568d9b7",
+      "state": "complete",
+      "timeSeconds": 207.64,
+      "minHP": 56,
+      "combat": {
+        "shots": 111,
+        "hits": 73,
+        "kills": 19
+      },
+      "language": {
+        "language": "en",
+        "preference": "en",
+        "browserLanguages": [
+          "zh-CN"
+        ],
+        "storageAvailable": true,
+        "untranslated": []
+      },
+      "audioContext": "stub",
+      "invulnerableDuringPlay": false,
+      "errors": [],
+      "networkResources": [],
+      "geometry": {
+        "dog": {
+          "hash": "56cdfa8c",
+          "triangles": 17348,
+          "meshes": 2
+        },
+        "drone": {
+          "hash": "aabcf30a",
+          "triangles": 13790,
+          "meshes": 3
+        }
+      },
+      "viewport": {
+        "width": 1280,
+        "height": 720,
+        "dpr": 2
+      },
+      "frameTiming": {
+        "samples": 9293,
+        "medianMs": 22.1,
+        "p95Ms": 26.6,
+        "p99Ms": 28.6
+      },
+      "report": "freight-playthrough.json",
+      "details": {
+        "objectives": null,
+        "minOxygen": null,
+        "fuseUsed": null,
+        "supplies": 4,
+        "loaded": [
+          "W",
+          "U",
+          "E"
+        ],
+        "route": "west",
+        "maxY": 4.800000000000001,
+        "minCart": 76.35,
+        "cartHealth": 98.44,
+        "repairUses": 1,
+        "recoverySpawned": 10,
+        "checksPassed": 16
+      }
+    }
+  ],
+  "languageSwitchPassed": true,
+  "staticLanguageCases": 73,
+  "limits": [
+    "Silent testing does not validate sound mixing.",
+    "Mobile touch gameplay, file:// cold start and explicit offline browser mode are not accepted.",
+    "Dedicated thermal, east-route, rail-probe and full climb scenarios were not repeated in this UI release.",
+    "Earlier intermediate builds and UI defects retain their own hashes and files; they are not final-build gameplay evidence."
+  ]
+}

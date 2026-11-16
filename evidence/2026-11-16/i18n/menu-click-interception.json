@@ -1,0 +1,7 @@
+{
+  "artifactSHA256": "def7fba7739532a8ec586f3b498fb4b4fb7df4eb42166eb171494376bc13788f",
+  "url": "https://subtlecooooder.github.io/BigGamePage/games/bunker-09.html?noaudio=1&qa=1&q=high&dynres=0&seed=4207",
+  "issue": "Controls menu click intercepted by a fully transparent decorative .loc-card with pointer-events:auto.",
+  "fix": ".loc-card { pointer-events:none; }",
+  "gameplayStateChanged": false
+}

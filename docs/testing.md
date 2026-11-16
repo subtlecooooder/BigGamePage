@@ -8,6 +8,28 @@
 
 静态检查不代替游玩；检查机位不证明角色抵达；自动路线通关不证明人类觉得有趣。每份实测应绑定 HTML 哈希，保留失败记录，区分本轮与历史证据。
 
+## 2026-11-16 v0.4 bilingual UI / 最终双语版本实测
+
+The final game artifacts were built from `568d9b7710afbd660e6f569e55d7e7da03aa9306` after [Pages deployment](https://github.com/subtlecooooder/BigGamePage/actions/runs/43824166494) and [technical checks](https://github.com/subtlecooooder/BigGamePage/actions/runs/43824166399) passed. Every report below matches the SHA-256 of its current exported HTML and the actual HTTPS response. Later documentation/evidence commits do not change those game bytes.
+
+四款均使用英文界面完成了最终构建的完整输入路线，保留正常敌人与伤害，没有修改坐标、生命、弹药或任务状态，也没有使用检查机位。单文件大小为 **1,527,215–1,537,702 字节**；机器狗、无人机完整模型哈希仍为 `56cdfa8c` / `aabcf30a`。本轮有意补做了英文菜单、长提示和结算的视觉检查。
+
+| Game | Final HTTPS result | Evidence |
+|---|---|---|
+| Silent Harbor / 夜港无声 | 61.76 s; 3 objectives, 6 kills, minimum HP 95, 2 supplies | [Report](../evidence/2026-11-16/i18n/harbor-playthrough.json) · [Debrief](../evidence/2026-11-16/i18n/harbor-complete.jpg) |
+| Lunar Reserve / 月面余氧 | 60.69 s; 3 objectives, 6 kills, minimum HP 79, minimum oxygen 79.51%, 3 supplies | [Report](../evidence/2026-11-16/i18n/moon-playthrough.json) · [Gameplay](../evidence/2026-11-16/i18n/moon-in-play.jpg) |
+| Bunker Nine / 地底九号 | 61.01 s; fuse acquired and installed, 3 objectives, 6 kills, 3 supplies | [Report](../evidence/2026-11-16/i18n/bunker-playthrough.json) · [Gameplay](../evidence/2026-11-16/i18n/bunker-in-play.jpg) |
+| Switchyard Zero / 零号中转站 | 207.64 s; W/U/E loaded, 4.8 m upper ring, west delivery, 19 kills, minimum HP 56, 4 supplies, 1 repair; 16 checks passed | [Report](../evidence/2026-11-16/i18n/freight-playthrough.json) · [Delivery](../evidence/2026-11-16/i18n/freight-complete.jpg) |
+
+- All four final runs report `audioContext: stub`, no invulnerability, no captured errors, no runtime resource requests and no untranslated UI strings encountered along those routes. Raw diagnostic event names and scene texture lettering are retained as source data.
+- Switching English → Chinese → English while Bunker Nine was paused preserved the full mission snapshot, position and driver step exactly, including all three objectives and the installed fuse. See [comparison](../evidence/2026-11-16/i18n/final-language-switch.json), [Chinese pause](../evidence/2026-11-16/i18n/final-pause-zh.jpg) and [English pause](../evidence/2026-11-16/i18n/final-pause-en.jpg). Earlier checks also covered switching while carrying a freight core.
+- Browser-following English and Chinese, saved choices across games, returning to automatic selection, title/pause selectors, settings and controls were exercised. The 73 Node cases additionally cover unsupported browser languages, query precedence, blocked storage, all four recipe translations and dynamic messages. The [local UI record](../evidence/2026-11-16/i18n/local-final-ui.json) identifies its intermediate build; the language resolver is unchanged in the final artifacts.
+- Inspected the English menu and settings at 390 × 844 as well as the desktop layout. This is menu responsiveness, not mobile gameplay acceptance. A separate [ordinary-mode check](../evidence/2026-11-16/i18n/ordinary-mode-check.json) used no QA panel and verified starting, opening Controls, pausing with P and switching language.
+- Visual review found and fixed overflowing titles/briefs, overlapping narrow settings controls, incomplete dynamic translations, incorrect Close/Off wording, an over-broad word-spacing rule, wrapped compass units, transparent location cards intercepting menu clicks, and long combat warnings clipping. The final [visible warning](../evidence/2026-11-16/i18n/freight-warning.jpg) and [bounds](../evidence/2026-11-16/i18n/warning-layout.json) confirm the English warning wraps inside the viewport. [Observation log](../evidence/2026-11-16/i18n/observations.json) retains issues and test-tool limitations.
+- Environment: desktop in-app browser, 1280 × 720 CSS pixels, DPR 2, `q=high&dynres=0&seed=4207&noaudio=1`. Dedicated thermal recovery, east escort, rail probes and full crane traversal were not repeated for this UI-only release. Their historical evidence remains separate. Audio mixing, mobile touch gameplay and broad performance acceptance are not claimed.
+
+[Final machine-readable summary](../evidence/2026-11-16/i18n/summary.json) · [Hosted HTML hashes](../evidence/2026-11-16/i18n/http-artifacts.json) · [Static/package checks](../evidence/2026-11-16/repository-check.json)
+
 ## 2026-11-14 gameplay baseline / 历史游玩基准
 
 These records belong to the v0.3 branding baseline, before the repository reorganization. 旧记录保留其原始 HTML 哈希；v0.4 双语界面构建会改变文件字节，必须提供新一轮实测，不能将这些旧通关记录改标为新版本。

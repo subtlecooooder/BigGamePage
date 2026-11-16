@@ -1,0 +1,90 @@
+{
+  "verifiedAt": "2026-11-16T07:30:15.366837+00:00",
+  "commit": "568d9b7710afbd660e6f569e55d7e7da03aa9306",
+  "games": [
+    {
+      "id": "switchyard-zero",
+      "bytes": 1537702,
+      "sha256": "204fcd9c3dc094d8b1bfd7d97f4b51e12c933b880496cce8ff2a4f330b10e230",
+      "budget": 2000000,
+      "externalHTMLResources": [],
+      "runtimeNetworkPolicy": "connect-src none",
+      "foundation_sha256": "1f78441cb11f5376cc2f27db547d46111324a8dabddba2dcee21583f78c25098",
+      "brand": "BigGamePage · 一页大作",
+      "tagline": "Big games. One page.",
+      "version": "0.4.0",
+      "languages": [
+        "zh",
+        "en"
+      ],
+      "defaultLanguage": "browser",
+      "file": "switchyard-zero.html",
+      "title": "零号中转站",
+      "url": "https://subtlecooooder.github.io/BigGamePage/games/switchyard-zero.html?noaudio=1&qa=1&q=high&dynres=0&seed=4207&lang=en&build=568d9b7",
+      "status": 200
+    },
+    {
+      "id": "night-harbor",
+      "bytes": 1527215,
+      "sha256": "8d919d567be0ecbae295201dff8f5912c39b1b11a949b53f266fe0a3c896bc8f",
+      "budget": 2000000,
+      "externalHTMLResources": [],
+      "runtimeNetworkPolicy": "connect-src none",
+      "foundation_sha256": "1f78441cb11f5376cc2f27db547d46111324a8dabddba2dcee21583f78c25098",
+      "brand": "BigGamePage · 一页大作",
+      "tagline": "Big games. One page.",
+      "version": "0.4.0",
+      "languages": [
+        "zh",
+        "en"
+      ],
+      "defaultLanguage": "browser",
+      "file": "night-harbor.html",
+      "title": "夜港无声",
+      "url": "https://subtlecooooder.github.io/BigGamePage/games/night-harbor.html?noaudio=1&qa=1&q=high&dynres=0&seed=4207&lang=en&build=568d9b7",
+      "status": 200
+    },
+    {
+      "id": "selene-repair",
+      "bytes": 1527329,
+      "sha256": "f8e472d058681e61b3f097a909752b4ad8fd3284c93a9f565055bdb2be503b10",
+      "budget": 2000000,
+      "externalHTMLResources": [],
+      "runtimeNetworkPolicy": "connect-src none",
+      "foundation_sha256": "1f78441cb11f5376cc2f27db547d46111324a8dabddba2dcee21583f78c25098",
+      "brand": "BigGamePage · 一页大作",
+      "tagline": "Big games. One page.",
+      "version": "0.4.0",
+      "languages": [
+        "zh",
+        "en"
+      ],
+      "defaultLanguage": "browser",
+      "file": "selene-repair.html",
+      "title": "月面余氧",
+      "url": "https://subtlecooooder.github.io/BigGamePage/games/selene-repair.html?noaudio=1&qa=1&q=high&dynres=0&seed=4207&lang=en&build=568d9b7",
+      "status": 200
+    },
+    {
+      "id": "bunker-09",
+      "bytes": 1527415,
+      "sha256": "3191e31710841e8edc3de0aa8495aba829f46ec6d9763ba0cf495bf6b5562179",
+      "budget": 2000000,
+      "externalHTMLResources": [],
+      "runtimeNetworkPolicy": "connect-src none",
+      "foundation_sha256": "1f78441cb11f5376cc2f27db547d46111324a8dabddba2dcee21583f78c25098",
+      "brand": "BigGamePage · 一页大作",
+      "tagline": "Big games. One page.",
+      "version": "0.4.0",
+      "languages": [
+        "zh",
+        "en"
+      ],
+      "defaultLanguage": "browser",
+      "file": "bunker-09.html",
+      "title": "地底九号",
+      "url": "https://subtlecooooder.github.io/BigGamePage/games/bunker-09.html?noaudio=1&qa=1&q=high&dynres=0&seed=4207&lang=en&build=568d9b7",
+      "status": 200
+    }
+  ]
+}

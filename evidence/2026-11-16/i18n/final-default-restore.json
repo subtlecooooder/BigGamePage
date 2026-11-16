@@ -1,0 +1,10 @@
+{
+  "artifactSHA256": "204fcd9c3dc094d8b1bfd7d97f4b51e12c933b880496cce8ff2a4f330b10e230",
+  "url": "https://subtlecooooder.github.io/BigGamePage/games/switchyard-zero.html?noaudio=1&lang=auto&build=568d9b7",
+  "title": "零号中转站 · BigGamePage · 一页大作",
+  "selector": {
+    "selectedLabel": "跟随浏览器",
+    "value": "auto"
+  },
+  "note": "Restored Browser language after testing so the test does not leave a saved English preference."
+}
