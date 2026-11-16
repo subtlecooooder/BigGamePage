@@ -42,14 +42,14 @@ Each exported HTML is independently movable. Its `.build.json` sidecar is verifi
 
 | Game / recipe | Layout and mechanics | HTML size |
 |---|---|---:|
-| [零号中转站 / Switchyard Zero · `switchyard-zero`](https://subtlecooooder.github.io/BigGamePage/games/switchyard-zero.html?noaudio=1) | Independent freight hub; unordered core recovery, heat/cooling, route choice, escort and finite repairs | 1,537,232 B |
-| [夜港无声 / Silent Harbor · `night-harbor`](https://subtlecooooder.github.io/BigGamePage/games/night-harbor.html?noaudio=1) | Original harbor layout; alert management, infiltration, devices and extraction | 1,526,745 B |
-| [月面余氧 / Lunar Reserve · `selene-repair`](https://subtlecooooder.github.io/BigGamePage/games/selene-repair.html?noaudio=1) | Original harbor layout; reduced gravity, oxygen and repairs | 1,526,859 B |
-| [地底九号 / Bunker Nine · `bunker-09`](https://subtlecooooder.github.io/BigGamePage/games/bunker-09.html?noaudio=1) | Original harbor layout; fuse recovery, power, flashlight and escape | 1,526,945 B |
+| [零号中转站 / Switchyard Zero · `switchyard-zero`](https://subtlecooooder.github.io/BigGamePage/games/switchyard-zero.html?noaudio=1) | Independent freight hub; unordered core recovery, heat/cooling, route choice, escort and finite repairs | 1,537,350 B |
+| [夜港无声 / Silent Harbor · `night-harbor`](https://subtlecooooder.github.io/BigGamePage/games/night-harbor.html?noaudio=1) | Original harbor layout; alert management, infiltration, devices and extraction | 1,526,863 B |
+| [月面余氧 / Lunar Reserve · `selene-repair`](https://subtlecooooder.github.io/BigGamePage/games/selene-repair.html?noaudio=1) | Original harbor layout; reduced gravity, oxygen and repairs | 1,526,977 B |
+| [地底九号 / Bunker Nine · `bunker-09`](https://subtlecooooder.github.io/BigGamePage/games/bunker-09.html?noaudio=1) | Original harbor layout; fuse recovery, power, flashlight and escape | 1,527,063 B |
 
 The last three share the original layout. Switchyard Zero replaces both the map and mission controller. Detailed machine dogs, drones, enterable warehouses and open containers are retained. Export size was not achieved by replacing those models with simplified approximations.
 
-Controls: WASD move, mouse aim, left click fire, R reload, hold E interact, Shift sprint, C crouch, Space jump, P pause. Switchyard adds Q to drop a core and M for the map; Bunker uses L for the flashlight. Follow the game's fallback-view instructions if pointer lock is unavailable. **The landing page and guides are bilingual; current in-game UI remains Chinese.**
+Controls: WASD move, mouse aim, left click fire, R reload, hold E interact, Shift sprint, C crouch, Space jump, P pause. Switchyard adds Q to drop a core and M for the map; Bunker uses L for the flashlight. Follow the game's fallback-view instructions if pointer lock is unavailable. The landing page, guides and in-game UI support both English and Chinese.
 
 ## Install the Skill in Codex
 

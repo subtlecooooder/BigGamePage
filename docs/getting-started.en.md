@@ -6,6 +6,8 @@
 
 Open the [online arcade](https://subtlecooooder.github.io/BigGamePage/?lang=en) and choose one of the four games. Links start muted. Playing requires no Python, Git or Skill installation; those tools are for authoring and local verification.
 
+All games embed English and Chinese UI. On the title screen or after pausing with Esc / P, use **Language** to switch instantly. The default follows your browser; an explicit choice is remembered across games. Choose **Browser language** to reset it. Direct links may specify `lang=en`, `lang=zh` or `lang=auto`.
+
 ## Requirements
 
 Python 3.9+, a WebGL2-capable desktop browser, and keyboard/mouse. Python scripts use the standard library. Node.js is optional for exported JavaScript syntax checks. The AI agent must provide filesystem access, Python execution and browser controls; the Skill does not bundle an agent, browser automation runtime or model subscription.

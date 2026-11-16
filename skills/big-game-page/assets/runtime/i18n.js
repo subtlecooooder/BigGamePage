@@ -41,7 +41,7 @@
     }
     result = result.replace(/[，、]/g, ', ').replace(/。/g, '. ').replace(/；/g, '; ').replace(/：/g, ': ')
       .replace(/！/g, '! ').replace(/？/g, '? ').replace(/[“”]/g, '"').replace(/（/g, '(').replace(/）/g, ')')
-      .replace(/([^\s])uses\b/g, '$1 uses').replace(/(\d)(s|waves)\b/g, '$1 $2').replace(/ {2,}/g, ' ');
+      .replace(/(\d)uses\b/g, '$1 uses').replace(/(\d)(s|waves)\b/g, '$1 $2').replace(/ {2,}/g, ' ');
     if (han.test(result) && missing.size < 160) missing.add(text);
     if (cache.size >= 768) cache.clear();
     cache.set(text, result);

@@ -6,6 +6,8 @@
 
 打开 [在线演示站](https://subtlecooooder.github.io/BigGamePage/?lang=zh) 即可选择四款游戏；默认静音。仅试玩不需要 Python、Git 或 Skill，以下工具用于本地制作和验证。
 
+四款游戏均内置中英文界面。开始页或按 Esc / P 暂停后，可通过“语言”即时切换。默认跟随浏览器，手动选择会跨游戏记住；选择“跟随浏览器”可恢复自动识别。直达链接也支持 `lang=en`、`lang=zh`、`lang=auto`。
+
 ## 运行环境
 
 - Python 3.9 或更高版本；构建、安装、静态检查不需第三方 Python 包。
